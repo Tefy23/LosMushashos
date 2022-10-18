@@ -51,7 +51,7 @@ margin-left: .40em;
 
 /*-----------CARRUSEL----------------------------------------------------------------*/
 
-@charset "UTF-8";
+
 .carousel {
   display: block;
   font-size: 0;
@@ -144,7 +144,6 @@ margin-left: .40em;
   display: block;
   height: 100%;
   margin: auto;
-  vertical-align: bottom;
   position: relative;
   z-index: 1;
   transition: 1s ease;
