@@ -1,0 +1,152 @@
+ 
+  /* */
+
+  h1, h2{
+    text-align:center;
+  }
+
+  /* Info */
+  .rectangle{
+    width: 60%;
+    height: 300px;
+    background: gray;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+  }
+  .center{
+    font-size: 30px;
+  }
+
+   /* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Style the submit button */
+  /*input[type=submit] {
+    background-color: #aa0439;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }*/
+  
+  /* Style the container */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  } 
+
+  /* BOTTON */
+/*   .btn{
+    position: relative;
+    background-color: red;
+    color: #75c44f;
+    border: none;
+    font-size: 18px;
+    border-radius: 50px;
+    width: 130px;
+    height: 50px;
+    cursor: pointer;
+    padding: 0;
+  } */
+
+  
+  /* CSS */
+  .button-73 {
+    appearance: none;
+    background-color: #662727;
+    border-radius: 40px;
+    border-style: none;
+    box-shadow: #45494e 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    /* display: inline-block; */
+    font-size: 10px;
+    font-weight: 70;
+    letter-spacing: -.24px;
+    float: right;
+    margin-left: 1000px;
+    outline: none;
+    padding: 12px 20px;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-73:hover {
+    background-color: #755a13;
+    box-shadow: #6b2c0c 0 -6px 8px inset;
+    transform: scale(1.125);
+  }
+  
+  .button-73:active {
+    transform: scale(1.025);
+  }
+  
+  @media (min-width: 768px) {
+    .button-73 {
+      font-size: 10px;
+      padding: 12px 20px;
+    }
+  }
+
+
+  /* FIN BOTTON */
+
+  .boxed {
+    border: 1px solid green ;
+  } 
