@@ -1,0 +1,16 @@
+h3{
+    text-align: center;
+}
+body{
+    background-color: white;
+
+}
+
+.caja{
+
+    border: 2px solid;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: bisque;
+    border-radius: 5%;
+}
