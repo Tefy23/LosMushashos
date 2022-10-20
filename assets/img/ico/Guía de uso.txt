@@ -1,0 +1,32 @@
+Guía de uso
+
+/* HOLA MUSHASHOS 
+* Estos son los iconos propuestos para implementar en nuestro proyecto para poder aprovecharlos
+* de una manera más comoda y eficiente les dejo algunas reglas y recomendaciones de uso:
+
+*	1.Todos los iconos que están aquí vienen sin fondo (formato .png) y en
+		un tamaño de 512px, esto con la finalidad de que se puedan 
+		implementar en sus proyectos sin que la imagen se distorsionen
+
+	2.Exceptuando los iconos de redes sociales todos los iconos se pueden 
+		encontrar en 3 Colores diferentes con el siguiente código hex:
+			
+			- #D2CCCC : Gris
+			- #FFFFFF : Blanco
+			- #000000 : Negro
+	
+	3.El logo de búsqueda-activa (Lupita color gris) tiene un tono ligeramente
+		diferente y mi idea es utilizarla para cuando el usuario esté
+		realizando una busqueda en tiempo real. su código de color es:
+
+			-#959595: Gris (búsqueda)
+	
+	4.Para las redes sociales subí varias versiones de logo con la intención de 
+		elegirlos entre todos en la siguiente reunión
+
+	5. Si alguno de ustedes quiere implementar un icono podemos comunicarnos para 
+		darle formato, color y quitarle el fondo
+
+
+
+	SIN MAS POR EL MOMENTO... espero que estén todos bien. los TQM =)
