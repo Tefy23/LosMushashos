@@ -1,12 +1,12 @@
 /* */
 
-h1, h2{
+h1, h5{
   text-align:center;
 }
 
 /* Info */
 .rectangle{
-  width: 70%;
+  width: 40%;
   height: 300px;
   background: gray;
   border-radius: 20px;
@@ -17,9 +17,9 @@ h1, h2{
   margin-bottom: 50px;
 
 }
-.center{
+/* .center{
   font-size: 30px;
-}
+} */
 
  /* Style inputs, select elements and textareas */
 input[type=text], select, textarea{
@@ -29,6 +29,7 @@ input[type=text], select, textarea{
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
+  position: relative;
 }
 
 /* Style the label to display next to the inputs */
@@ -36,17 +37,6 @@ label {
   padding: 12px 12px 12px 0;
   display: inline-block;
 }
-
-/* Style the submit button */
-/*input[type=submit] {
-  background-color: #aa0439;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}*/
 
 /* Style the container */
 .container {
@@ -85,63 +75,60 @@ label {
 } 
 
 /* BOTTON */
-/*   .btn{
-  position: relative;
-  background-color: red;
-  color: #75c44f;
-  border: none;
-  font-size: 18px;
-  border-radius: 50px;
-  width: 130px;
-  height: 50px;
-  cursor: pointer;
-  padding: 0;
-} */
-
-
-/* CSS */
-.button-73 {
-  appearance: none;
-  background-color: #662727;
-  border-radius: 40px;
-  border-style: none;
-  box-shadow: #45494e 0 -12px 6px inset;
-  box-sizing: border-box;
-  color: #000000;
-  cursor: pointer;
-  /* display: inline-block; */
-  font-size: 10px;
-  font-weight: 70;
-  letter-spacing: -.24px;
-  float: right;
-  margin-left: 1000px;
-  outline: none;
+/* From uiverse.io by @adamgiebl */
+button {
+  font-family: inherit;
+  font-size: 20px;
+  background: rgb(222, 102, 128);
+  color: white;
   padding: 12px 20px;
-  quotes: auto;
-  text-align: center;
-  text-decoration: none;
-  transition: all .15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-73:hover {
-  background-color: #a33d3d;
-  box-shadow: #6b2c0c 0 -6px 8px inset;
-  transform: scale(1.125);
-}
-
-.button-73:active {
-  transform: scale(1.025);
-}
-
-@media (min-width: 768px) {
-  .button-73 {
-    font-size: 10px;
-    padding: 12px 20px;
+  padding-left: 12px;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  float: right;
+ }
+ 
+ button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+ }
+ 
+ button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+ }
+ 
+ button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+ }
+ 
+ button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+ }
+ 
+ button:hover span {
+  transform: translateX(5em);
+ }
+ 
+ button:active {
+  transform: scale(0.95);
+ }
+ 
+ @keyframes fly-1 {
+  from {
+   transform: translateY(0.1em);
   }
-}
+ 
+  to {
+   transform: translateY(-0.1em);
+  }
+ }
 
 
 /* FIN BOTTON */
@@ -163,3 +150,57 @@ label {
   padding: 20px;
 }
 /* ----------------- */
+
+/* */
+
+/* From uiverse.io by @satyamchaudharydev */
+.form {
+  --width-of-input: 200px;
+  --border-height: 1px;
+  --border-before-color: rgba(221, 221, 221, 0.39);
+  --border-after-color: #5891ff;
+  --input-hovered-color: #4985e01f;
+  position: relative;
+  width: var(--width-of-input);
+ }
+ /* styling of Input */
+ .input {
+  color: rgb(208, 145, 145);
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+  border-bottom: var(--border-height) solid var(--border-before-color);
+ }
+ /* styling of animated border */
+ .input-border {
+  position: absolute;
+  background: var(--border-after-color);
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+ }
+ /* Hover on Input */
+ input:hover {
+  background: var(--input-hovered-color);
+ }
+ 
+ input:focus {
+  outline: none;
+ }
+ /* here is code of animated border */
+ input:focus ~ .input-border {
+  width: 100%;
+ }
+ /* === if you want to do animated border on typing === */
+ /* remove input:focus code and uncomment below code */
+ /* input:valid ~ .input-border{
+   width: 100%;
+ } */
+
+ /*  */
