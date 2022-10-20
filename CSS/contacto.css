@@ -1,12 +1,12 @@
 /* */
 
-h1, h2{
+h1, h5{
   text-align:center;
 }
 
 /* Info */
 .rectangle{
-  width: 70%;
+  width: 40%;
   height: 300px;
   background: gray;
   border-radius: 20px;
@@ -17,9 +17,9 @@ h1, h2{
   margin-bottom: 50px;
 
 }
-.center{
+/* .center{
   font-size: 30px;
-}
+} */
 
  /* Style inputs, select elements and textareas */
 input[type=text], select, textarea{
@@ -165,7 +165,7 @@ button {
  }
  /* styling of Input */
  .input {
-  color: #fff;
+  color: rgb(208, 145, 145);
   font-size: 0.9rem;
   background-color: transparent;
   width: 100%;
