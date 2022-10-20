@@ -1,6 +1,6 @@
 /* */
 
-h1, h5{
+h1, h6{
   text-align:center;
 }
 
@@ -167,7 +167,7 @@ button {
  .input {
   color: rgb(208, 145, 145);
   font-size: 0.9rem;
-  background-color: transparent;
+  background-color: grey;
   width: 100%;
   box-sizing: border-box;
   padding-inline: 0.5em;
