@@ -57,7 +57,7 @@
 
     
   <!-- DEJAR EL MENSAJE / RELLENAR -->
-    <div class="container">
+    <div class="container-md">
         <h2> Déjanos un mensaje</h2>
         <form action="action_page.php">
       
@@ -68,20 +68,16 @@
           <input type="text" id="correo" name="correo" placeholder="Correo">
       
           <label for="asunto">Asunto</label>
-          <select id="asunto" name="asunto">
-            <option value="choose">...</option>
-            <option value="compra">Problemas con una compra</option>
-            <option value="prenda">¿No te quedó la prenda?</option>
-            <option value="Reembolso">Reembolso</option>
+            <select id="asunto" name="asunto">
+              <option value="choose">...</option>
+              <option value="compra">Problemas con una compra</option>
+              <option value="prenda">¿No te quedó la prenda?</option>
+              <option value="Reembolso">Reembolso</option>
+              <option value="Reembolso">Trabaja con nosotros</option>
           </select>
       
           <label for="msj"></label>
-          <textarea id="msj" name="msj" placeholder="Escribe tu mensaje..." style="height:200px"></textarea>
-          
-          <!-- BUTTON -->
-          <!-- <div class="row">
-            <button class="button-73" role="button" type="submit">Enviar</button>
-          </div> -->
+          <input type="text" style="height:200px" placeholder="Escribe tu mensaje...">
 
           <!-- BUTTON -->
           <button>
@@ -97,6 +93,8 @@
           </button>
         </form>
     </div> 
+    <br>
+    <br>
 
 
   <!-------------------------- Footer de la pagina ------------------------>
