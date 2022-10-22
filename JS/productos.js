@@ -1,14 +1,16 @@
 
 
 function addItem(item){
-    const itemHTML = '<div class="card" style="width: 14rem;">\n' +
-        '    <img src="'+item.img +'" class="card-img-top" alt="image">\n' +
-        '    <div class="card-body">\n' +
-        '        <h5 class="card-title">'+item.name+'</h5>\n' +
-        '        <p class="card-text">'+item.description+'</p>\n' +
-        '    </div>\n' +
-        '</div>\n' +
-        '<br/>';
+    const itemHTML = `
+        <div class="card">
+            <div style="flex: 1;">
+                <img src="${item.img}" style="object-fit:cover;" class="card-img-top img-fluid" alt="image">
+            </div>
+            <div class="card-body d-flex justify-content-end"  style="flex: 1; flex-direction: column;">
+                <h5 class="card-title">${item.name}</h5>
+                <p class="card-text">${item.description}</p>
+            </div>
+        </div>`;
     const itemsContainer = document.getElementById("list-items");
     itemsContainer.innerHTML += itemHTML;
 }
@@ -37,9 +39,9 @@ addItem({'name':'Jumpsuit Water',
     'img':'../assets/img/Articulos/jumpsuit_animal_print.jpg',
     'description':'Animal Print'})
 
-addItem({'name':'Air ',
-    'img':'../assets/img/Articulos/air_rosa.jpg',
-    'description':'Rosa'})
+addItem({'name':'Jumpsuit ',
+    'img':'../assets/img/Articulos/jumpsuit_water.jpg',
+    'description':'Edicion limitada'})
 
 addItem({'name':'Sudadera',
     'img':'../assets/img/Articulos/sudadera_autum.png',
