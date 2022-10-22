@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/registro.css">
-    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
   <!--ENLACE Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <!--Icono Superior con Logo WS-->
-    <link rel="icon" type="image/x-icon" href="./assets/img/logo/ws-boton.png">
+    <link rel="icon" type="image/x-icon" href="../assets/img/logo/ws-boton.png">
   <!--ENLACE CDN Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
@@ -18,7 +18,7 @@
 <body>
     <!--ENCABEZADO BASE PAGINA PRINCIPAL-->
   <!--LOGO PRINCPIPAL-->
-  <img src="./assets/img/logo/wicsha-logo-principal.png" class="img-fluid" align="top-left"  alt="wicsha-logo-principal" id="logoPrincipal">
+  <img src="../assets/img/logo/wicsha-logo-principal.png" class="img-fluid" align="top-left"  alt="wicsha-logo-principal" id="logoPrincipal">
 
 
 <!--BARRA DE NAVEGACION-->
@@ -38,14 +38,14 @@
               <input class="icon-placeholder" type="search" placeholder="   B u s c a r " style="width: 228px; height: 25px" aria-label="Search">
         <!--ICONOS superiores-->
               <div class="dropdown-center">              
-                  <img class="icon dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" src="./assets/img/ico/usuario barra principal.png">
-                   <ul class="dropdown-menu">
+                  <img class="icon dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" src="../assets/img/ico/usuario barra principal.png">
+                  <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Perfil</a></li>
                     <li><a class="dropdown-item" href="./html/registro.html">Registrarse</a></li>
                     </ul>
                 
-                <a href="prueba.html"><img class="icon" src="./assets/img/ico/Bolsa de compra.png"></a>
-                <a href="prueba.html"><img class="icon-last" src="./assets/img/ico/Wish.png" class="float-end"></a>
+                <a href="prueba.html"><img class="icon" src="../assets/img/ico/Bolsa de compra.png"></a>
+                <a href="prueba.html"><img class="icon-last" src="../assets/img/ico/Wish.png" class="float-end"></a>
               </div>
             </form>
           </div>        
@@ -65,44 +65,67 @@
 
             </div>
         </div>
-        <div class="row">
-            <div class="caja">
-                <!-- Formulario -->
-                <form class="row g-3" id="registro">
-                    <h3>Bienvenido</h3>
-                    <div class="col-md-6">
-                    <label for="inputNombre" class="form-label"></label>
-                    <input type="text" class="form-control" id="inputNombre" required placeholder="Nombre">
-                    </div>
-                    <div class="col-md-6">
-                    <label for="inputApellido" class="form-label"></label>
-                    <input type="text" class="form-control" id="inputApellido" required placeholder="Apellido">
-                    </div>
-                    <div class="col-12">
-                    <label for="Email" class="form-label"></label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Email: ejemplo@gmail.com">
-                    </div>
-                    <div class="col-12">
-                    <label for="password" class="form-label"></label>
-                    <input type="password" class="form-control" id="password" placeholder="Contraseña">
-                    </div>
-                    <div class="col-md-6">
-                    <label for="rPassword" class="form-label"></label>
-                    <input type="text" class="form-control" id="inputContraseña" placeholder="Confirma contraseña">
-                    </div>
+        <div class="Cont_todo">
+          <div class="row">
+              <div class="caja_tras">
+                  <!-- Se crea las cajas de atras  -->
+                  <div class="inputLogin">
 
-                    <div class="col-12">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                        Check me out
-                        </label>
-                    </div>
-                    </div>
-                    <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Sign in</button>
-                    </div>
-                </form>
+                    <!-- Link a inicio de sesion -->
+                    <h3>Inicia sesion</h3>
+                    <p>Inicia sesion para poder seguir comprando</p>
+                    <button id="Inicio_Sesion" href="inicioSesion">Iniciar sesion</button>
+                  </div>
+
+                  <!-- Parte trasera registro -->
+                  <div class="inputRegistro">
+                    <h3>¿No tienes cuenta?</h3>
+                    <p>Registrate para empezar a comprar en Wicsha</p>
+                    <button id="btn_Registro">Registrarme</button>
+                  </div>
+                  <div class="caja_frente">
+                    <!-- <form class="row g-3" id="registro"> -->
+
+                      
+                      <!-- Formulario inicio de sesion -->
+                      <form action="">
+                        <h2>Inicia sesión y compra</h2>
+                        <p>Adentrate a esta pagina y </p>
+                      </form>
+                      <!-- Formulario registro-->
+                      <form action="" class="form-registro">
+                        <h3>Bienvenido</h3>
+                        <div class="col-md-6">
+                          <label for="inputNombre" class="form-label"></label>
+                          <input type="text" class="form-control" id="inputNombre" required placeholder="Nombre">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputApellido" class="form-label"></label>
+                          <input type="text" class="form-control" id="inputApellido" required placeholder="Apellido">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputNumero" class="form-label"></label>
+                          <input type="text" class="form-control" id="inputNumero" required placeholder="Numero telefonico">
+                        </div>
+                        <div class="col-6">
+                          <label for="Email" class="form-label"></label>
+                          <input type="email" class="form-control" id="inputEmail" placeholder="Email: ejemplo@gmail.com">
+                        </div>
+                        <div class="col-6">
+                          <label for="password" class="form-label"></label>
+                          <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="rPassword" class="form-label"></label>
+                          <input type="text" class="form-control" id="inputContraseña" placeholder="Confirma contraseña">
+                        </div>
+
+                        <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Registrarme</button>
+                        </div>
+                      </form>
+                  </div>
+                </div>
             </div>
         </div>
     </div>

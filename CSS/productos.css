@@ -1,0 +1,66 @@
+/*ENCABEZADO-----------------------------------------------------------------------------------------------------------
+Este código de estilo es para que los botones de "Dama", "Caballero" y "Accesorios" cambien de color al hacer click.*/
+a.nav-link {
+    border: none;
+  color: black;
+  width: 150px;
+  font-size: 18px;
+  border-radius: 200px
+}
+a.nav-link:active{
+    background-color:black;
+   
+  }
+  a.nav-link:focus{
+    color: white;
+  background-color:black;
+   
+  }
+/*----------------INPUT PARA BÚSQUEDA----------------------------------*/
+
+.icon-placeholder {
+  PADDING: 0.25em 0.6em;
+  border-radius: 0.3rem;
+  border: 1px solid #d3d6e4;
+  text-align: center;
+  font-size: small;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  width: 25%;
+  margin-right: .80em;
+}
+.icon-placeholder::placeholder {
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+}
+.icon-placeholder:focus {
+outline: none;
+}
+/*---- ICON STYLE---*/
+.icon {
+width: 20px; 
+height: 23px;
+margin-right: .40em;
+}
+.icon-last{
+width: 20px; 
+height: 23px;
+margin-right: 5em;
+margin-left: .40em;
+}
+
+
+
+
+body {
+  background: #EEE;
+}
+
+.cuadro {
+    display: flex;
+     flex-wrap: wrap;
+justify-content: center;
+
+    
+}
+
+/*.............................................................*/

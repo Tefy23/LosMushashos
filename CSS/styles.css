@@ -39,14 +39,14 @@ outline: none;
 .icon {
 width: 20px; 
 height: 23px;
-margin-right: .40em;
+
 }
 .icon-last{
 width: 20px; 
 height: 23px;
-margin-right: 5em;
-margin-left: .40em;
+
 }
+
 
 
 /*-----------CARRUSEL----------------------------------------------------------------*/
@@ -153,7 +153,7 @@ body {
   background: #EEE;
 }
 
-.carousel {
+ /* .carousel {
   position: absolute;
   top: 0;
   right: 0;
@@ -163,7 +163,7 @@ body {
   max-width: 1000px;
   min-width: 550px;
   margin: auto;
-}
+}   */
 
 
 /*.............................................................*/
