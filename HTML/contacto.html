@@ -26,11 +26,11 @@
 
 
   <!-- MENSAJE -->
-    <div class="container">
-      <div class="rectangle">
-          <h2 class="center">
+    <div class="container d-flex">
+      <div class="rectangle d-flex">
+          <h6 class="fs-6">
             Si deseas consultar mayor información sobre nuestros productos o tienes alguna duda al respecto, no dudes en escribirnos por cualquiera de los siguientes medios.
-          </h2>
+          </h6>
       </div>
     </div>
 
@@ -57,7 +57,7 @@
 
     
   <!-- DEJAR EL MENSAJE / RELLENAR -->
-    <div class="container">
+    <div class="container-md">
         <h2> Déjanos un mensaje</h2>
         <form action="action_page.php">
       
@@ -68,27 +68,39 @@
           <input type="text" id="correo" name="correo" placeholder="Correo">
       
           <label for="asunto">Asunto</label>
-          <select id="asunto" name="asunto">
-            <option value="choose">...</option>
-            <option value="compra">Problemas con una compra</option>
-            <option value="prenda">¿No te quedó la prenda?</option>
-            <option value="Reembolso">Reembolso</option>
+            <select id="asunto" name="asunto">
+              <option value="choose">...</option>
+              <option value="compra">Problemas con una compra</option>
+              <option value="prenda">¿No te quedó la prenda?</option>
+              <option value="Reembolso">Reembolso</option>
+              <option value="Reembolso">Trabaja con nosotros</option>
           </select>
       
           <label for="msj"></label>
-          <textarea id="msj" name="msj" placeholder="Escribe tu mensaje..." style="height:200px"></textarea>
-          
-          <div class="row">
-            <button class="button-73" role="button" type="submit">Enviar</button>
-          </div>
+          <input type="text" style="height:200px" placeholder="Escribe tu mensaje...">
+
+          <br><br>
+          <!-- BUTTON -->
+          <button>
+            <div class="svg-wrapper-1">
+              <div class="svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                </svg>
+              </div>
+            </div>
+            <span>Enviar</span>
+          </button>
         </form>
     </div> 
+    <br><br>
 
 
   <!-------------------------- Footer de la pagina ------------------------>
   <hr>
   <footer class="container text-center">
-    
+      
     <div class="d-md-none"><!-- FOOTER MOBILE -->
       <div class="row">
         <div class="col-md-12"><!-- CONTACTO -->
@@ -215,7 +227,13 @@
           <a href="#" target="_blank">Poíticas de privacidad</a>
       </div>
     </div>
-  </footer>  
+  </footer>
+
+  <!--****SCRIPT*******-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="../JS/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  
 
 </body>
 
