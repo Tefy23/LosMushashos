@@ -10,7 +10,7 @@
     <!--ENLACE Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <!--Icono Superior con Logo WS-->
-    <link rel="icon" type="image/x-icon" href="./assets/img/logo/ws-boton.png">
+    <link rel="icon" type="image/x-icon" href="../assets/img/logo/ws-boton.png">
   <!--ENLACE CDN Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
@@ -18,19 +18,69 @@
 </head>
 
 <body>
+<!-- HEADER -->
+<!--ENCABEZADO BASE PAGINA PRINCIPAL-->
+  <!--LOGO PRINCPIPAL-->
+  <img src="../assets/img/logo/wicsha-logo-principal.png" class="img-fluid" align="top-left"  alt="wicsha-logo-principal" id="logoPrincipal">
 
-  <!-- HEADER -->
+  <!--BARRA DE NAVEGACION-->
+  <!--<div class="container-sm mt-2">-->
     <div class="container">
-      <h1 class="">PONERSE EN CONTACTO</h1>
+      <nav class="navbar navbar-expand-md">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-center justify-content-center"  id="navbarSupportedContent">
+            <a class="nav-link" target="_blank"  href="https://www.instagram.com/wicsha.mx">Caballero</a>
+            <a class="nav-link" target="_blank"  href="https://www.instagram.com/wicsha.mx">Dama</a>
+            <a class="nav-link" target="_blank"  href="https://www.instagram.com/wicsha.mx">Accesorios</a>
+          </div>
+          <!-- Barra de busqueda -->
+          <div class="text-center  justify-content-between">
+            <form class="d-flex" role="Buscar">
+              <input class="icon-placeholder" type="search" placeholder="   B u s c a r " style="width: 190px; height: 25px" aria-label="Search">
+        <!--ICONOS superiores-->
+              <div class="dropdown-center">              
+                  <img class="icon dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" src="../assets/img/ico/usuario barra principal.png">
+                   <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+                    <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                    </ul>
+    
+                <a href="prueba.html"><img class="icon" src="../assets/img/ico/Bolsa de compra.png"></a>
+                <a href="prueba.html"><img class="icon-last" src="../assets/img/ico/Wish.png" class="float-end"></a>
+              </div>
+            </form>
+          </div>        
+
+      </nav>
+    </div>
+    
+<!--DIVISION DE PÀGINA Y COLECCION-->
+<hr>
+<!-- TERMINA HEADER -->
+
+
+  <!-- TITLE -->
+    <div class="container">
+      <h1 class="" id="contacto">PONERSE EN CONTACTO</h1>
     </div>
 
 
   <!-- MENSAJE -->
-    <div class="container d-flex">
+    <!-- <div class="container d-flex">
       <div class="rectangle d-flex">
-          <h6 class="fs-6">
+          <h5 class="fs-6">
             Si deseas consultar mayor información sobre nuestros productos o tienes alguna duda al respecto, no dudes en escribirnos por cualquiera de los siguientes medios.
-          </h6>
+          </h5>
+      </div>
+    </div> -->
+
+    <div class="card bg-secondary text-center">
+      <div class="card-header">
+        <h3>
+          Si deseas consultar mayor información sobre nuestros productos o tienes alguna duda al respecto, no dudes en escribirnos por cualquiera de los siguientes medios.
+        </h3>
       </div>
     </div>
 
@@ -40,17 +90,17 @@
         <div class="col">
           <div><img src="../assets/img/ico/location.png" alt="iconTelefono" class="circle-icon"></div>
           <strong>Dirección.</strong> 
-          <div class="col">Tlalpán, CDMX. CP 14490</div>
+          <div class="col"> <a href="https://www.google.com.mx/maps/place/San+Guillermo+553,+Ajusco,+Coyoac%C3%A1n,+04600+Ciudad+de+M%C3%A9xico,+CDMX/@19.3129734,-99.1705441,17z/data=!4m5!3m4!1s0x85ce004128ea6b09:0xabbc212403ad7e8!8m2!3d19.3108864!4d-99.1628049" style="text-decoration: none ; color:palevioletred" >Tlalpán, CDMX. CP 14490 </a>  </div>
         </div>
         <div class="col">
           <div><img src="../assets/img/ico/telefono.png" alt="iconTelefono" class="circle-icon"></div>
           <strong>Teléfono.</strong> 
-          <div class="col">+52 5562280518</div>
+          <div class="col"> <a href="tel:5562280518" style="text-decoration: none ; color:palevioletred">+52 5562280518</a></div>
         </div>
         <div class="col">
           <div><img src="../assets/img/ico/correo.png" alt="iconTelefono" class="circle-icon"></div>
           <strong>Correo.</strong> 
-          <div class="col">wicsha.mx@gmail.com</div>
+          <div class="col"> <a href="mailto:wicsha.mx@gmail.com" style="text-decoration: none ; color:palevioletred" >wicsha.mx@gmail.com</a></div>
         </div>
       </div>
     </div>
@@ -59,27 +109,33 @@
   <!-- DEJAR EL MENSAJE / RELLENAR -->
     <div class="container-md">
         <h2> Déjanos un mensaje</h2>
-        <form action="action_page.php">
-      
-          <label for="name"></label>
-          <input type="text" id="name" name="name" placeholder="Nombre">
-      
-          <label for="correo"></label>
-          <input type="text" id="correo" name="correo" placeholder="Correo">
-      
-          <label for="asunto">Asunto</label>
-            <select id="asunto" name="asunto">
-              <option value="choose">...</option>
-              <option value="compra">Problemas con una compra</option>
-              <option value="prenda">¿No te quedó la prenda?</option>
-              <option value="Reembolso">Reembolso</option>
-              <option value="Reembolso">Trabaja con nosotros</option>
-          </select>
-      
-          <label for="msj"></label>
-          <input type="text" style="height:200px" placeholder="Escribe tu mensaje...">
 
-          <br><br>
+        <form class="form-floating mb-3">
+          <input type="name" class="form-control bg-secondary text-light" id="floatingInput" placeholder="Escribe tu nombre">
+          <label class ="text-light" for="floatingInput">Nombre</label>
+        </form>
+
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control bg-secondary text-light" id="floatingInput" placeholder="Escribe tu correo ej. name@example.com">
+          <label  class ="text-light" for="floatingInput">Correo</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <select class="form-select bg-secondary text-light" id="floatingSelect" aria-label="Floating label select example">
+            <option selected>...</option>
+            <option value="compra">Problemas con una compra</option>
+            <option value="prenda">¿No te quedó la prenda?</option>
+            <option value="Reembolso">Reembolso</option>
+            <option value="Reembolso">Trabaja con nosotros</option>
+          </select>
+          <label class ="text-light" for="floatingSelect">Asunto</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <textarea class="form-control bg-secondary text-light" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
+          <label class ="text-light" for="floatingTextarea2">Escribe tu mensaje</label>
+        </div>
+
           <!-- BUTTON -->
           <button>
             <div class="svg-wrapper-1">
@@ -110,8 +166,8 @@
             </a>
           </p>
           <div class="collapse list-group" id="collapseContacto"><!-- Contenido que despliega el boton -->
-            <a href="" class="list-group-item list-group-item-action">Envianos un Mensaje</a>
-            <a href="" class="list-group-item list-group-item-action">TEL: 52+ 5612124578</a>
+            <a href="" class="list-group-item list-group-item-action" href="#contacto">Envianos un Mensaje</a>
+            <a class="list-group-item list-group-item-action">TEL: +52 5562280518</a>
             <a href="" class="list-group-item list-group-item-action">Iniciar Chat</a>
           </div>
         </div>
@@ -165,8 +221,9 @@
         <div class="col-md-3"><!--CONTACTO -->
           <ul class="list-group list-group-flush">
             <p class="list-group">CONTACTO</p>
-            <li class="list-group-item">Envianos un mensaje</li>
-            <li class="list-group-item">52+ 5612124578</li>
+            <li class="list-group-item"> <a href="#contacto" style="text-decoration: none ; color:palevioletred">Envianos un mensaje</a></li>
+            <li class="list-group-item"> <a href="https://api.whatsapp.com/send?phone=5562280518" class="st-group-item" style="text-decoration:none; color:palevioletred ""> 52+ 561212457</a></li>
+            <!-- <a href="whatsapp://send?text=Hola, Index.pe&phone=+12 346 678 910&abid=+12 346 678 910">+12 346 678 910</a> -->
             <li class="list-group-item">Iniciar Chat</li>
           </ul>
         </div>
