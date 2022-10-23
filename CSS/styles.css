@@ -16,6 +16,9 @@ a.nav-link:active{
   background-color:black;
    
   }
+  img, svg {
+    margin: 4px;
+}
 /*----------------INPUT PARA BÚSQUEDA----------------------------------*/
 
 .icon-placeholder {
