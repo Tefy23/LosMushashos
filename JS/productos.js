@@ -2,15 +2,19 @@
 
 function addItem(item){
     const itemHTML = `
-        <div class="card">
-            <div style="flex: 1;">
-                <img src="${item.img}" style="object-fit:cover;" class="card-img-top img-fluid" alt="image">
+        <div class="col p-2">
+            <div class="card h-100">
+                <div class="p-4">
+                    <img src="${item.img}" class="card-img-top img-fluid" alt="image">
+                </div>
+                <div class="card-body border-top" >
+                    <h5 class="card-title">${item.name}</h5>
+                    <p class="card-text">${item.description}</p>
+                    <p class="card-text">$450</p>
+                </div>
             </div>
-            <div class="card-body d-flex justify-content-end"  style="flex: 1; flex-direction: column;">
-                <h5 class="card-title">${item.name}</h5>
-                <p class="card-text">${item.description}</p>
-            </div>
-        </div>`;
+        </div>
+        `;
     const itemsContainer = document.getElementById("list-items");
     itemsContainer.innerHTML += itemHTML;
 }
