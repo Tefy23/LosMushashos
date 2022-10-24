@@ -18,35 +18,39 @@
   <!--LOGO PRINCPIPAL-->
   <img src="./assets/img/logo/wicsha-logo-principal.png" class="img-fluid" align="top-left"  alt="wicsha-logo-principal" id="logoPrincipal">
 
-<!--BARRA DE NAVEGACION-->
-    <nav class="navbar navbar-expand-sm">
-      <div class="container-fluid mt-4">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse text-center justify-content-center"  id="navbarSupportedContent">
-          <a class="nav-link" target="_blank"  href="https://www.instagram.com/wicsha.mx">Dama</a>
-          <a class="nav-link" target="_blank"  href="https://www.instagram.com/wicsha.mx">Caballero</a>
-          <a class="nav-link" target="_blank"  href="https://www.instagram.com/wicsha.mx">Accesorios</a>
-        </div>
-        <div class="text-center  justify-content-between">
-          <form class="d-flex" role="Buscar">
-            <input class="icon-placeholder" type="search" placeholder="   B u s c a r " style="width: 228px; height: 25px" aria-label="Search">
-<!--ICONOS superiores-->
-            <div class="dropdown-center">              
-                <img class="icon dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" src="./assets/img/ico/usuario barra principal.png">
-                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Perfil</a></li>
-                  <li><a class="dropdown-item" href="#">Registrarse</a></li>
-                  </ul>
+  <!--BARRA DE NAVEGACION-->
+  <!--<div class="container-sm mt-2">-->
+    <div class="container">
+      <nav class="navbar navbar-expand-md">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-center justify-content-center"  id="navbarSupportedContent">
+            <a class="nav-link" target="_blank"  href="./HTML/productos.html">Caballero</a>
+            <a class="nav-link" target="_blank"  href="./HTML/productos.html">Dama</a>
+            <a class="nav-link" target="_blank"  href="./HTML/productos.html">Accesorios</a>
+          </div>
+          <!-- Barra de busqueda -->
+          <div class="text-center  justify-content-between">
+            <form class="d-flex" role="Buscar">
+              <input class="icon-placeholder" type="search" placeholder="   B u s c a r " style="width: 190px; height: 25px" aria-label="Search">
+        <!--ICONOS superiores-->
+              <div class="dropdown-center">              
+                  <img class="icon dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" src="./assets/img/ico/usuario barra principal.png">
+                   <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+                    <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                    </ul>
+              </div>
+                <a href="prueba.html"><img class="icon" src="./assets/img/ico/Bolsa de compra.png"></a>
+                <a href="prueba.html"><img class="icon-last" src="./assets/img/ico/Wish.png" class="float-end"></a>
               
-              <a href="prueba.html"><img class="icon" src="./assets/img/ico/Bolsa de compra.png"></a>
-              <a href="prueba.html"><img class="icon-last" src="./assets/img/ico/Wish.png" class="float-end"></a>
-            </div>
-          </form>
-        </div>        
-      </div>
-    </nav>
+            </form>
+          </div>        
+
+      </nav>
+    </div>
+    
 
 <!--DIVISION DE PÀGINA Y COLECCION-->
     <hr>
@@ -159,9 +163,9 @@
               </a>
             </p>
             <div class="collapse list-group" id="collapseContacto"><!-- Contenido que despliega el boton -->
-              <a href="" class="list-group-item list-group-item-action">Envianos un Mensaje</a>
-              <a href="" class="list-group-item list-group-item-action">TEL: 52+ 5612124578</a>
-              <a href="" class="list-group-item list-group-item-action">Iniciar Chat</a>
+              <a href="./HTML/contacto.html" class="list-group-item list-group-item-action">Envianos un Mensaje</a>
+              <a href="./HTML/contacto.html" class="list-group-item list-group-item-action">TEL: 52+ 5612124578</a>
+              <a href="./HTML/contacto.html" class="list-group-item list-group-item-action">Iniciar Chat</a>
             </div>
           </div>
           
@@ -189,9 +193,9 @@
               </a>
             </p>
             <div class="collapse list-group" id="collapseNosotros"><!-- Contenido que despliega el boton -->
-              <a href="" class="list-group-item list-group-item-action">¿Quiénes somos?</a>
-              <a href="" class="list-group-item list-group-item-action">Trabaja con Nosotros</a>
-              <a href="" class="list-group-item list-group-item-action">Colaboraciones</a>
+              <a href="./HTML/acercade.html#nosotros" class="list-group-item list-group-item-action">¿Quiénes somos?</a>
+              <a href="./HTML/acercade.html#colabora" class="list-group-item list-group-item-action">Trabaja con Nosotros</a>
+              <a href="./HTML/acercade.html#redes" class="list-group-item list-group-item-action">Colaboraciones</a>
             </div>
           </div>
           
@@ -214,29 +218,29 @@
           <div class="col-md-3"><!--CONTACTO -->
             <ul class="list-group list-group-flush">
               <p class="list-group">CONTACTO</p>
-              <li class="list-group-item">Envianos un mensaje</li>
-              <li class="list-group-item">52+ 5612124578</li>
-              <li class="list-group-item">Iniciar Chat</li>
+              <a href="./HTML/contacto.html" class="list-group-item">Envianos un mensaje</a>
+              <a href="./HTML/contacto.html" class="list-group-item">52+ 5612124578</a>
+              <a href="./HTML/contacto.html" class="list-group-item">Iniciar Chat</a>
             </ul>
           </div>
 
           <div class="col-md-3"><!--AYUDA -->
             <ul class="list-group list-group-flush">
               <p class="list-group">AYUDA</p>
-              <li class="list-group-item">Preguntas Frecuentes</li>
-              <li class="list-group-item">Estatus de Pedido</li>
-              <li class="list-group-item">Envíos</li>
-              <li class="list-group-item">Factura</li>
-              <li class="list-group-item">Devoluciones</li>
+              <a class="list-group-item">Preguntas Frecuentes</a>
+              <a class="list-group-item">Estatus de Pedido</a>
+              <a class="list-group-item">Envíos</a>
+              <a class="list-group-item">Factura</a>
+              <a class="list-group-item">Devoluciones</a>
             </ul>
           </div>
 
           <div class="col-md-3"><!--SOBRE NOSOTROS -->
             <ul class="list-group list-group-flush">
               <p class="list-group">SOBRE NOSOTROS</p>
-              <li class="list-group-item">¿Quiénes somos?</li>
-              <li class="list-group-item">Trabaja con Nosotros</li>
-              <li class="list-group-item">Colaboraciones</li>
+              <a href="./HTML/acercade.html#nosotros" class="list-group-item">¿Quiénes somos?</a>
+              <a href="./HTML/acercade.html#colabora" class="list-group-item">Trabaja con Nosotros</a>
+              <a href="./HTML/acercade.html#redes" class="list-group-item">Colaboraciones</a>
             </ul>
           </div>
 
