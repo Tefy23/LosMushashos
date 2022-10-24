@@ -1,41 +1,39 @@
-/*ENCABEZADO-----------------------------------------------------------------------------------------------------------
-Este código de estilo es para que los botones de "Dama", "Caballero" y "Accesorios" cambien de color al hacer click.*/
+/*------------------ENCABEZADO-------------------------------------------*/
+/*Este código de estilo es para que los botones de "Dama", "Caballero" y "Accesorios" cambien de color al hacer click.*/
 a.nav-link {
-    border: none;
-  color: black;
-  width: 150px;
-  font-size: 18px;
-  border-radius: 200px
+  border: none;
+color: black;
+width: 150px;
+font-size: 18px;
+border-radius: 200px
 }
 a.nav-link:active{
-    background-color:black;
-   
-  }
-  a.nav-link:focus{
-    color: white;
   background-color:black;
    
   }
+  img, svg {
+    margin: 4px;
+}
 /*----------------INPUT PARA BÚSQUEDA----------------------------------*/
-
 .icon-placeholder {
-  PADDING: 0.25em 0.6em;
-  border-radius: 0.3rem;
-  border: 1px solid #d3d6e4;
-  text-align: center;
-  font-size: small;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
-  width: 25%;
-  margin-right: .80em;
+PADDING: 0.25em 0.6em;
+border-radius: 0.3rem;
+border: 1px solid #d3d6e4;
+text-align: center;
+font-size: small;
+box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+width: 25%;
+margin-right: .80em;
 }
 .icon-placeholder::placeholder {
-  font-family: "Font Awesome 5 Free"; 
-  font-weight: 900; 
+font-family: "Font Awesome 5 Free"; 
+font-weight: 900; 
 }
 .icon-placeholder:focus {
 outline: none;
 }
-/*---- ICON STYLE---*/
+
+/*---------------- ICON STYLE------------------------------------------*/
 .icon {
 width: 20px; 
 height: 23px;
@@ -48,55 +46,51 @@ height: 23px;
 }
 
 
-
-/*-----------CARRUSEL----------------------------------------------------------------*/
-
-
+/*------------------CARRUSEL-------------------------------------------*/
 .carousel {
-  display: block;
-  font-size: 0;
+  display: flex;
   border-radius: 8px;
   padding: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   background: white;
   transform: translateZ(0);
-  height: 200px;
+  height: 300px;
   -webkit-overflow-scrolling: touch;
   /* for tablets */
 }
 .touch .carousel {
-  overflow: auto;
+overflow: auto;
 }
 .carousel[data-at*=left] > .wrap::before {
-  opacity: 1;
-  text-indent: -50px;
+opacity: 1;
+text-indent: -50px;
 }
 .carousel[data-at*=right] > .wrap::after {
-  opacity: 1;
-  text-indent: -50px;
+opacity: 1;
+text-indent: -50px;
 }
 .carousel::after {
-  content: "";
-  pointer-events: none;
-  position: absolute;
-  z-index: 4;
-  bottom: -4px;
-  left: 0;
-  background: #D82B6A;
-  height: 4px;
-  border-radius: 4px;
-  opacity: 0;
-  width: var(--scrollWidth, 0);
-  left: var(--scrollLleft, 0);
-  transition: opacity 0.2s, bottom 0.2s;
+content: "";
+pointer-events: none;
+position: absolute;
+z-index: 4;
+bottom: -4px;
+left: 0;
+background: #D82B6A;
+height: 4px;
+border-radius: 4px;
+opacity: 0;
+width: var(--scrollWidth, 0);
+left: var(--scrollLleft, 0);
+transition: opacity 0.2s, bottom 0.2s;
 }
 .carousel:hover::after {
-  opacity: 1;
-  bottom: -10px;
+opacity: 1;
+bottom: -10px;
 }
 .carousel > .wrap {
-  overflow: hidden;
-  border-radius: 4px;
+overflow: hidden;
+border-radius: 4px;
 }
 .carousel > .wrap::before, .carousel > .wrap::after {
   content: "‹";
@@ -109,7 +103,7 @@ height: 23px;
   width: 50px;
   font-size: 80px;
   text-indent: -30px;
-  line-height: 200px;
+  line-height: 300px;
   font-family: monospace;
   color: #555;
   font-weight: bold;
@@ -119,41 +113,37 @@ height: 23px;
   background: linear-gradient(to right, white 20%, transparent);
 }
 .carousel > .wrap::after {
-  transform: rotate(180deg);
-  left: auto;
-  right: 0;
+transform: rotate(180deg);
+left: auto;
+right: 0;
 }
 .carousel > .wrap > ul {
   list-style: none;
   white-space: nowrap;
-  height: 200px;
+  height: 300px;
 }
 .carousel > .wrap > ul > li {
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
-  margin: 0 0 0 5px;
-  position: relative;
-  overflow: hidden;
-  transition: 0.25s ease-out;
+display: inline-block;
+vertical-align: middle;
+height: 100%;
+margin: 0 0 0 5px;
+position: relative;
+overflow: hidden;
+transition: 0.25s ease-out;
 }
 .carousel > .wrap > ul > li:first-child {
-  margin: 0;
+margin: 0;
 }
 .carousel > .wrap > ul > li > img {
-  display: block;
-  height: 100%;
-  margin: auto;
-  position: relative;
-  z-index: 1;
-  transition: 1s ease;
+display: block;
+height: 100%;
+margin: auto;
+position: relative;
+z-index: 1;
+transition: 1s ease;
 }
 
-body {
-  background: #EEE;
-}
-
- /* .carousel {
+.carousel {
   position: absolute;
   top: 0;
   right: 0;
@@ -161,9 +151,104 @@ body {
   left: 0;
   width: 100%;
   max-width: 1000px;
-  min-width: 550px;
+  min-width: 300px;
   margin: auto;
-}   */
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
 
 
-/*.............................................................*/
+/*---------------CONTENERDOR DE IMAGEN BITTERSWEET---------------------*/
+.bitter {
+  height: 300px;
+  display: flex;
+}
+
+/*---------------CONTENERDOR NEGRO DE CABALLERO------------------------*/
+.man {
+  background-color: rgb(2, 2, 2);
+  box-shadow: 0 0 30px 0 black;
+  height: 530px;
+}
+.fotoCab {
+  height: 330px;
+  width: 450px;
+  box-shadow: 0 0 20px 0 rgb(12, 130, 177);
+}
+.fotoCab:hover {
+  box-shadow: 0px 0px 26px 1px rgb(167, 16, 54);
+  border: 1px solid rgb(12, 130, 177);
+}
+              /*------------CODIGO DE BOTON SHOP NOW CABALLERO---------*/
+.cta {
+  border: none;
+  background: none;
+}
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 28px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+.cta:hover svg {
+  transform: translateX(0);
+}
+.cta:active svg {
+  transform: scale(0.9);
+}
+.hover-underline-animation {
+  position: relative;
+  color: rgb(0, 0, 0);
+  padding-bottom: 20px;
+}
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/*-------------ICONOS DE CATEGORIA - ROPA -----*/
+.iconoropa {
+  height: 180px;
+  width:  180px;
+  padding: 18px;
+}
+.iconoropa:hover {
+  box-shadow: 0px 0px 26px 1px rgb(0, 0, 0);
+  border-radius: 25%;
+}
+
+/*------------FOTOS COMUNIDAD ------*/
+.cliente {
+  height: 200px;
+  width:  200px;
+  padding: 10px;
+  box-shadow: 0px 0px 18px 2px rgb(0, 0, 0);
+}
+.cliene-img-grande{
+  height: 400px;
+  width:  340px;
+  padding: 10px;
+  box-shadow: 0px 0px 18px 2px rgb(0, 0, 0);
+}
+.comunidad{
+  background-image: url("../assets/img/logo/ellas\ fondo\ jpg.jpg") ;
+  background-size: 150%;
+  box-shadow: 0px 0px 18px 2px rgb(0, 0, 0);
+  padding: 20px;
+}
