@@ -333,6 +333,6 @@ transition: 1s ease;
 }
 
 /* -------BODY---------- */
-body{
+*{
   font-family: 'Raleway', sans-serif;;
 }
