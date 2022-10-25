@@ -3,18 +3,19 @@
 a.nav-link {
   border: none;
 color: black;
-width: 150px;
+width: 100%;
 font-size: 18px;
 border-radius: 200px
 }
-a.nav-link:active{
+
+a.nav-link:hover {
   background-color:black;
-   
-  }
-  img, svg {
-    margin: 4px;
+  color: white;
+  background-color:black;
 }
+
 /*----------------INPUT PARA BÚSQUEDA----------------------------------*/
+
 .icon-placeholder {
 PADDING: 0.25em 0.6em;
 border-radius: 0.3rem;
@@ -32,18 +33,33 @@ font-weight: 900;
 .icon-placeholder:focus {
 outline: none;
 }
-
-/*---------------- ICON STYLE------------------------------------------*/
+/*---- ICON STYLE---*/
 .icon {
 width: 20px; 
 height: 23px;
-
+margin-right: .40em;
 }
 .icon-last{
 width: 20px; 
 height: 23px;
-
+margin-right: 5em;
+margin-left: .40em;
 }
+
+
+
+
+body {
+background: #EEE;
+}
+
+/* .cuadro {
+  display: flex;
+   flex-wrap: wrap;
+justify-content: center;
+} */
+
+/*.............................................................*/
 
 
 /*------------------CARRUSEL-------------------------------------------*/
