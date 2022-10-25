@@ -267,3 +267,72 @@ transition: 1s ease;
   box-shadow: 0px 0px 18px 2px rgb(0, 0, 0);
   padding: 20px;
 }
+/*-----------Imagen del producto----------------------------------------------------------------*/
+.contendorImg{
+  overflow: hidden;
+}
+.imgProduct{
+  transition: 1s;
+}
+.imgProduct:hover{
+  cursor: -moz-zoom-in;
+  transform: scale(1.8);
+  transition: 1s;
+}
+
+.blanco{
+  color: #EEE;
+}
+#price{
+  text-align: center;
+  font-weight: 700;
+  font-size: x-large;
+}
+.ranking{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 550; 
+  color: gray;
+}
+.ranking:hover{
+  color:deepskyblue;
+}
+.star{
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+}
+.star:hover{
+  background-color: gold;
+}
+.buy_icos{
+  margin-top: 0px;
+  margin-bottom: 5px;
+  height: 15px;
+  width: 15px; 
+}
+#wish{
+  height: 20px;
+  width: 20px;
+  margin: -1px;
+}
+.otros_productos{
+  margin: 0;
+  background-color: burlywood;
+}
+/* -------Enlace a Descripción del producto */
+.card:hover{
+  transform: scale(1.005);
+}
+.toDescription{
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+}
+.toDescription:hover{
+  color: #000000;
+}
+
+/* -------BODY---------- */
+body{
+  font-family: 'Raleway', sans-serif;;
+}
