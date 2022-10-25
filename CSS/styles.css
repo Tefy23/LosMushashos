@@ -1,20 +1,24 @@
-/*------------------ENCABEZADO-------------------------------------------*/
-/*Este código de estilo es para que los botones de "Dama", "Caballero" y "Accesorios" cambien de color al hacer click.*/
+/*ENCABEZADO-----------------------------------------------------------------------------------------------------------
+Este código de estilo es para que los botones de "Dama", "Caballero" y "Accesorios" cambien de color al hacer click.*/
 a.nav-link {
   border: none;
 color: black;
-width: 150px;
+width: 100%;
 font-size: 18px;
 border-radius: 200px
 }
-a.nav-link:active{
+
+a.nav-link:hover {
   background-color:black;
-   
-  }
-  img, svg {
-    margin: 4px;
+  color: white;
+  background-color:black;
 }
+img, svg {
+  margin: 4px;
+}
+
 /*----------------INPUT PARA BÚSQUEDA----------------------------------*/
+
 .icon-placeholder {
 PADDING: 0.25em 0.6em;
 border-radius: 0.3rem;
@@ -32,19 +36,30 @@ font-weight: 900;
 .icon-placeholder:focus {
 outline: none;
 }
-
 /*---------------- ICON STYLE------------------------------------------*/
 .icon {
 width: 20px; 
 height: 23px;
-
+margin-right: .40em;
 }
 .icon-last{
 width: 20px; 
 height: 23px;
-
+margin-right: 5em;
+margin-left: .40em;
 }
 
+body {
+background: #EEE;
+}
+
+/* .cuadro {
+  display: flex;
+   flex-wrap: wrap;
+justify-content: center;
+} */
+
+/*.............................................................*/
 
 /*------------------CARRUSEL-------------------------------------------*/
 .carousel {
@@ -251,4 +266,73 @@ transition: 1s ease;
   background-size: 150%;
   box-shadow: 0px 0px 18px 2px rgb(0, 0, 0);
   padding: 20px;
+}
+/*-----------Imagen del producto----------------------------------------------------------------*/
+.contendorImg{
+  overflow: hidden;
+}
+.imgProduct{
+  transition: 1s;
+}
+.imgProduct:hover{
+  cursor: -moz-zoom-in;
+  transform: scale(1.8);
+  transition: 1s;
+}
+
+.blanco{
+  color: #EEE;
+}
+#price{
+  text-align: center;
+  font-weight: 700;
+  font-size: x-large;
+}
+.ranking{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 550; 
+  color: gray;
+}
+.ranking:hover{
+  color:deepskyblue;
+}
+.star{
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+}
+.star:hover{
+  background-color: gold;
+}
+.buy_icos{
+  margin-top: 0px;
+  margin-bottom: 5px;
+  height: 15px;
+  width: 15px; 
+}
+#wish{
+  height: 20px;
+  width: 20px;
+  margin: -1px;
+}
+.otros_productos{
+  margin: 0;
+  background-color: burlywood;
+}
+/* -------Enlace a Descripción del producto */
+.card:hover{
+  transform: scale(1.005);
+}
+.toDescription{
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+}
+.toDescription:hover{
+  color: #000000;
+}
+
+/* -------BODY---------- */
+*{
+  font-family: 'Raleway', sans-serif;;
 }

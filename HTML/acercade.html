@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nosotros</title>
-    <link rel="stylesheet" href="../CSS/styles.css">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/productos.css">
     <!--ENLACE Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -22,47 +26,51 @@
 <body>
     <!--ENCABEZADO BASE PAGINA PRINCIPAL-->
     <!--LOGO PRINCPIPAL-->
-    <img src="../assets/img/logo/wicsha-logo-secundario.png" class="img-fluid" align="top-left"
-        alt="wicsha-logo-principal" id="logoPrincipal">
+    <a href="../index.html"><img src="../assets/img/logo/wicsha-logo-secundario.png" class="img-fluid" align="top-left"
+            alt="wicsha-logo-principal" id="logoPrincipal"></a>
 
-    <!--BARRA DE NAVEGACION-->
-    <!--<div class="container-sm mt-2">-->
-    <div class="container">
-        <nav class="navbar navbar-expand-md">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+<!--BARRA DE NAVEGACION-->
+  <!--<div class="container-sm mt-2">-->
+    <nav class="navbar navbar-expand-sm">
+        <div class="container mt-4 gap-2 gap-lg-4">
+          <!--  -->
+          <div class="d-flex flex-grow-1 flex-sm-grow-0 gap-2 order-sm-1">
+            <button class="navbar-toggler px-2" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse text-center justify-content-center" id="navbarSupportedContent">
-                <a class="nav-link" target="_blank" href="https://www.instagram.com/wicsha.mx">Caballero</a>
-                <a class="nav-link" target="_blank" href="https://www.instagram.com/wicsha.mx">Dama</a>
-                <a class="nav-link" target="_blank" href="https://www.instagram.com/wicsha.mx">Accesorios</a>
+            <div class="text-center d-flex flex-grow-1 justify-content-end gap-2 gap-lg-4">
+              <form class="d-flex flex-grow-1 flex-sm-grow-0 justify-content-end" style="min-width: 200px;" role="Buscar">
+                <input class="icon-placeholder w-100 m-0" type="search" placeholder="   B u s c a r " aria-label="Search">
+              </form>
+              <!--ICONOS superiores-->
+              <div class="dropdown-center d-flex gap-2">
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Perfil</a></li>
+                  <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                </ul>
+                <div class="d-flex gap-3 gap-lg-4 justify-content-center align-items-center">
+                  <img class="icon mx-auto dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    src="../assets/img/ico/usuario barra principal.png">
+                  <a class="d-flex" href="prueba.html"><img class="icon mx-auto"
+                      src="../assets/img/ico/Bolsa de compra.png"></a>
+                  <a class="d-flex" href="prueba.html"><img class="icon mx-auto" src="../assets/img/ico/Wish.png"
+                      class="float-end"></a>
+                </div>
+              </div>
             </div>
-            <!-- Barra de busqueda -->
-            <div class="text-center  justify-content-between">
-                <form class="d-flex" role="Buscar">
-                    <input class="icon-placeholder" type="search" placeholder="   B u s c a r "
-                        style="width: 190px; height: 25px" aria-label="Search">
-                    <!--ICONOS superiores-->
-                    <div class="dropdown-center">
-                        <img class="icon dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false"
-                            src="../assets/img/ico/usuario barra principal.png">
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Perfil</a></li>
-                            <li><a class="dropdown-item" href="#">Registrarse</a></li>
-                        </ul>
-
-                        <a href="prueba.html"><img class="icon" src="../assets/img/ico/Bolsa de compra.png"></a>
-                        <a href="prueba.html"><img class="icon-last" src="../assets/img/ico/Wish.png"
-                                class="float-end"></a>
-                    </div>
-                </form>
-            </div>
-
-        </nav>
-    </div>
-    <hr>
+          </div>
+          <!-- Enlaces -->
+          <div class="collapse navbar-collapse text-center justify-content-center gap-2 gap-lg-5 order-sm-0 flex-sm-grow-1"
+            id="navbarSupportedContent">
+            <a class="nav-link py-2 py-sm-0" href="/HTML/productos.html">Dama</a>
+            <a class="nav-link py-2 py-sm-0" href="/HTML/productos.html">Caballero</a>
+            <a class="nav-link py-2 py-sm-0" href="/HTML/productos.html">Accesorios</a>
+          </div>
+        </div>
+      </nav>
+      <hr>
     <!-- ======================================================= -->
     <!--DIVISION DE PÀGINA Y EQUIPO-->
     <section class="container py-5 my-md-3 my-lg-5">
@@ -266,7 +274,8 @@
                                     class="btn btn-icon btn-secondary btn-linkedin btn-sm me-2">
                                     <i class="bi bi-linkedin"></i>
                                 </a>
-                                <a href="https://github.com/davidsotogtz" class="btn btn-icon btn-secondary btn-github btn-sm">
+                                <a href="https://github.com/davidsotogtz"
+                                    class="btn btn-icon btn-secondary btn-github btn-sm">
                                     <i class="bi bi-github"></i>
                                 </a>
                             </div>
@@ -301,7 +310,8 @@
             <!--FACEBOOK-->
             <div class="col" aria-label="1 / 4" style="width: 216px;">
                 <div class="position-relative text-center mx-n1 img-fluid">
-                    <a href="https://www.facebook.com/profile.php?id=100056972211087" class="btn btn-icon btn-secondary btn-facebook btn-lg stretched-link">
+                    <a href="https://www.facebook.com/profile.php?id=100056972211087"
+                        class="btn btn-icon btn-secondary btn-facebook btn-lg stretched-link">
                         <i class="bi bi-facebook"></i>
                     </a>
                     <div class="pt-4">
@@ -370,8 +380,10 @@
                     </p>
                     <div class="collapse list-group" id="collapseContacto">
                         <!-- Contenido que despliega el boton -->
-                        <a href="./contacto.html" class="list-group-item list-group-item-action" style="text-decoration: none ; color:palevioletred">Envianos un Mensaje</a>
-                        <a href="./contacto.html" class="list-group-item list-group-item-action" style="text-decoration: none ; color:palevioletred">TEL: 52+ 5612124578</a>
+                        <a href="./contacto.html" class="list-group-item list-group-item-action"
+                            style="text-decoration: none ; color:palevioletred">Envianos un Mensaje</a>
+                        <a href="./contacto.html" class="list-group-item list-group-item-action"
+                            style="text-decoration: none ; color:palevioletred">TEL: 52+ 5612124578</a>
                         <a href="./contacto.html" class="list-group-item list-group-item-action">Iniciar Chat</a>
                     </div>
                 </div>
@@ -419,7 +431,8 @@
             <div class="row">
                 <!-- REDES SOCIALES -->
 
-                <div class="col"><a href="https://www.facebook.com/profile.php?id=100056972211087"><i class="bi bi-facebook"></i></a> </div>
+                <div class="col"><a href="https://www.facebook.com/profile.php?id=100056972211087"><i
+                            class="bi bi-facebook"></i></a> </div>
                 <div class="col"><a href="https://www.instagram.com/wicsha.mx/?hl=es"><i class="bi bi-instagram"
                             style="color:palevioletred;"></i></a> </div>
                 <div class="col"><a href=""><i class="bi bi-tiktok" style="color:black;"></i></a> </div>
@@ -473,7 +486,9 @@
                             <br>
                             <div class="row">
                                 <div class="col-md-2"></div>
-                                <div class="col-md-4"><a href="https://www.facebook.com/profile.php?id=100056972211087"><i class="bi bi-facebook"></i></a></div>
+                                <div class="col-md-4"><a
+                                        href="https://www.facebook.com/profile.php?id=100056972211087"><i
+                                            class="bi bi-facebook"></i></a></div>
                                 <div class="col-md-4"><a href="https://www.instagram.com/wicsha.mx/?hl=es"><i
                                             class="bi bi-instagram" style="color:palevioletred;"></i></a></div>
                                 <div class="col-md-2"></div>
