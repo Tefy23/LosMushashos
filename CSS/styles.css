@@ -317,9 +317,21 @@ transition: 1s ease;
 }
 .otros_productos{
   margin: 0;
-  
   background-color: burlywood;
 }
+/* -------Enlace a Descripción del producto */
+.card:hover{
+  transform: scale(1.005);
+}
+.toDescription{
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+}
+.toDescription:hover{
+  color: #000000;
+}
+
 /* -------BODY---------- */
 body{
   font-family: 'Raleway', sans-serif;;
