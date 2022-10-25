@@ -13,6 +13,9 @@ a.nav-link:hover {
   color: white;
   background-color:black;
 }
+img, svg {
+  margin: 4px;
+}
 
 /*----------------INPUT PARA BÚSQUEDA----------------------------------*/
 
@@ -33,7 +36,7 @@ font-weight: 900;
 .icon-placeholder:focus {
 outline: none;
 }
-/*---- ICON STYLE---*/
+/*---------------- ICON STYLE------------------------------------------*/
 .icon {
 width: 20px; 
 height: 23px;
@@ -45,9 +48,6 @@ height: 23px;
 margin-right: 5em;
 margin-left: .40em;
 }
-
-
-
 
 body {
 background: #EEE;
