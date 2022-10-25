@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Nombre del artículo]</title>
+    <link rel="stylesheet" href="./../CSS/styles.css">
+    <!--ENLACE Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <!--Icono Superior con Logo WS-->
+    <link rel="icon" type="image/x-icon" href="./../assets/img/logo/ws-boton.png">
+    <!--ENLACE CDN Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <!-- HEADER -->
+        <!--ENCABEZADO BASE PAGINA PRINCIPAL-->
+        <!--LOGO PRINCPIPAL-->
+        <a href="../index.html"><img src="../assets/img/logo/wicsha-logo-secundario.png" class="img-fluid"
+                align="top-left" alt="wicsha-logo-principal" id="logoPrincipal"></a>
+
+        <!--BARRA DE NAVEGACION-->
+        <!--<div class="container-sm mt-2">-->
+        <nav class="navbar navbar-expand-sm">
+            <div class="container mt-4 gap-2 gap-lg-4">
+                <!--  -->
+                <div class="d-flex flex-grow-1 flex-sm-grow-0 gap-2 order-sm-1">
+                    <button class="navbar-toggler px-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="text-center d-flex flex-grow-1 justify-content-end gap-2 gap-lg-4">
+                        <form class="d-flex flex-grow-1 flex-sm-grow-0 justify-content-end" style="min-width: 200px;"
+                            role="Buscar">
+                            <input class="icon-placeholder w-100 m-0" type="search" placeholder="   B u s c a r "
+                                aria-label="Search">
+                        </form>
+                        <!--ICONOS superiores-->
+                        <div class="dropdown-center d-flex gap-2">
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Perfil</a></li>
+                                <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                            </ul>
+                            <div class="d-flex gap-3 gap-lg-4 justify-content-center align-items-center">
+                                <img class="icon mx-auto dropdown" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false" src="../assets/img/ico/usuario barra principal.png">
+                                <a class="d-flex" href="prueba.html"><img class="icon mx-auto"
+                                        src="../assets/img/ico/Bolsa de compra.png"></a>
+                                <a class="d-flex" href="prueba.html"><img class="icon mx-auto"
+                                        src="../assets/img/ico/Wish.png" class="float-end"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Enlaces -->
+                <div class="collapse navbar-collapse text-center justify-content-center gap-2 gap-lg-5 order-sm-0 flex-sm-grow-1"
+                    id="navbarSupportedContent">
+                    <a class="nav-link  py-2 py-sm-0" target="_blank" href="/HTML/productos.html">Dama</a>
+                    <a class="nav-link  py-2 py-sm-0" target="_blank" href="/HTML/productos.html">Caballero</a>
+                    <a class="nav-link  py-2 py-sm-0" target="_blank" href="/HTML/productos.html">Accesorios</a>
+                </div>
+            </div>
+        </nav>
+        <hr>
+    </header>
+
+
+    <!-- DESCRIPCIÓN DEL PRODUCTO -->
+    <main class="container itemDescriptionMain">
+        <div class="row">
+            <!-- Fotografía del producto -->
+            <div class="col-md-8 text-center border-end  contendorImg">
+                <img src="./../assets/img/itemDescription/card_abrigoMoon.png" alt="Abrigo_Moon" class="imgProduct">
+            </div>
+
+            <!-- Ficha del producto -->
+            <div class="col-md-4 border-end">
+                <!-- Nombre del Item -->
+                <div class="row text-center">
+                    <h2>Abrigo Moon</h2>
+                    <hr>
+                </div>
+
+                <!--Precio -->
+                <div class="row" id="price">
+                    <p>$450.00 mxn</p>
+                </div>
+
+                <div class="row ">
+                    <hr>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 text-start my-5 ">
+                        <h6>Calificaciones del producto</h6>
+                        <!-- ranking stars -->
+                        <img src="./../assets/ico/estrella.png" alt="estrella()" class="star">
+                        <img src="./../assets/ico/estrella.png" alt="estrella()" class="star">
+                        <img src="./../assets/ico/estrella.png" alt="estrella()" class="star">
+                        <img src="./../assets/ico/estrella.png" alt="estrella()" class="star">
+                        <img src="./../assets/ico/estrella.png" alt="estrella()" class="star">
+
+                        <!-- link de reviews -->
+                        <a href="#" class="ranking ms-1 ms-3">reviews</a>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <hr>
+
+                </div>
+                <!-- Descripción del producto -->
+                <div class="row mt-0">
+                    <div class="col-2"></div>
+                    <div class="col-md-8 text-start">
+                        <h4>Descripción</h4>
+                        <p>Etiam egestas vehicula libero quis malesuada. Quisque aliquam nibh pharetra iaculis mattis.
+                            Mauris at sem erat. Nam lacinia tortor et libero luctus, ut ornare nulla mattis. Sed
+                            bibendum ac
+                            enim vel fringilla. Cras tincidunt efficitur orci, a fermentum leo sodales facilisis. Duis
+                            diam
+                            nibh, congue at mi eu, bibendum aliquet velit. Pellentesque quis dui risus. Nam vitae felis
+                            volutpat, aliquet diam id, placerat ligula. Vestibulum semper convallis elit id dictum. Sed
+                            volutpat, elit in lobortis elementum, lectus ipsum semper elit, at feugiat nisi neque non
+                            nisl.</p>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <br><br><br>
+                <hr>
+
+                <!-- Botones de compra  -->
+                <div class="row text-center align-items-center my-5">
+                    <div class="col-md-1"></div>
+
+                    <!-- Añadir al carrito -->
+                    <div class="col-md-10 my-1 d-flex">
+                        <p>
+                            <a href="#" class="btn btn-warning  mx-3">
+                                <b>Añadir a la bolsa <img src="./../assets/ico/Bolsa de compra.png"
+                                        alt="bolsa de compra" class="buy_icos mx-2"></b>
+                            </a>
+                        </p>
+
+                        <!-- Wishlist -->
+                        <p>
+                            <a href="#" class="btn btn-dark rounded-circle mx-3">
+                                <b class=" blanco"><img src="./../assets/ico/white-wish.png" alt="wishlist"
+                                        class="buy_icos my-1" id="wish"></b>
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row otros_productos">
+            <section>
+                <h3>Ve también estos productos</h3>
+                <p>otros productos</p>
+            </section>
+        </div>
+
+    </main>
+
+    <!-------------------------- Footer de la pagina ------------------------>
+    <hr>
+    <footer class="container text-center">
+
+        <div class="d-md-none">
+            <!-- FOOTER MOBILE -->
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- CONTACTO -->
+                    <p>
+                        <!-- boton que despliega -->
+                        <a class="d-grid btn btn-light collapsed" data-bs-toggle="collapse" href="#collapseContacto"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            CONTACTO
+                        </a>
+                    </p>
+                    <div class="collapse list-group" id="collapseContacto">
+                        <!-- Contenido que despliega el boton -->
+                        <a href="" class="list-group-item list-group-item-action" href="#contacto">Envianos un
+                            Mensaje</a>
+                        <a class="list-group-item list-group-item-action">TEL: +52 5562280518</a>
+                        <a href="" class="list-group-item list-group-item-action">Iniciar Chat</a>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <!-- AYUDA -->
+                    <p>
+                        <!-- boton que despliega -->
+                        <a class="d-grid btn btn-light collapsed" data-bs-toggle="collapse" href="#collapseAyuda"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            AYUDA
+                        </a>
+                    </p>
+                    <div class="collapse list-group" id="collapseAyuda">
+                        <!-- Contenido que despliega el boton -->
+                        <a href="" class="list-group-item list-group-item-action">Preguntas Frecuentes</a>
+                        <a href="" class="list-group-item list-group-item-action">Estatus de Pedido</a>
+                        <a href="" class="list-group-item list-group-item-action">Envíos</a>
+                        <a href="" class="list-group-item list-group-item-action">Factura</a>
+                        <a href="" class="list-group-item list-group-item-action">Devoluciones</a>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <!-- SOBRE NOSOTROS -->
+                    <p>
+                        <!-- boton que despliega -->
+                        <a class="d-grid btn btn-light collapsed" data-bs-toggle="collapse" href="#collapseNosotros"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            SOBRE NOSOTROS
+                        </a>
+                    </p>
+                    <div class="collapse list-group" id="collapseNosotros">
+                        <!-- Contenido que despliega el boton -->
+                        <a href="" class="list-group-item list-group-item-action">¿Quiénes somos?</a>
+                        <a href="" class="list-group-item list-group-item-action">Trabaja con Nosotros</a>
+                        <a href="" class="list-group-item list-group-item-action">Colaboraciones</a>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="row">
+                <!-- REDES SOCIALES -->
+
+                <div class="col"><a href=""><i class="bi bi-facebook"></i></a> </div>
+                <div class="col"><a href=""><i class="bi bi-instagram" style="color:palevioletred;"></i></a> </div>
+                <div class="col"><a href=""><i class="bi bi-tiktok" style="color:black;"></i></a> </div>
+                <div class="col"><a href=""><i class="bi bi-pinterest" style="color:red;"></i></a> </div>
+            </div>
+        </div>
+
+        <!-- ======================================================= -->
+
+        <div class="d-none d-md-block">
+            <!-- FOOTER WEB -->
+            <div class="row">
+
+                <div class="col-md-3">
+                    <!--CONTACTO -->
+                    <ul class="list-group list-group-flush">
+                        <p class="list-group">CONTACTO</p>
+                        <li class="list-group-item"> <a href="#contacto"
+                                style="text-decoration: none ; color:palevioletred">Envianos un mensaje</a></li>
+                        <li class="list-group-item"> <a href="https://api.whatsapp.com/send?phone=5562280518"
+                                class="st-group-item" style="text-decoration:none; color:palevioletred"> +52
+                                5562280518</a></li>
+                        <!-- <a href="whatsapp://send?text=Hola, Index.pe&phone=+12 346 678 910&abid=+12 346 678 910">+12 346 678 910</a> -->
+                        <li class="list-group-item">Iniciar Chat</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <!--AYUDA -->
+                    <ul class="list-group list-group-flush">
+                        <p class="list-group">AYUDA</p>
+                        <li class="list-group-item">Preguntas Frecuentes</li>
+                        <li class="list-group-item">Estatus de Pedido</li>
+                        <li class="list-group-item">Envíos</li>
+                        <li class="list-group-item">Factura</li>
+                        <li class="list-group-item">Devoluciones</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <!--SOBRE NOSOTROS -->
+                    <ul class="list-group list-group-flush">
+                        <p class="list-group">SOBRE NOSOTROS</p>
+                        <li class="list-group-item">¿Quiénes somos?</li>
+                        <li class="list-group-item">Trabaja con Nosotros</li>
+                        <li class="list-group-item">Colaboraciones</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <!--REDES SOCIALES -->
+                    <ul class="list-group list-group-flush">
+                        <p class="list-group">REDES SOCIALES</p>
+                        <li class="list-group-item">
+                            <br>
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-4"><a href=""><i class="bi bi-facebook"></i></a></div>
+                                <div class="col-md-4"><a href=""><i class="bi bi-instagram"
+                                            style="color:palevioletred;"></i></a></div>
+                                <div class="col-md-2"></div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-4"><a href=""><i class="bi bi-tiktok" style="color:black;"></i></a>
+                                </div>
+                                <div class="col-md-4"><a href=""><i class="bi bi-pinterest" style="color:red;"></i></a>
+                                </div>
+                                <div class="col-md-2"></div>
+                            </div>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <!-- Terminos y condiciones -->
+            <div class="col-md-6">
+                <p>Copyright 2022 WICSHA</p>
+            </div>
+            <div class="col-md-6">
+                <a href="#" target="_blank">Términos y condiciones</a>
+                <span> | </span>
+                <a href="#" target="_blank">Políticas de privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Archivo JS bootstrap -->
+    <!--****SCRIPT*******-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../JS/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- Archivo Script interno -->
+    <script src="./../JS/scripts.js"></script>
+</body>
+
+</html>
