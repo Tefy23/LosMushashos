@@ -16,7 +16,14 @@ a.nav-link:hover {
 img, svg {
   margin: 4px;
 }
-
+header{
+  background-color: #ffffff;
+  width: 100%;
+  z-index: 10;
+}
+main{
+  padding-top: 200px;
+}
 /*----------------INPUT PARA BÚSQUEDA----------------------------------*/
 
 .icon-placeholder {
@@ -321,7 +328,7 @@ transition: 1s ease;
 }
 /* -------Enlace a Descripción del producto */
 .card:hover{
-  transform: scale(1.005);
+  transform: scale(1.01);
 }
 .toDescription{
   text-decoration: none;
