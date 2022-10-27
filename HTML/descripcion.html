@@ -76,16 +76,22 @@
             </div>
         </nav>
     </header>
-    <main class="container itemDescriptionMain">
+    <main class="container-lg itemDescriptionMain">
         <!-- DESCRIPCIÓN DEL PRODUCTO -->
         <div class="row">
             <!-- Fotografía del producto -->
-            <div class="col-md-8 text-center border-end  contendorImg">
-                <img src="./../assets/img/itemDescription/card_abrigoMoon.png" alt="Abrigo_Moon" class="imgProduct">
+            <div class="col-sm-12 col-md-7 col-lg-8 border-end contendorImg">
+                <div class="d-none d-lg-block text-center">
+                    <img src="./../assets/img/itemDescription/card_abrigoMoon.png" alt="Abrigo_Moon" class="imgProduct">
+                </div>
+
+                <div class="d-lg-none mt-2 text-center">
+                    <img src="./../assets/img/Articulos/abrigo_moon.jpg" alt="Abrigo_Moon" class="dinamicImgProduct">
+                </div>
             </div>
 
             <!-- Ficha del producto -->
-            <div class="col-md-4 border-end">
+            <div class="col-sm-12 col-md-5 col-lg-4 border-end">
                 <!-- Nombre del Item -->
                 <div class="row text-center">
                     <h2>Abrigo Moon</h2>
@@ -97,11 +103,11 @@
                     <p>$450.00 mxn</p>
                 </div>
 
-                <div class="row ">
+                <div class="row justify-content-center">
                     <hr>
                     <div class="col-md-2"></div>
-                    <div class="col-md-8 text-start my-5 ">
-                        <h6>Calificaciones del producto</h6>
+                    <div class="col-sm-12 col-md-8 text-center my-5 ">
+                        <h6><b>Calificaciones del producto</b></h6>
                         <!-- ranking stars -->
                         <img src="./../assets/ico/estrella.png" alt="estrella()" class="star">
                         <img src="./../assets/ico/estrella.png" alt="estrella()" class="star">
@@ -120,16 +126,11 @@
                 <div class="row mt-0">
                     <div class="col-2"></div>
                     <div class="col-md-8 text-start">
-                        <h4>Descripción</h4>
+                        <h6><b>Descripción</b></h6>
                         <p>Etiam egestas vehicula libero quis malesuada. Quisque aliquam nibh pharetra iaculis mattis.
                             Mauris at sem erat. Nam lacinia tortor et libero luctus, ut ornare nulla mattis. Sed
                             bibendum ac
-                            enim vel fringilla. Cras tincidunt efficitur orci, a fermentum leo sodales facilisis. Duis
-                            diam
-                            nibh, congue at mi eu, bibendum aliquet velit. Pellentesque quis dui risus. Nam vitae felis
-                            volutpat, aliquet diam id, placerat ligula. Vestibulum semper convallis elit id dictum. Sed
-                            volutpat, elit in lobortis elementum, lectus ipsum semper elit, at feugiat nisi neque non
-                            nisl.</p>
+                            enim vel fringilla.</p>
                     </div>
                     <div class="col-md-2"></div>
                 </div>
@@ -137,11 +138,11 @@
                 <hr>
 
                 <!-- Botones de compra  -->
-                <div class="row text-center align-items-center my-5">
+                <div class="row text-center my-5">
                     <div class="col-md-1"></div>
 
                     <!-- Añadir al carrito -->
-                    <div class="col-md-10 my-1 d-flex">
+                    <div class="col-sm-12 col-md-10 my-1 d-flex justify-content-center">
                         <p>
                             <a href="#" class="btn btn-warning  mx-3">
                                 <b>Añadir a la bolsa <img src="./../assets/ico/Bolsa de compra.png"
@@ -163,10 +164,13 @@
             </div>
         </div>
 
+        <!-------Otras Ofertas------->
         <div class="row otros_productos">
             <section>
-                <h3>Ve también estos productos</h3>
-                <p>otros productos</p>
+                <h3 class="text-center">Ve también estas ofertas</h3>
+
+                <!-- Carrousel con tarjetas -->
+
             </section>
         </div>
     </main>
@@ -233,8 +237,7 @@
                             somos?</a>
                         <a href="acercade.html#colabora" class="list-group-item list-group-item-action">Trabaja
                             con Nosotros</a>
-                        <a href="acercade.html#redes"
-                            class="list-group-item list-group-item-action">Colaboraciones</a>
+                        <a href="acercade.html#redes" class="list-group-item list-group-item-action">Colaboraciones</a>
                     </div>
                 </div>
 
