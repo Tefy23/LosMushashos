@@ -124,15 +124,13 @@
       </div>
     </nav>
 
-
-
-<!-- Fuentes -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-
-
-
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Registro -->
     <main>
@@ -148,9 +146,7 @@
               <!-- Link a inicio de sesion -->
               <h3>Inicia sesion</h3>
               <p>Inicia sesion para poder seguir comprando</p>
-              <a href="./prueba.html"><button>
-                Iniciar sesion
-              </button></a>
+              <button id="btn_Inicio">Iniciar sesion</button>
             </div>
 
             <!-- Parte trasera registro -->
@@ -162,7 +158,7 @@
           </div>
 
           <!--Contededor cajadelantera  -->
-          <div class="caja_frente">
+          <div class="caja_frente col-md-12">
             <!-- Formulario inicio de sesion -->
             <form action="" class="form-inicio">
               <h2>Inicia sesión y compra</h2>
@@ -170,6 +166,10 @@
                 Adentrate a esta pagina y saca tu Wicsha interior. Despues de
                 todo, todo es mejor cuando All is in black mood.
               </p>
+              <a href="./prueba.html">
+                <button id="botonInicio" class="btn btn-dark">
+                  Iniciar sesión
+                </button></a>
             </form>
             <!-- Formulario registro-->
             <form action="" class="form-registro">
@@ -185,7 +185,7 @@
               </div>
               <div class="col-md-12">
                 <input
-                  type="text"
+                  type="number"
                   class="form-control"
                   id="inputNumero"
                   required
@@ -197,6 +197,7 @@
                   type="email"
                   class="form-control"
                   id="inputEmail"
+                  required
                   placeholder="Email: ejemplo@gmail.com"
                 />
               </div>
@@ -205,30 +206,28 @@
                   type="password"
                   class="form-control"
                   id="password"
-                  placeholder="Contraseña"
+                  required
+                  placeholder="contraseña"
                 />
               </div>
               <div class="col-md-12">
                 <input
-                  type="text"
+                  type="password"
                   class="form-control"
-                  id="inputContraseña"
+                  id="inputContra"
+                  required
                   placeholder="Confirma contraseña"
                 />
               </div>
 
               <div class="col-12">
-                <button type="submit" class="btn btn-dark">
-                  Registrarme
-                </button>
+                <button type="submit" class="btn btn-dark">Registrarme</button>
               </div>
             </form>
           </div>
         </div>
       </div>
     </main>
-
-
 
     <!-------------------------- Footer de la pagina ------------------------>
     <hr />
