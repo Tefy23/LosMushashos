@@ -1,10 +1,13 @@
 /* Se solicitan variables para la resposiva de la pagina */
 
-let formularioRegistro = document.querySelector(".form-registro");
-let inicioSesion = document.querySelector(".form-inicio");
-let cajaFrente = document.querySelector(".caja_frente");
-let cajaInicio = document.querySelector(".inputLogin");
-let cajaRegistro = document.querySelector(".inputRegistro");
+
+const formularioRegistro = document.querySelector(".form-registro");
+const inicioSesion = document.querySelector(".form-inicio");
+const cajaFrente = document.querySelector(".caja_frente");
+const cajaInicio = document.querySelector(".inputLogin");
+const cajaRegistro = document.querySelector(".inputRegistro");
+const fRegistro = document.getElementById("formularioRegistro");
+
 document.getElementById("btn_Registro").addEventListener("click", registro);
 document.getElementById("btn_Inicio").addEventListener("click", inicio);
 window.addEventListener("resize", anchoPagina);
@@ -12,10 +15,10 @@ window.addEventListener("resize", anchoPagina);
 /* Se solicitan las variables para el registro */
 /* const nombre = document.getElementById("inputNombre");
 const numero = document.getElementById("inputNumero");
-const email = document.getElementById("inputEmail");
+const email = document.getElementById("inputEmagiil");
 const contraseña = document.getElementById("password");
 const confiContraseña = document.getElementById("inputContraseña"); */
-const formRegistro = document.forms("form-registro");
+const formRegistro = document.forms["form-registro"];
 
 
 /* Funcion para el ancho de la pagina  */
@@ -72,12 +75,15 @@ function inicio(){
 }
 
 /* Funciones para el registro */
-formRegistro.addEventListener("Submit", evento => {
-    formRegistro.preventdefault();
+
+fRegistro.addEventListener("submit", event => {
+    event.preventDefault();
     let nombre = formRegistro.elements['inputNombre'].value;
     let telefono = formRegistro.elements['inputNumero'].value;
     let email = formRegistro.elements['inputEmail'].value;
     let contraseña = formRegistro.elements['password'].value;
     let confiContraseña = formRegistro.elements['inputContra'];
 });
+
+
 
