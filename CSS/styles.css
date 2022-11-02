@@ -53,23 +53,16 @@ body {
 background: #EEE;
 }
 
-/* .cuadro {
-  display: flex;
-   flex-wrap: wrap;
-justify-content: center;
-} */
-
-/*.............................................................*/
 
 /*------------------CARRUSEL-------------------------------------------*/
 .carousel {
   display: flex;
   border-radius: 8px;
-  padding: 8px;
+  
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   background: white;
   transform: translateZ(0);
-  height: 300px;
+  height: 350px;
   -webkit-overflow-scrolling: touch;
   /* for tablets */
 }
@@ -99,10 +92,7 @@ width: var(--scrollWidth, 0);
 left: var(--scrollLleft, 0);
 transition: opacity 0.2s, bottom 0.2s;
 }
-.carousel:hover::after {
-opacity: 1;
-bottom: -10px;
-}
+
 .carousel > .wrap {
 overflow: hidden;
 border-radius: 4px;
@@ -118,14 +108,14 @@ border-radius: 4px;
   width: 50px;
   font-size: 80px;
   text-indent: -30px;
-  line-height: 300px;
+  line-height: 100px;
   font-family: monospace;
   color: #555;
   font-weight: bold;
   border-radius: 8px;
   pointer-events: none;
   transition: 0.2s ease-out;
-  background: linear-gradient(to right, white 20%, transparent);
+  background: linear-gradient(to right, rgba(80, 80, 80, 0.15);, transparent);
 }
 .carousel > .wrap::after {
 transform: rotate(180deg);
@@ -136,6 +126,7 @@ right: 0;
   list-style: none;
   white-space: nowrap;
   height: 300px;
+ 
 }
 .carousel > .wrap > ul > li {
 display: inline-block;
@@ -144,18 +135,18 @@ height: 100%;
 margin: 0 0 0 5px;
 position: relative;
 overflow: hidden;
-transition: 0.25s ease-out;
+transition: 1s ease-out;
 }
 .carousel > .wrap > ul > li:first-child {
 margin: 0;
 }
 .carousel > .wrap > ul > li > img {
 display: block;
-height: 100%;
+height: 90%;
 margin: auto;
 position: relative;
 z-index: 1;
-transition: 1s ease;
+transition: 3s ease;
 }
 
 .carousel {
@@ -165,35 +156,48 @@ transition: 1s ease;
   bottom: 0;
   left: 0;
   width: 100%;
-  max-width: 1000px;
-  min-width: 300px;
+ 
   margin: auto;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 3px rgba(80, 80, 80, 0.15);
 }
 
 
 /*---------------CONTENERDOR DE IMAGEN BITTERSWEET---------------------*/
 .bitter {
-  height: 300px;
-  display: flex;
+  background-image: url(/assets/img/logo/Mesa\ de\ trabajo\ 5.png);
+  background-attachment: fixed;
+  height: 350px;
+  display: grid;
+  place-content: center;
+  box-shadow: 0 0 30px 0 black;
+}
+.coleccion{
+  display: grid;
+  place-content: center;
 }
 
-/*---------------CONTENERDOR NEGRO DE CABALLERO------------------------*/
+/*---------------CONTENERDOR DE CABALLERO------------------------*/
 .man {
-  background-color: rgb(2, 2, 2);
+  background-image: url(/assets/img/logo/Mesa\ de\ trabajo\ 7.png);
+  background-attachment: fixed;
   box-shadow: 0 0 30px 0 black;
-  height: 530px;
+  height: 480px;
+}
+.ellos{
+  height: 5rem;
+  width: 10rem;
 }
 .fotoCab {
-  height: 330px;
-  width: 450px;
-  box-shadow: 0 0 20px 0 rgb(12, 130, 177);
+  height: 280px;
+  width: 400px;
+  box-shadow: 0 0 16px 0 rgb(0, 0, 0);
 }
 .fotoCab:hover {
-  box-shadow: 0px 0px 26px 1px rgb(167, 16, 54);
-  border: 1px solid rgb(12, 130, 177);
+  box-shadow: 0px 0px 26px 1px rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
 }
               /*------------CODIGO DE BOTON SHOP NOW CABALLERO---------*/
+              
 .cta {
   border: none;
   background: none;
@@ -238,10 +242,14 @@ transition: 1s ease;
 }
 
 /*-------------ICONOS DE CATEGORIA - ROPA -----*/
+.categoria {
+  background-image: url(/assets/img/logo/Mesa\ de\ trabajo\ 8.png);
+  background-attachment: fixed;
+}
 .iconoropa {
-  height: 180px;
-  width:  180px;
-  padding: 18px;
+  height: 150px;
+  width:  150px;
+  padding: 15px;
 }
 .iconoropa:hover {
   box-shadow: 0px 0px 26px 1px rgb(0, 0, 0);
@@ -249,24 +257,18 @@ transition: 1s ease;
 }
 
 /*------------FOTOS COMUNIDAD ------*/
-.cliente {
-  height: 200px;
-  width:  200px;
-  padding: 10px;
-  box-shadow: 0px 0px 18px 2px rgb(0, 0, 0);
+
+.comunidad {
+  background-color: #000000;
+  color: white;
+  box-shadow: 0px 0px 12px 1px rgb(0, 0, 0);
 }
-.cliene-img-grande{
-  height: 400px;
-  width:  340px;
-  padding: 10px;
-  box-shadow: 0px 0px 18px 2px rgb(0, 0, 0);
+.btn-comunidad {
+  height: 10rem;
+  width: 10rem;
+  
 }
-.comunidad{
-  background-image: url("../assets/img/logo/ellas\ fondo\ jpg.jpg") ;
-  background-size: 150%;
-  box-shadow: 0px 0px 18px 2px rgb(0, 0, 0);
-  padding: 20px;
-}
+
 /*-----------Imagen del producto----------------------------------------------------------------*/
 .contendorImg{
   overflow: hidden;
