@@ -1,15 +1,255 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/CSS/prueba.css">
-    <link href="https://prod.spline.design/ozFiSTBUTHj4gBfq/scene.splinecode">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro prueba</title>
+  <!-- Fuentes extraidas de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <link rel="stylesheet" href="../CSS/prueba-form.css">
+  <!--ENLACE Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!--Icono Superior con Logo WS-->
+  <link rel="icon" type="image/x-icon" href="./../assets/img/logo/ws-boton.png">
+  <!--ENLACE CDN Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
+
 <body>
-    <h1>EN HREF HAY QUE PONER LA REFERENCIA DE SUS PÁGINAS PARA QUE LOS DIRECCIONE EL BOTON </h1>
+  <!-- HEADER -->
+  <header class="row-fluid position-fixed border-bottom">
+  <!--ENCABEZADO BASE PAGINA PRINCIPAL-->
+  <!--LOGO PRINCPIPAL-->
+    <a href="../index.html"><img src="../assets/img/logo/wicsha-logo-secundario.png"  class="img-fluid" align="top-left"
+        alt="wicsha-logo-principal" id="logoPrincipal"></a>
+
+  <!--BARRA DE NAVEGACION-->
+    <nav class="navbar navbar-expand-sm">
+      <div class="container mt-4 gap-2 gap-lg-4">
+        <!--  -->
+        <div class="d-flex flex-grow-1 flex-sm-grow-0 gap-2 order-sm-1">
+          <button class="navbar-toggler px-2" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="text-center d-flex flex-grow-1 justify-content-end gap-2 gap-lg-4">
+            <form class="d-flex flex-grow-1 flex-sm-grow-0 justify-content-end" style="min-width: 200px;" role="Buscar">
+              <input class="icon-placeholder w-100 m-0" type="search" placeholder="   B u s c a r "
+                aria-label="Search">
+            </form>
+
+        <!--ICONOS superiores-->
+            <div class="dropdown-center d-flex gap-2">
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Perfil</a></li>
+                <li><a class="dropdown-item" href="#">Registrarse</a></li>
+              </ul>
+              <div class="d-flex gap-3 gap-lg-4 justify-content-center align-items-center">
+                <img class="icon mx-auto dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                  src="../assets/img/ico/usuario barra principal.png">
+                <a class="d-flex" href="prueba.html"><img class="icon mx-auto"
+                    src="../assets/img/ico/Bolsa de compra.png"></a>
+                <a class="d-flex" href="prueba.html"><img class="icon mx-auto" src="../assets/img/ico/Wish.png"
+                    class="float-end"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enlaces -->
+        <div
+          class="collapse navbar-collapse text-center justify-content-center gap-2 gap-lg-5 order-sm-0 flex-sm-grow-1"
+          id="navbarSupportedContent">
+          <a class="nav-link py-2 py-sm-0" href="/HTML/productos.html">Todes</a>
+          <a class="nav-link py-2 py-sm-0" href="/HTML/productos.html">Ellas</a>
+          <a class="nav-link py-2 py-sm-0" href="/HTML/productos.html">Ellos</a>
+          <a class="nav-link py-2 py-sm-0" href="/HTML/productos.html">Accesorios</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="cookies">
+  </div>
+
+  <!--EMPIEZA FORMULARIO-->
+    <main>
+		<form methodod="get" action="mailto:wicsha.mx@gmail.com" class="formulario" id="formulario">
+			<!-- Grupo: Usuario -->
+			<div class="formulario__grupo" id="grupo__usuario">
+				<label for="usuario" class="formulario__label">Usuario</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Nombre de Usuario" required>
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			</div>
+
+			<!-- Grupo: Nombre -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre" required>
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El nombre solo debe llevar letras.</p>
+			</div>
+
+			<!-- Grupo: Contraseña -->
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="formulario__label">Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password" required>
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La contraseña tiene que ser de 8 a 15 dígitos con un número.</p>
+			</div>
+
+			<!-- Grupo: Contraseña 2 -->
+			<div class="formulario__grupo" id="grupo__password2">
+				<label for="password2" class="formulario__label">Repetir Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password2" id="password2" required>
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+			</div>
+
+			<!-- Grupo: Correo Electronico -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+			<!-- Grupo: Teléfono -->
+			<div class="formulario__grupo" id="grupo__telefono">
+				<label for="telefono" class="formulario__label">Teléfono</label>
+				<div class="formulario__grupo-input">
+					<input type="number" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+			</div>
+
+			<!-- Grupo: Terminos y Condiciones -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn" id="btnRegistrar">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+		</form>
+	</main>
    
+    <!-- ======================================================= -->
+
+    <div class="d-none d-md-block">
+        <!-- FOOTER WEB -->
+        <div class="row">
+  
+          <div class="col-md-3">
+            <!--CONTACTO -->
+            <ul class="list-group list-group-flush">
+              <p class="list-group">CONTACTO</p>
+              <a href="./HTML/contacto.html" class="list-group-item">Envianos un mensaje</a>
+              <a href="./HTML/contacto.html" class="list-group-item">52+ 5612124578</a>
+              <a href="./HTML/contacto.html" class="list-group-item">Iniciar Chat</a>
+            </ul>
+          </div>
+  
+          <div class="col-md-3">
+            <!--AYUDA -->
+            <ul class="list-group list-group-flush">
+              <p class="list-group">AYUDA</p>
+              <a class="list-group-item">Preguntas Frecuentes</a>
+              <a class="list-group-item">Estatus de Pedido</a>
+              <a class="list-group-item">Envíos</a>
+              <a class="list-group-item">Factura</a>
+              <a class="list-group-item">Devoluciones</a>
+            </ul>
+          </div>
+  
+          <div class="col-md-3">
+            <!--SOBRE NOSOTROS -->
+            <ul class="list-group list-group-flush">
+              <p class="list-group">SOBRE NOSOTROS</p>
+              <a href="./HTML/acercade.html" class="list-group-item">¿Quiénes somos?</a>
+              <a href="./HTML/acercade.html#colabora" class="list-group-item">Trabaja con Nosotros</a>
+              <a href="./HTML/acercade.html#redes" class="list-group-item">Colaboraciones</a>
+            </ul>
+          </div>
+  
+          <div class="col-md-3">
+            <!--REDES SOCIALES -->
+            <ul class="list-group list-group-flush">
+              <p class="list-group">REDES SOCIALES</p>
+              <li class="list-group-item">
+                <br>
+                <div class="row">
+                  <div class="col-md-2"></div>
+                  <div class="col-md-4"><a href=""><i class="bi bi-facebook"></i></a></div>
+                  <div class="col-md-4"><a href=""><i class="bi bi-instagram" style="color:palevioletred;"></i></a></div>
+                  <div class="col-md-2"></div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-2"></div>
+                  <div class="col-md-4"><a href=""><i class="bi bi-tiktok" style="color:black;"></i></a>
+                  </div>
+                  <div class="col-md-4"><a href=""><i class="bi bi-pinterest" style="color:red;"></i></a>
+                  </div>
+                  <div class="col-md-2"></div>
+                </div>
+  
+              </li>
+  
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <!-- Terminos y condiciones -->
+        <div class="col-md-6">
+          <p>Copyright 2022 WICSHA</p> href="./HTML/acercade.html"
+        </div>
+        <div class="col-md-6">
+          <a href="./PDF/Condiciones-de-uso-Wicsha.pdf" target="_blank">Términos y condiciones</a>
+          <span> | </span>
+          <a href="./HTML/cookies.html" target="_blank">Políticas de cookies</a>
+          <span> | </span>
+          <a href="./PDF/Política-de-Privacidad-Wicsha.pdf" target="_blank">Políticas de Privacidad</a>
+        </div>
+      </div>
+    </footer>
+      <!--****SCRIPT*******-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="../JS/prueba-form.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+    <script src="../JS/prueba-form.js"></script>
 </body>
 </html>

@@ -2,57 +2,100 @@
 Este código de estilo es para que los botones de "Dama", "Caballero" y "Accesorios" cambien de color al hacer click.*/
 a.nav-link {
   border: none;
-color: black;
-width: 100%;
-font-size: 18px;
-border-radius: 200px
+  color: black;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 200px
 }
 
 a.nav-link:hover {
-  background-color:black;
+  background-color: black;
   color: white;
-  background-color:black;
+  background-color: black;
 }
-img, svg {
+
+img,
+svg {
   margin: 4px;
+}
+
+header {
+  background-color: #ffffff;
+  width: 100%;
+  z-index: 10;
+}
+
+main {
+  padding-top: 200px;
 }
 
 /*----------------INPUT PARA BÚSQUEDA----------------------------------*/
 
 .icon-placeholder {
-PADDING: 0.25em 0.6em;
-border-radius: 0.3rem;
-border: 1px solid #d3d6e4;
-text-align: center;
-font-size: small;
-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
-width: 25%;
-margin-right: .80em;
+  PADDING: 0.25em 0.6em;
+  border-radius: 0.3rem;
+  border: 1px solid #d3d6e4;
+  text-align: center;
+  font-size: small;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  width: 25%;
+  margin-right: .80em;
 }
+
 .icon-placeholder::placeholder {
-font-family: "Font Awesome 5 Free"; 
-font-weight: 900; 
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
 }
+
 .icon-placeholder:focus {
-outline: none;
+  outline: none;
 }
+
 /*---------------- ICON STYLE------------------------------------------*/
 .icon {
-width: 20px; 
-height: 23px;
-margin-right: .40em;
+  width: 20px;
+  height: 23px;
+  margin-right: .40em;
 }
-.icon-last{
-width: 20px; 
-height: 23px;
-margin-right: 5em;
-margin-left: .40em;
+
+.icon-last {
+  width: 20px;
+  height: 23px;
+  margin-right: 5em;
+  margin-left: .40em;
 }
 
 body {
-background: #EEE;
+  background: #EEE;
+}
+/*---Cookies--*/
+
+.cookies {
+  height: 10rem;
+  border-color: #000000;
+}
+/*------------cookies--------------*/
+
+.cajacookies {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  color: white;
+  font-family: arial;
+  text-align: center;
 }
 
+.pull-right {
+  background: initial;
+  border: 2px solid white;
+  padding: 1rem;
+  font-size: 1rem;
+  color: white;
+  width: 20rem;
+  text-align: center;
+}
 
 /*------------------CARRUSEL-------------------------------------------*/
 .carousel {
@@ -66,38 +109,44 @@ background: #EEE;
   -webkit-overflow-scrolling: touch;
   /* for tablets */
 }
+
 .touch .carousel {
-overflow: auto;
+  overflow: auto;
 }
-.carousel[data-at*=left] > .wrap::before {
-opacity: 1;
-text-indent: -50px;
+
+.carousel[data-at*=left]>.wrap::before {
+  opacity: 1;
+  text-indent: -50px;
 }
-.carousel[data-at*=right] > .wrap::after {
-opacity: 1;
-text-indent: -50px;
+
+.carousel[data-at*=right]>.wrap::after {
+  opacity: 1;
+  text-indent: -50px;
 }
+
 .carousel::after {
-content: "";
-pointer-events: none;
-position: absolute;
-z-index: 4;
-bottom: -4px;
-left: 0;
-background: #D82B6A;
-height: 4px;
-border-radius: 4px;
-opacity: 0;
-width: var(--scrollWidth, 0);
-left: var(--scrollLleft, 0);
-transition: opacity 0.2s, bottom 0.2s;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  z-index: 4;
+  bottom: -4px;
+  left: 0;
+  background: #D82B6A;
+  height: 4px;
+  border-radius: 4px;
+  opacity: 0;
+  width: var(--scrollWidth, 0);
+  left: var(--scrollLleft, 0);
+  transition: opacity 0.2s, bottom 0.2s;
 }
 
 .carousel > .wrap {
 overflow: hidden;
 border-radius: 4px;
 }
-.carousel > .wrap::before, .carousel > .wrap::after {
+
+.carousel>.wrap::before,
+.carousel>.wrap::after {
   content: "‹";
   opacity: 0;
   position: absolute;
@@ -115,14 +164,16 @@ border-radius: 4px;
   border-radius: 8px;
   pointer-events: none;
   transition: 0.2s ease-out;
-  background: linear-gradient(to right, rgba(80, 80, 80, 0.15);, transparent);
+  background: linear-gradient(to right, rgba(80, 80, 80, 0.15), transparent);
 }
-.carousel > .wrap::after {
-transform: rotate(180deg);
-left: auto;
-right: 0;
+
+.carousel>.wrap::after {
+  transform: rotate(180deg);
+  left: auto;
+  right: 0;
 }
-.carousel > .wrap > ul {
+
+.carousel>.wrap>ul {
   list-style: none;
   white-space: nowrap;
   height: 300px;
@@ -137,8 +188,9 @@ position: relative;
 overflow: hidden;
 transition: 1s ease-out;
 }
-.carousel > .wrap > ul > li:first-child {
-margin: 0;
+
+.carousel>.wrap>ul>li:first-child {
+  margin: 0;
 }
 .carousel > .wrap > ul > li > img {
 display: block;
@@ -166,7 +218,7 @@ transition: 3s ease;
 .bitter {
   background-image: url(/assets/img/logo/Mesa\ de\ trabajo\ 5.png);
   background-attachment: fixed;
-  height: 350px;
+  height: 33em;
   display: grid;
   place-content: center;
   box-shadow: 0 0 30px 0 black;
@@ -174,7 +226,15 @@ transition: 3s ease;
 .coleccion{
   display: grid;
   place-content: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  grid-template-columns: auto auto auto;
 }
+
 
 /*---------------CONTENERDOR DE CABALLERO------------------------*/
 .man {
@@ -187,11 +247,13 @@ transition: 3s ease;
   height: 5rem;
   width: 10rem;
 }
+
 .fotoCab {
   height: 280px;
   width: 400px;
   box-shadow: 0 0 16px 0 rgb(0, 0, 0);
 }
+
 .fotoCab:hover {
   box-shadow: 0px 0px 26px 1px rgb(0, 0, 0);
   border: 2px solid rgb(0, 0, 0);
@@ -202,6 +264,7 @@ transition: 3s ease;
   border: none;
   background: none;
 }
+
 .cta span {
   padding-bottom: 7px;
   letter-spacing: 4px;
@@ -209,21 +272,26 @@ transition: 3s ease;
   padding-right: 15px;
   text-transform: uppercase;
 }
+
 .cta svg {
   transform: translateX(-8px);
   transition: all 0.3s ease;
 }
+
 .cta:hover svg {
   transform: translateX(0);
 }
+
 .cta:active svg {
   transform: scale(0.9);
 }
+
 .hover-underline-animation {
   position: relative;
   color: rgb(0, 0, 0);
   padding-bottom: 20px;
 }
+
 .hover-underline-animation:after {
   content: "";
   position: absolute;
@@ -236,6 +304,7 @@ transition: 3s ease;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
+
 .cta:hover .hover-underline-animation:after {
   transform: scaleX(1);
   transform-origin: bottom left;
@@ -251,6 +320,7 @@ transition: 3s ease;
   width:  150px;
   padding: 15px;
 }
+
 .iconoropa:hover {
   box-shadow: 0px 0px 26px 1px rgb(0, 0, 0);
   border-radius: 25%;
@@ -262,6 +332,7 @@ transition: 3s ease;
   background-color: #000000;
   color: white;
   box-shadow: 0px 0px 12px 1px rgb(0, 0, 0);
+  height: 33em;
 }
 .btn-comunidad {
   height: 10rem;
@@ -270,71 +341,126 @@ transition: 3s ease;
 }
 
 /*-----------Imagen del producto----------------------------------------------------------------*/
-.contendorImg{
+.contendorImg {
+  padding-left: 0;
+  margin-left: 0;
   overflow: hidden;
 }
-.imgProduct{
+
+.imgProduct {
   transition: 1s;
 }
-.imgProduct:hover{
-  cursor: -moz-zoom-in;
+
+.imgProduct:hover {
   transform: scale(1.8);
   transition: 1s;
 }
 
-.blanco{
+.blanco {
   color: #EEE;
 }
-#price{
+
+#price {
   text-align: center;
   font-weight: 700;
   font-size: x-large;
 }
-.ranking{
+
+.ranking {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 550; 
+  font-weight: 550;
   color: gray;
 }
-.ranking:hover{
-  color:deepskyblue;
+
+.ranking:hover {
+  color: deepskyblue;
 }
-.star{
+
+.star {
   justify-content: center;
   width: 16px;
   height: 16px;
 }
-.star:hover{
+
+.star:hover {
   background-color: gold;
 }
-.buy_icos{
+
+.buy_icos {
   margin-top: 0px;
   margin-bottom: 5px;
   height: 15px;
-  width: 15px; 
+  width: 15px;
 }
-#wish{
+
+#wish {
   height: 20px;
   width: 20px;
   margin: -1px;
 }
-.otros_productos{
+
+.otros_productos {
   margin: 0;
-  background-color: burlywood;
+  color: #ffffff;
+  background-color: black;
 }
+
 /* -------Enlace a Descripción del producto */
-.card:hover{
-  transform: scale(1.005);
+.card:hover {
+  transform: scale(1.01);
 }
-.toDescription{
+
+.toDescription {
   text-decoration: none;
   text-align: center;
   color: #000000;
 }
-.toDescription:hover{
+
+.toDescription:hover {
   color: #000000;
 }
 
-/* -------BODY---------- */
-body{
-  font-family: 'Raleway', sans-serif;;
+label.talla {
+  padding: auto;
+  font-size: smaller;
+  font-weight: 600;
+  background-color: #353535;
+  color: #ffffff;
+  width: 40px;
+  height: 35px;
+  border-radius: 45%;
+}
+
+label.aro {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+/* -------FUENTE GENERAL--------- */
+* {
+  font-family: 'Raleway', sans-serif;
+  ;
+}
+
+
+@media (max-width: 991px) {
+  .contendorImg {
+    padding-left: 0;
+    margin-left: 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .dinamicImgProduct {
+    width: 352px;
+    height: 352px;
+    transition: 1s;
+    margin-top: 150px;
+  }
+
+  .dinamicImgProduct:hover {
+    transform: scale(1.3);
+    transition: 1s;
+  }
 }
