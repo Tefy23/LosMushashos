@@ -157,7 +157,7 @@
             </div>
           </div>
 
-          <!--Contededor cajadelantera  -->
+          <!--Contenedor cajaDelantera  -->
           <div class="caja_frente col-md-12">
             <!-- Formulario inicio de sesion -->
             <form action="" class="form-inicio">
@@ -166,24 +166,29 @@
                 Adentrate a esta pagina y saca tu Wicsha interior. Despues de
                 todo, todo es mejor cuando All is in black mood.
               </p>
-              <a href="./prueba.html">
-                <button id="botonInicio" class="btn btn-dark">
+              <a href="./contacto.html">
+                <button type="button" id="botonInicio" class="btn btn-dark">
                   Iniciar sesión
-                </button></a>
+                </button>
+              </a>
             </form>
             <!-- Formulario registro-->
             <form action="" class="form-registro" id="formularioRegistro">
               <h3>Bienvenido</h3>
-              <div class="col-md-12">
+            
+              <div class="col-md-12 inputNombre">
                 <input
                   type="text"
+                  maxlength="50"
                   class="form-control"
+                  name="usuarioNombre"
                   id="inputNombre"
                   required
                   placeholder="Nombre Completo"
-                />
+                /> 
               </div>
-              <div class="col-md-12">
+
+              <div class="col-md-12 inputNumero" >
                 <input
                   type="number"
                   class="form-control"
@@ -192,7 +197,7 @@
                   placeholder="Numero telefonico"
                 />
               </div>
-              <div class="col-md-12">
+              <div class="col-md-12 inputEmail">
                 <input
                   type="email"
                   class="form-control"
@@ -201,7 +206,7 @@
                   placeholder="Email: ejemplo@gmail.com"
                 />
               </div>
-              <div class="col-md-12">
+              <div class="col-md-12 password">
                 <input
                   type="password"
                   class="form-control"
@@ -210,7 +215,8 @@
                   placeholder="contraseña"
                 />
               </div>
-              <div class="col-md-12">
+              <div class="col-md-12 inputContra">
+                <div>
                 <input
                   type="password"
                   class="form-control"
@@ -218,10 +224,20 @@
                   required
                   placeholder="Confirma contraseña"
                 />
+                </div>
               </div>
 
+              <!-- Terminos y condiciones -->
+              <div class="formularioTerminos">
+                <label class="formularioCheck">
+                  <input class="formCheck" type="checkbox" name="terminos" id="terminos">Acepto Terminos y Condiciones0
+                </label>
+              </div>
+
+              <!-- Registro -->
               <div class="col-12">
-                <button type="submit" class="btn btn-dark">Registrarme</button>
+                <button type="submit" id="btnSubmit" class="btn btn-dark">Registrarme</button>
+                <p class="warnings" id="warnings"></p>
               </div>
             </form>
           </div>
@@ -443,12 +459,13 @@
 
     <!--****SCRIPT*******-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="../scripts/registro.js"></script>
+    <script src="../JS/registro.js"></script>
     <script src="../JS/scripts.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
   </body>
 </html>
