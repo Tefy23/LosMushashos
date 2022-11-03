@@ -3,7 +3,7 @@
 function addItem(item) {
     const itemHTML = `
         <div class="col p-2">
-            <a href="./descripcion.html" target="_blank" class="toDescription">
+            <a href="./descripcion.html" class="toDescription">
                 <div class="card h-100">
                     <div class="p-4">
                         <img src="${item.img}" class="card-img-top img-fluid" alt="image">
