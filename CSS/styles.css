@@ -406,6 +406,10 @@ label.aro {
   height: 25px;
   border-radius: 50%;
 }
+/*------------Carrito de compras---------------- */
+.card-cart{
+  top:151px;
+}
 
 /* -------FUENTE GENERAL--------- */
 * {
