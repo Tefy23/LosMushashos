@@ -134,14 +134,16 @@
     <div class="container-md">
       <h2> Déjanos un mensaje</h2>
 
-      <form class="form-floating mb-3">
+      <div class="form-floating mb-3">
         <input type="name" class="form-control bg-secondary text-light" id="floatingInput" placeholder="Escribe tu nombre">
         <label class="text-light" for="floatingInput">Nombre</label>
-      </form>
+        <p class="msj-error" id="errorNombre"></p>
+      </div>
       
       <div class="form-floating mb-3">
         <input type="email" class="form-control bg-secondary text-light" id="floatingInput" placeholder="Escribe tu correo ej. name@example.com">
         <label class="text-light" for="floatingInput">Correo</label>
+        <p class="msj-error" id="errorEmail"></p>
       </div>
 
       <div class="form-floating mb-3">
@@ -172,14 +174,9 @@
             </div>
             <span>Enviar</span>
           </button>
-      
-
-
-
     </div> 
     <br><br>
 
-    </div>
 
 
   </main>
