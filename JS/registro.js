@@ -13,12 +13,14 @@ document.getElementById("btn_Inicio").addEventListener("click", inicio);
 window.addEventListener("resize", anchoPagina);
 
 /* Se solicitan las variables para el registro */
-/* const nombre = document.getElementById("inputNombre");
-const numero = document.getElementById("inputNumero");
-const email = document.getElementById("inputEmagiil");
-const contraseña = document.getElementById("password");
-const confiContraseña = document.getElementById("inputContraseña"); */
+const nom = document.getElementById("inputNombre");
+const num = document.getElementById("inputNumero");
+const ema = document.getElementById("inputEmagiil");
+const contra = document.getElementById("password");
+const confiContra = document.getElementById("inputContraseña"); 
+const advertencia = document.getElementById("warnings");
 const formRegistro = document.forms["form-registro"];
+const todoRegistro = document.querySelectorAll(".form-control");
 
 
 /* Funcion para el ancho de la pagina  */
@@ -44,13 +46,25 @@ anchoPagina();
 function registro(){
     if(window.innerWidth > 850){
         formularioRegistro.style.display = "block";
-        cajaFrente.style.left= "650px";
+        if(window.innerWidth < 1400){
+            cajaFrente.style.left= "650px";
+        }else if(window.innerWidth < 1000){
+            cajaFrente.style.left= "40px";
+        }else
+            cajaFrente.style.left= "650px";
         inicioSesion.style.display = "none";
         cajaRegistro.style.opacity = "0";
         cajaInicio.style.opacity = "1";
     }else{
         formularioRegistro.style.display = "block";
-        cajaFrente.style.left= "0px";
+        if(window.innerWidth < 1400){
+            cajaFrente.style.left= "250px";
+        }else if(window.innerWidth < 1200){
+            cajaFrente.style.left= "250px";
+        }else if(window.innerWidth < 1000){
+            cajaFrente.style.left= "40px";
+        }else
+            cajaFrente.style.left= "0px";
         inicioSesion.style.display = "none";
         cajaRegistro.style.display = "none";
         cajaInicio.style.display = "block";
@@ -61,13 +75,29 @@ function registro(){
 function inicio(){
     if(window.innerWidth > 850){
         formularioRegistro.style.display = "none";
-        cajaFrente.style.left= "213px";
+        
+        if(window.innerWidth < 1400){
+            cajaFrente.style.left= "150px";
+        }else if(window.innerWidth < 1200){
+            cajaFrente.style.left= "150px";
+        }else if(window.innerWidth < 1000){
+            cajaFrente.style.left= "40px";
+        }else{
+            cajaFrente.style.left= "213px";
+        }
         inicioSesion.style.display = "block";
         cajaRegistro.style.opacity = "1";
         cajaInicio.style.opacity = "0";
     }else{
         formularioRegistro.style.display = "none";
-        cajaFrente.style.left= "0px";
+        if(window.innerWidth < 1400){
+            cajaFrente.style.left= "150px";
+        }else if(window.innerWidth < 1200){
+            cajaFrente.style.left= "150px";
+        }else if(window.innerWidth < 1000){
+            cajaFrente.style.left= "40px";
+        }else if(window.innerWidth < 850)
+            cajaFrente.style.left= "50px";
         inicioSesion.style.display = "block";
         cajaRegistro.style.display = "block";
         cajaInicio.style.display = "none";
@@ -75,15 +105,53 @@ function inicio(){
 }
 
 /* Funciones para el registro */
-
+let usuraio = [];
 fRegistro.addEventListener("submit", event => {
     event.preventDefault();
-    let nombre = formRegistro.elements['inputNombre'].value;
-    let telefono = formRegistro.elements['inputNumero'].value;
-    let email = formRegistro.elements['inputEmail'].value;
-    let contraseña = formRegistro.elements['password'].value;
-    let confiContraseña = formRegistro.elements['inputContra'];
+    let nombre = fRegistro.elements['inputNombre'].value;
+    console.log("Se genero el submit");
+    let telefono = fRegistro.elements['inputNumero'].value;
+    let email = fRegistro.elements['inputEmail'].value;
+    let contraseña = fRegistro.elements['password'].value;
+    let confiContraseña = fRegistro.elements['inputContra'];
+
+    let warning = "";
+    let entrar = false;
+    /* Con esta expresion regular se puede validar cualqueir direccion de correo que contenga caracteres Unicode */
+    let regexEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    if(nom.value.length < 6){
+        warning += `El nombre no es valido <br>`;
+        entrar = true;
+    }
+    console.log(regexEmail.test(email))
+    if(!regexEmail.test(email)){
+        warning += `El email no es valido <br>`;
+        entrar = true;
+        
+    }
+
+    if(contra.value.length < 8){
+        warning += `La contraseña no deben tener menos de 8 caracteres <br>`;
+        entrar = true;
+    }
+
+    if(contraseña != confiContraseña){
+        warning += `La contraseña no coincide <br>`;
+        entrar = true;
+    }
+
+    if(entrar){
+        advertencia.innerHTML = warning;
+    }
+    
+
+
+    
 });
 
 
 
+
+/* 
+const filtrado = productos.filter( producto  => producto.categorias.includes({nombre: “accion”})
+ */
