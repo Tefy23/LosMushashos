@@ -221,9 +221,9 @@ let elementoBotonRegistro = document.querySelector('#btnRegistrar');
 elementoBotonRegistro.addEventListener('click', registrarUsuario)
 
 function registrarUsuario(){
-    let bUsuario = document.querySelector('#usuario').value,
+    let bUsuario = document.querySelector('#usuario'),
         bNombre = document.querySelector('#nombre').value,
-        bPassword = document.querySelector('#password').value,
+        bPassword = document.querySelector('#password'),
         bPassword2 = document.querySelector('#password2').value,
         bCorreo = document.querySelector('#correo').value,
         bTelefono = document.querySelector('#telefono').value;
@@ -248,3 +248,35 @@ function registrarUsuario(){
 /* 
 const filtrado = productos.filter( producto  => producto.categorias.includes({nombre: “accion”})
  */
+
+
+/* Inicio de sesion */
+
+let elementoBotonInicio = document.querySelector('#botonInicio');
+
+elementoBotonInicio.addEventListener('click', iniciarSesion)
+
+function iniciarSesion(){
+    const usuarioInicioSesion = localStorage.getItem('usuario');
+    const contraInicioSesion = localStorage.getItem('password');
+    let iUsuario = document.querySelector('#inputUsuario');
+    let iContraseña = document.querySelector('#inicioUsuarioPassword');
+
+
+    if(iUsuario.value == usuarioInicioSesion && iContraseña.value == contraInicioSesion) {
+        alert('You are loged in.');
+    }else {
+        console.log(iUsuario.value);
+        console.log(iContraseña.value);
+        console.log(usuarioInicioSesion);
+        console.log(contraInicioSesion);
+        alert('ERROR.');
+    }
+
+
+    /* if(iUsuario == usuarioInicioSesion.value ){
+        console.log("Lo logramos banda");
+    }else console.log("F"); */
+}
+
+

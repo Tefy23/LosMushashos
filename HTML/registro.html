@@ -164,29 +164,29 @@
               <h2>Inicia sesión</h2>
               <div class="col-md-12">
                 <input
-                  type="email"
+                  type="text"
                   class="form-control"
-                  name="uCorreo"
-                  id="correoUsuario"
+                  name="inputUsuario"
+                  id="inputUsuario"
                   required
-                  placeholder="Correo Electronico"
+                  placeholder="Ingrese su usuario"
                 />
               </div>
               <div class="col-md-12">
                 <input
                   type="password"
                   class="form-control"
-                  name="uPassword"
+                  name="inputPassword"
                   id="inicioUsuarioPassword"
                   required
                   placeholder="Contraseña"
                 />
               </div>
-              <a href="./contacto.html">
+              <div id="inicioSesionBoton">
                 <button type="button" id="botonInicio" class="btn btn-dark">
                   Iniciar sesión
                 </button>
-              </a>
+              </div>
             </form>
 
             <!-- Formulario registro-->
@@ -200,7 +200,7 @@
                     class="formulario__input"
                     name="usuario"
                     id="usuario"
-                    placeholder="Nombre de Usuario"
+                    placeholder="Nombre de usuario"
                     required
                   />
                   <i
@@ -241,6 +241,7 @@
                     name="password"
                     id="password"
                     required
+                    placeholder="Contraseña"
                   />
                   <i
                     class="formulario__validacion-estado fas fa-times-circle"
@@ -259,6 +260,7 @@
                     class="formulario__input"
                     name="password2"
                     id="password2"
+                    placeholder="Confirma contraseña"
                     required
                   />
                   <i

@@ -31,8 +31,12 @@ main{
 }
 
 
+.formulario{
+    padding-top: -200px;
+}
+
 .container{
-    padding-bottom: 10%;
+    padding-bottom: 150px;
     padding-top: 0%;
 }
 .caja_tras{
