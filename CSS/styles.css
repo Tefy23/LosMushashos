@@ -454,6 +454,9 @@ label.aro {
 div.inactive {
   display: none;
 }
+.clickCarrito:hover{
+  cursor: pointer;
+}
 
 /* -------FUENTE GENERAL--------- */
 * {
