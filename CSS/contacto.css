@@ -53,15 +53,10 @@ body {
 background: #EEE;
 }
 
-/* .cuadro {
-  display: flex;
-   flex-wrap: wrap;
-justify-content: center;
-} */
 
 /*.............................................................*/
 
-h1, h6{
+h1, h2, h6{
   text-align:center;
 }
 
@@ -87,6 +82,12 @@ h1, h6{
 .card{
   padding: 20px;
   margin-bottom: 20px;
+  background: gray;
+}
+
+.msj-error{
+	margin: 0;
+	color: black;
 }
 
 /* BOTTON */
@@ -148,14 +149,14 @@ button {
 
 /* FIN BOTTON */
 
-.boxed {
+/* .boxed {
   border: 1px solid green ;
-} 
+} */
 
 
 /* ESTILO DE ICONOS */
-.circle-icon {
-  background: #b0d1d2;
+img.circle-icon {
+  background:gray;
   width: 80px;
   height: 80px;
   border-radius: 40%;
@@ -165,3 +166,11 @@ button {
   padding: 20px;
 }
 /* ----------------- */
+
+
+
+
+
+
+
+/*  */

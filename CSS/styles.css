@@ -99,6 +99,21 @@ body {
   text-align: center;
 }
 
+
+
+body {
+background: #EEE;
+}
+
+/* .cuadro {
+  display: flex;
+   flex-wrap: wrap;
+justify-content: center;
+} */
+
+/*.............................................................*/
+
+
 /*------------------CARRUSEL-------------------------------------------*/
 .carousel {
   display: flex;
