@@ -89,6 +89,11 @@ h1, h2, h6{
   margin-bottom: 20px;
 }
 
+.msj-error{
+	margin: 0;
+	color: rgb(241, 98, 98);
+}
+
 /* BOTTON */
 /* From uiverse.io by @adamgiebl */
 button {

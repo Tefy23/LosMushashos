@@ -135,13 +135,13 @@
       <h2> Déjanos un mensaje</h2>
 
       <div class="form-floating mb-3">
-        <input type="name" class="form-control bg-secondary text-light" id="floatingInput" placeholder="Escribe tu nombre">
-        <label class="text-light" for="floatingInput">Nombre</label>
+        <input name="nombre" type="text" class="form-control bg-secondary text-light" id="floatingInput" placeholder="Escribe tu nombre">
+        <label class="text-light" type="text" for="floatingInput">Nombre</label>
         <p class="msj-error" id="errorNombre"></p>
       </div>
       
       <div class="form-floating mb-3">
-        <input type="email" class="form-control bg-secondary text-light" id="floatingInput" placeholder="Escribe tu correo ej. name@example.com">
+        <input name="email" type="email" class="form-control bg-secondary text-light" id="floatingInput" placeholder="Escribe tu correo ej. name@example.com">
         <label class="text-light" for="floatingInput">Correo</label>
         <p class="msj-error" id="errorEmail"></p>
       </div>
@@ -158,8 +158,9 @@
       </div>
 
         <div class="form-floating mb-3">
-          <textarea class="form-control bg-secondary text-light" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
+          <textarea name="mensaje" class="form-control bg-secondary text-light" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
           <label class ="text-light" for="floatingTextarea2">Escribe tu mensaje</label>
+          <p class="msj-error" id="errorMensaje"></p>
         </div>
 
           <!-- BUTTON -->
