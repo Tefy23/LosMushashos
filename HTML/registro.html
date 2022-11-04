@@ -161,83 +161,187 @@
           <div class="caja_frente col-md-12">
             <!-- Formulario inicio de sesion -->
             <form action="" class="form-inicio">
-              <h2>Inicia sesión y compra</h2>
-              <p>
-                Adentrate a esta pagina y saca tu Wicsha interior. Despues de
-                todo, todo es mejor cuando All is in black mood.
-              </p>
-              <a href="./contacto.html">
+              <h2>Inicia sesión</h2>
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="inputUsuario"
+                  id="inputUsuario"
+                  required
+                  placeholder="Ingrese su usuario"
+                />
+              </div>
+              <div class="col-md-12">
+                <input
+                  type="password"
+                  class="form-control"
+                  name="inputPassword"
+                  id="inicioUsuarioPassword"
+                  required
+                  placeholder="Contraseña"
+                />
+              </div>
+              <div id="inicioSesionBoton">
                 <button type="button" id="botonInicio" class="btn btn-dark">
                   Iniciar sesión
                 </button>
-              </a>
+              </div>
             </form>
+
             <!-- Formulario registro-->
-            <form action="" class="form-registro" id="formularioRegistro">
+            <form class="form-registro" id="formulario">
               <h3>Bienvenido</h3>
-            
-              <div class="col-md-12 inputNombre">
-                <input
-                  type="text"
-                  maxlength="50"
-                  class="form-control"
-                  name="usuarioNombre"
-                  id="inputNombre"
-                  required
-                  placeholder="Nombre Completo"
-                /> 
-              </div>
 
-              <div class="col-md-12 inputNumero" >
-                <input
-                  type="number"
-                  class="form-control"
-                  id="inputNumero"
-                  required
-                  placeholder="Numero telefonico"
-                />
-              </div>
-              <div class="col-md-12 inputEmail">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="inputEmail"
-                  required
-                  placeholder="Email: ejemplo@gmail.com"
-                />
-              </div>
-              <div class="col-md-12 password">
-                <input
-                  type="password"
-                  class="form-control"
-                  id="password"
-                  required
-                  placeholder="contraseña"
-                />
-              </div>
-              <div class="col-md-12 inputContra">
-                <div>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="inputContra"
-                  required
-                  placeholder="Confirma contraseña"
-                />
+              <div class="formulario__grupo" id="grupo__usuario">
+                <div class="formulario__grupo-input">
+                  <input
+                    type="text"
+                    class="formulario__input"
+                    name="usuario"
+                    id="usuario"
+                    placeholder="Nombre de usuario"
+                    required
+                  />
+                  <i
+                    class="formulario__validacion-estado fas fa-times-circle"
+                  ></i>
                 </div>
+                <p class="formulario__input-error">
+                  El usuario tiene que ser de 4 a 16 dígitos y solo puede
+                  contener numeros, letras y guion bajo.
+                </p>
               </div>
 
-              <!-- Terminos y condiciones -->
-              <div class="formularioTerminos">
-                <label class="formularioCheck">
-                  <input class="formCheck" type="checkbox" name="terminos" id="terminos">Acepto Terminos y Condiciones0
+              <div class="formulario__grupo" id="grupo__nombre">
+                <div class="formulario__grupo-input">
+                  <input
+                    type="text"
+                    class="formulario__input"
+                    name="nombre"
+                    id="nombre"
+                    placeholder="Nombre"
+                    required
+                  />
+                  <i
+                    class="formulario__validacion-estado fas fa-times-circle"
+                  ></i>
+                </div>
+                <p class="formulario__input-error">
+                  El nombre solo debe llevar letras.
+                </p>
+              </div>
+
+              <!-- Grupo: Contraseña -->
+              <div class="formulario__grupo" id="grupo__password">
+                <div class="formulario__grupo-input">
+                  <input
+                    type="password"
+                    class="formulario__input"
+                    name="password"
+                    id="password"
+                    required
+                    placeholder="Contraseña"
+                  />
+                  <i
+                    class="formulario__validacion-estado fas fa-times-circle"
+                  ></i>
+                </div>
+                <p class="formulario__input-error">
+                  La contraseña tiene que ser de 8 a 15 dígitos con un número.
+                </p>
+              </div>
+
+              <!-- Grupo: Contraseña 2 -->
+              <div class="formulario__grupo" id="grupo__password2">
+                <div class="formulario__grupo-input">
+                  <input
+                    type="password"
+                    class="formulario__input"
+                    name="password2"
+                    id="password2"
+                    placeholder="Confirma contraseña"
+                    required
+                  />
+                  <i
+                    class="formulario__validacion-estado fas fa-times-circle"
+                  ></i>
+                </div>
+                <p class="formulario__input-error">
+                  Ambas contraseñas deben ser iguales.
+                </p>
+              </div>
+
+              <!-- Grupo: Correo Electronico -->
+              <div class="formulario__grupo" id="grupo__correo">
+                <div class="formulario__grupo-input">
+                  <input
+                    type="email"
+                    class="formulario__input"
+                    name="correo"
+                    id="correo"
+                    placeholder="correo@correo.com"
+                  />
+                  <i
+                    class="formulario__validacion-estado fas fa-times-circle"
+                  ></i>
+                </div>
+                <p class="formulario__input-error">
+                  El correo solo puede contener letras, numeros, puntos, guiones
+                  y guion bajo.
+                </p>
+              </div>
+
+              <!-- Grupo: Teléfono -->
+              <div class="formulario__grupo" id="grupo__telefono">
+                <div class="formulario__grupo-input">
+                  <input
+                    type="number"
+                    class="formulario__input"
+                    name="telefono"
+                    id="telefono"
+                    placeholder="4491234567"
+                  />
+                  <i
+                    class="formulario__validacion-estado fas fa-times-circle"
+                  ></i>
+                </div>
+                <p class="formulario__input-error">
+                  El telefono solo puede contener numeros y el maximo son 14
+                  dígitos.
+                </p>
+              </div>
+
+              <!-- Grupo: Terminos y Condiciones -->
+              <div class="formulario__grupo" id="grupo__terminos">
+                <label class="formulario__label">
+                  <input
+                    class="formulario__checkbox"
+                    type="checkbox"
+                    name="terminos"
+                    id="terminos"
+                  />
+                  Acepto los Terminos y Condiciones
                 </label>
               </div>
 
-              <!-- Registro -->
-              <div class="col-12">
-                <button type="submit" id="btnSubmit" class="btn btn-dark">Registrarme</button>
-                <p class="warnings" id="warnings"></p>
+              <div class="formulario__mensaje" id="formulario__mensaje">
+                <p>
+                  <i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por
+                  favor rellena el formulario correctamente.
+                </p>
+              </div>
+
+              <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn" id="btnRegistrar">
+                  Enviar
+                </button>
+                <p
+                  class="formulario__mensaje-exito"
+                  id="formulario__mensaje-exito"
+                >
+                  Formulario enviado exitosamente!
+                </p>
               </div>
             </form>
           </div>
@@ -466,6 +570,5 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
   </body>
 </html>
