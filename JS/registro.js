@@ -221,9 +221,9 @@ let elementoBotonRegistro = document.querySelector('#btnRegistrar');
 elementoBotonRegistro.addEventListener('click', registrarUsuario)
 
 function registrarUsuario(){
-    let bUsuario = document.querySelector('#usuario'),
+    let bUsuario = document.querySelector('#usuario').value,
         bNombre = document.querySelector('#nombre').value,
-        bPassword = document.querySelector('#password'),
+        bPassword = document.querySelector('#password').value,
         bPassword2 = document.querySelector('#password2').value,
         bCorreo = document.querySelector('#correo').value,
         bTelefono = document.querySelector('#telefono').value;
@@ -251,23 +251,36 @@ const filtrado = productos.filter( producto  => producto.categorias.includes({no
 
 
 /* Inicio de sesion */
-
+const aaUsuario = [];
+const aaNombre = [];
 let elementoBotonInicio = document.querySelector('#botonInicio');
 
 elementoBotonInicio.addEventListener('click', iniciarSesion)
 
 function iniciarSesion(){
+  
+
     const usuarioInicioSesion = localStorage.getItem('usuario');
     const contraInicioSesion = localStorage.getItem('password');
-    let iUsuario = document.querySelector('#inputUsuario');
-    let iContraseña = document.querySelector('#inicioUsuarioPassword');
+    
+    let iUsuario = document.querySelector('#inputUsuario').value;
+    let iContraseña = document.querySelector('#inicioUsuarioPassword').value;
+
+    aaUsuario.push(iUsuario);
+    aaNombre.push(iContraseña);
 
 
-    if(iUsuario.value == usuarioInicioSesion && iContraseña.value == contraInicioSesion) {
+    localStorage.setItem('usuarioIni', JSON.stringify(aaUsuario));
+    localStorage.setItem('contraIni', JSON.stringify(aaNombre));
+
+    const usuarioInicioSesion2 = localStorage.getItem('usuarioIni');
+    const contraInicioSesion2 = localStorage.getItem('contraIni');
+
+    if(usuarioInicioSesion2 == usuarioInicioSesion && contraInicioSesion2 == contraInicioSesion) {
         alert('You are loged in.');
     }else {
-        console.log(iUsuario.value);
-        console.log(iContraseña.value);
+        console.log(usuarioInicioSesion2);
+        console.log(contraInicioSesion2);
         console.log(usuarioInicioSesion);
         console.log(contraInicioSesion);
         alert('ERROR.');
