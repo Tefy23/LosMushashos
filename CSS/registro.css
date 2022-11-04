@@ -78,6 +78,30 @@ main{
     background: white; 
 }
 
+.formularioCheck{
+    padding-left: 40px;
+}
+.iconoError{
+    font-size: 10px;
+}
+
+/* Mensaje de error */
+.formularioError{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.formularioError-activo{
+    display: block;
+}
+
+.formularioError-estado{
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+}
+
 /* ------------Formularios------------- */
 
 /* link inicio de sesion */
@@ -129,7 +153,7 @@ main{
 
 .caja_frente form button{
     padding: 10px 40px;
-    margin-top: 40px;
+    margin-top: 20px;
     border: none;
     background-color: gray;
     border: gray;
@@ -144,6 +168,12 @@ main{
 .form-registro{
     display: none;
 }
+
+#formularioRegistro{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
 
 /* Diseño responsivo */
 
@@ -173,5 +203,44 @@ main{
 
     .caja_frente form{
         position: relative;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    main{
+        margin-top: 100px;
+    }
+
+
+    /* Formulario responsivo */
+
+    .caja_frente{
+        margin-left: -100px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    main{
+        margin-top: 100px;
+    }
+
+
+    /* Formulario responsivo */
+
+    .caja_frente{
+        margin-left: -125px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    main{
+        margin-top: 100px;
+    }
+
+
+    /* Formulario responsivo */
+
+    .caja_frente{
+        margin-left: -180px;
     }
 }
