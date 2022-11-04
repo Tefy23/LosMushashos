@@ -277,7 +277,8 @@ function iniciarSesion(){
     const contraInicioSesion2 = localStorage.getItem('contraIni');
 
     if(usuarioInicioSesion2 == usuarioInicioSesion && contraInicioSesion2 == contraInicioSesion) {
-        alert('You are loged in.');
+        alert('Sesion Iniciada.');
+        location.href="../index.html";
     }else {
         console.log(usuarioInicioSesion2);
         console.log(contraInicioSesion2);
