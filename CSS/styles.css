@@ -233,10 +233,14 @@ transition: 3s ease;
 .bitter {
   background-image: url(/assets/img/logo/Mesa\ de\ trabajo\ 5.png);
   background-attachment: fixed;
+  background-size: 100% 100%;
   height: 33em;
-  display: grid;
+  display: block;
   place-content: center;
   box-shadow: 0 0 30px 0 black;
+}
+.bitterOculto{
+  background-image: url(/assets/img/logo/coleccion-bittersweet-01-01.png);
 }
 .coleccion{
   display: grid;
@@ -255,8 +259,9 @@ transition: 3s ease;
 .man {
   background-image: url(/assets/img/logo/Mesa\ de\ trabajo\ 7.png);
   background-attachment: fixed;
+  background-size: 100% 100%;
   box-shadow: 0 0 30px 0 black;
-  height: 480px;
+  height: 45rem;
 }
 .ellos{
   height: 5rem;
@@ -264,14 +269,15 @@ transition: 3s ease;
 }
 
 .fotoCab {
-  height: 280px;
-  width: 400px;
+  height: 20rem;
+  width: auto;
   box-shadow: 0 0 16px 0 rgb(0, 0, 0);
+  
 }
 
 .fotoCab:hover {
   box-shadow: 0px 0px 26px 1px rgb(0, 0, 0);
-  border: 2px solid rgb(0, 0, 0);
+ 
 }
               /*------------CODIGO DE BOTON SHOP NOW CABALLERO---------*/
               
@@ -329,6 +335,7 @@ transition: 3s ease;
 .categoria {
   background-image: url(/assets/img/logo/Mesa\ de\ trabajo\ 8.png);
   background-attachment: fixed;
+  background-size: 100% 100%;
 }
 .iconoropa {
   height: 150px;
@@ -347,7 +354,7 @@ transition: 3s ease;
   background-color: #000000;
   color: white;
   box-shadow: 0px 0px 12px 1px rgb(0, 0, 0);
-  height: 33em;
+  height: 35rem;
 }
 .btn-comunidad {
   height: 10rem;
