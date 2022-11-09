@@ -1,13 +1,12 @@
 /* Se solicitan variables para la resposiva de la pagina */
-const formulario = document.getElementById('formulario');
-const inputs = document.querySelectorAll('#formulario input');
 
+const formularioLogin = document.querySelector(".formulario__login");
+const formularioRegistro = document.querySelector(".formulario__register");
+const cajaFrente = document.querySelector(".contenedor__login-register");
+const cajaInicio = document.querySelector(".caja__trasera-login");
+const cajaRegistro = document.querySelector(".caja__trasera-register");
 
-const formularioRegistro = document.querySelector(".form-registro");
-const inicioSesion = document.querySelector(".form-inicio");
-const cajaFrente = document.querySelector(".caja_frente");
-const cajaInicio = document.querySelector(".inputLogin");
-const cajaRegistro = document.querySelector(".inputRegistro");
+const inputs = formularioRegistro.querySelectorAll('input');
 
 
 document.getElementById("btn_Registro").addEventListener("click", registro);
@@ -24,7 +23,7 @@ function anchoPagina(){
         cajaRegistro.style.display = "block";
         cajaRegistro.style.opacity = "1";
         cajaInicio.style.display = "none";
-        inicioSesion.style.display = "block";
+        formularioLogin.style.display = "block";
         formularioRegistro.style.display = "none";
         cajaFrente.style.left = "0px";
     }
@@ -36,28 +35,15 @@ anchoPagina();
 
 /* funciones para el acomodo de la pagina y cada vez que se ahaga click en boton */
 function registro(){
+    formularioRegistro.style.display = "block";
+    formularioLogin.style.display = "none";
+
     if(window.innerWidth > 850){
-        formularioRegistro.style.display = "block";
-        if(window.innerWidth < 1400){
-            cajaFrente.style.left= "650px";
-        }else if(window.innerWidth < 1000){
-            cajaFrente.style.left= "40px";
-        }else
-            cajaFrente.style.left= "650px";
-        inicioSesion.style.display = "none";
+        cajaFrente.style.left= "410px";
         cajaRegistro.style.opacity = "0";
         cajaInicio.style.opacity = "1";
     }else{
-        formularioRegistro.style.display = "block";
-        if(window.innerWidth < 1400){
-            cajaFrente.style.left= "250px";
-        }else if(window.innerWidth < 1200){
-            cajaFrente.style.left= "250px";
-        }else if(window.innerWidth < 1000){
-            cajaFrente.style.left= "40px";
-        }else
-            cajaFrente.style.left= "0px";
-        inicioSesion.style.display = "none";
+        cajaFrente.style.left = "0px";
         cajaRegistro.style.display = "none";
         cajaInicio.style.display = "block";
         cajaInicio.style.opacity = "1"
@@ -65,32 +51,14 @@ function registro(){
 }
 
 function inicio(){
+    formularioLogin.style.display = "block";
+    formularioRegistro.style.display = "none";
     if(window.innerWidth > 850){
-        formularioRegistro.style.display = "none";
-        
-        if(window.innerWidth < 1400){
-            cajaFrente.style.left= "150px";
-        }else if(window.innerWidth < 1200){
-            cajaFrente.style.left= "150px";
-        }else if(window.innerWidth < 1000){
-            cajaFrente.style.left= "40px";
-        }else{
-            cajaFrente.style.left= "213px";
-        }
-        inicioSesion.style.display = "block";
+        cajaFrente.style.left = "10px";
         cajaRegistro.style.opacity = "1";
         cajaInicio.style.opacity = "0";
     }else{
-        formularioRegistro.style.display = "none";
-        if(window.innerWidth < 1400){
-            cajaFrente.style.left= "150px";
-        }else if(window.innerWidth < 1200){
-            cajaFrente.style.left= "150px";
-        }else if(window.innerWidth < 1000){
-            cajaFrente.style.left= "40px";
-        }else if(window.innerWidth < 850)
-            cajaFrente.style.left= "50px";
-        inicioSesion.style.display = "block";
+        cajaFrente.style.left = "0px";
         cajaRegistro.style.display = "block";
         cajaInicio.style.display = "none";
     }
@@ -188,7 +156,7 @@ inputs.forEach((input) => {
 	input.addEventListener('blur', validarFormulario);
 });
 
-formulario.addEventListener('submit', (e) => {
+formularioRegistro.addEventListener('submit', (e) => {
 	e.preventDefault();
 
 	const terminos = document.getElementById('terminos');

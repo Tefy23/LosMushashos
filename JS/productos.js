@@ -8,7 +8,7 @@ function addItem(item) {
                     <div class="p-4">
                         <img src="${item.img}" class="card-img-top img-fluid" alt="image">
                     </div>
-                    <div class="card-body border-top" >
+                    <div class="card-body border-top d-flex flex-column" >
                         <h5 class="card-title">${item.name}</h5>
                         <p class="card-text">${item.description}</p>
                         <p class="card-text">$450</p>
@@ -25,6 +25,7 @@ addItem({
     'name': 'Top Valeria',
     'img': '../assets/img/Articulos/top_valeria.jpg',
     'description': 'Top negro con mangas acampanadas'
+    
 });
 
 addItem({
