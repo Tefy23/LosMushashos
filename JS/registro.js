@@ -251,23 +251,37 @@ const filtrado = productos.filter( producto  => producto.categorias.includes({no
 
 
 /* Inicio de sesion */
-
+const aaUsuario = [];
+const aaNombre = [];
 let elementoBotonInicio = document.querySelector('#botonInicio');
 
 elementoBotonInicio.addEventListener('click', iniciarSesion)
 
 function iniciarSesion(){
+  
+
     const usuarioInicioSesion = localStorage.getItem('usuario');
     const contraInicioSesion = localStorage.getItem('password');
-    let iUsuario = document.querySelector('#inputUsuario');
-    let iContraseña = document.querySelector('#inicioUsuarioPassword');
+    
+    let iUsuario = document.querySelector('#inputUsuario').value;
+    let iContraseña = document.querySelector('#inicioUsuarioPassword').value;
+
+    aaUsuario.push(iUsuario);
+    aaNombre.push(iContraseña);
 
 
-    if(iUsuario.value == usuarioInicioSesion && iContraseña.value == contraInicioSesion) {
-        alert('You are loged in.');
+    localStorage.setItem('usuarioIni', JSON.stringify(aaUsuario));
+    localStorage.setItem('contraIni', JSON.stringify(aaNombre));
+
+    const usuarioInicioSesion2 = localStorage.getItem('usuarioIni');
+    const contraInicioSesion2 = localStorage.getItem('contraIni');
+
+    if(usuarioInicioSesion2 == usuarioInicioSesion && contraInicioSesion2 == contraInicioSesion) {
+        alert('Sesion Iniciada.');
+        location.href="../index.html";
     }else {
-        console.log(iUsuario.value);
-        console.log(iContraseña.value);
+        console.log(usuarioInicioSesion2);
+        console.log(contraInicioSesion2);
         console.log(usuarioInicioSesion);
         console.log(contraInicioSesion);
         alert('ERROR.');
