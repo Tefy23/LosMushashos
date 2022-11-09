@@ -89,102 +89,155 @@
         </div>
     </header>
 
+    <!-- Ficha principal Descripción del producto -->
     <main class="container-lg itemDescriptionMain">
-        <!-- DESCRIPCIÓN DEL PRODUCTO -->
-        <div class="row">
-            <div class="fichaDinamica">
+         <!-- DESCRIPCIÓN DEL PRODUCTO -->
+         <div class="row">
+            <!-- Fotografía del producto -->
+            <div class="col-sm-12 col-md-7 col-lg-8 border-end contendorImg">
+                <div class="d-none d-lg-block text-center">
+                    <img src="./../assets/img/itemDescription/card_abrigoMoon.png" alt="Abrigo_Moon" class="imgProduct">
+                </div>
 
-            </div>
-
-            <hr>
-
-            <!-- Formulario para pedido MOBILE-->
-            <div class="d-lg-none">
-                <div class="row">
-                    <select class="col-sm-1 form-select text-center bg-secondary talla" aria-label="allTallas">
-                        <option selected><b>Selecciona la talla</b></option>
-                        <option value="1">xs</option>
-                        <option value="2">s</option>
-                        <option value="3">m</option>
-                        <option value="4">l</option>
-                        <option value="5">xl</option>
-                    </select>
+                <div class="d-lg-none mt-2 text-center">
+                    <img src="./../assets/img/Articulos/abrigo_moon.jpg" alt="Abrigo_Moon" class="dinamicImgProduct">
                 </div>
             </div>
 
-            <!-- Formulario para pedido WEB-->
-            <div class="d-none d-lg-block">
+            <!-- Ficha del producto -->
+            <div class="col-sm-12 col-md-5 col-lg-4 border-end">
+                <!-- Nombre del Item -->
                 <div class="row text-center">
-                    <!-- Tallas -->
-                    <div class="row text-center">
-                        <div class="col-sm-1 col-md-1 align-self-center"></div>
-                        <div class="col-sm-12 col-md-10">
-                            <h6><b>Tallas: </b></h6>
-                            <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
-                            <label class="btn talla text-center" for="option1">xs</label>
+                    <h2>Abrigo Moon</h2>
+                    <hr>
+                </div>
 
-                            <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                            <label class="btn talla text-center" for="option2">s</label>
+                <!--Precio -->
+                <div class="row" id="price">
+                    <p>$450.00 mxn</p>
+                </div>
 
-                            <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
-                            <label class="btn talla text-center" for="option3">m</label>
+                <div class="row justify-content-center">
+                    <hr>
+                    <div class="col-md-2"></div>
+                    <div class="col-sm-12 col-md-8 text-center my-5 ">
+                        <h6><b>Calificaciones del producto</b></h6>
+                        <!-- ranking stars -->
+                        <img src="./../assets/ico/estrella.png" alt="estrella()" class="star">
+                        <img src="./../assets/ico/estrella.png" alt="estrella()" class="star">
+                        <img src="./../assets/ico/estrella.png" alt="estrella()" class="star">
+                        <img src="./../assets/ico/estrella.png" alt="estrella()" class="star">
+                        <img src="./../assets/ico/estrella.png" alt="estrella()" class="star">
 
-                            <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
-                            <label class="btn talla text-center" for="option4">l</label>
+                        <!-- link de reviews -->
+                        <a href="#" class="ranking ms-1 ms-3">reviews</a>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <hr>
 
-                            <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
-                            <label class="btn talla text-center" for="option5">xl</label>
-                        </div>
-                        <div class="col-sm-1 col-md-1"></div>
+                </div>
+                <!-- Descripción del producto -->
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-md-8 text-start">
+                        <h6><b>Descripción</b></h6>
+                        <p>Etiam egestas vehicula libero quis malesuada. Quisque aliquam nibh pharetra iaculis mattis.
+                            Mauris at sem erat. Nam lacinia tortor et libero luctus, ut ornare nulla mattis. Sed
+                            bibendum ac
+                            enim vel fringilla.</p>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+
+                <hr>
+
+                <!-- Formulario para pedido MOBILE-->
+                <div class="d-lg-none">
+                    <div class="row">
+                        <select class="col-sm-1 form-select text-center bg-secondary talla" aria-label="allTallas">
+                            <option selected><b>Selecciona la talla</b></option>
+                            <option value="1">xs</option>
+                            <option value="2">s</option>
+                            <option value="3">m</option>
+                            <option value="4">l</option>
+                            <option value="5">xl</option>
+                        </select>
                     </div>
                 </div>
-            </div>
-            <br><br>
-            <!-- Color de la prenda -->
-            <div class="row justify-content-center text-center">
-                <h6><b>Color:</b></h6>
-                <div class="col-md-2"></div>
-                <div class="col-md-6">
-                    <input type="radio" class="btn-check" name="colorP" id="blanco" autocomplete="off">
-                    <label class="btn aro text-center btn-light border" for="blanco">
-                        <p>.</p>
-                    </label>
 
-                    <input type="radio" class="btn-check" name="colorP" id="negro" autocomplete="off">
-                    <label class="btn aro text-center bg-dark border " for="negro">
-                        <p>.</p>
-                    </label>
+                <!-- Formulario para pedido WEB-->
+                <div class="d-none d-lg-block">
+                    <div class="row text-center">
+                        <!-- Tallas -->
+                        <div class="row text-center">
+                            <div class="col-sm-1 col-md-1 align-self-center"></div>
+                            <div class="col-sm-12 col-md-10">
+                                <h6><b>Tallas: </b></h6>
+                                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+                                <label class="btn talla text-center" for="option1">xs</label>
+
+                                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                                <label class="btn talla text-center" for="option2">s</label>
+
+                                <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                                <label class="btn talla text-center" for="option3">m</label>
+
+                                <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                                <label class="btn talla text-center" for="option4">l</label>
+
+                                <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
+                                <label class="btn talla text-center" for="option5">xl</label>
+                            </div>
+                            <div class="col-sm-1 col-md-1"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-2"></div>
-            </div>
+                <br><br>
+                <!-- Color de la prenda -->
+                <div class="row justify-content-center text-center">
+                    <h6><b>Color:</b></h6>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-6">
+                        <input type="radio" class="btn-check" name="colorP" id="blanco" autocomplete="off">
+                        <label class="btn aro text-center btn-light border" for="blanco">
+                            <p>.</p>
+                        </label>
 
-
-
-            <!-- Botones de compra  -->
-            <div class="row text-center my-5">
-                <div class="col-md-1"></div>
-
-                <!-- Añadir al carrito -->
-                <div class="col-sm-12 col-md-10 my-1 d-flex justify-content-center">
-                    <p>
-                        <a href="#" class="btn btn-warning  mx-3">
-                            <b>Añadir a la bolsa <img src="./../assets/ico/Bolsa de compra.png" alt="bolsa de compra"
-                                    class="buy_icos mx-2"></b>
-                        </a>
-                    </p>
-
-                    <!-- Wishlist -->
-                    <p>
-                        <a href="#" class="btn btn-dark rounded-circle mx-3">
-                            <b class=" blanco"><img src="./../assets/ico/white-wish.png" alt="wishlist"
-                                    class="buy_icos my-1" id="wish"></b>
-                        </a>
-                    </p>
+                        <input type="radio" class="btn-check" name="colorP" id="negro" autocomplete="off">
+                        <label class="btn aro text-center bg-dark border " for="negro">
+                            <p>.</p>
+                        </label>
+                    </div>
+                    <div class="col-md-2"></div>
                 </div>
 
-                <div class="col-md-1"></div>
+
+
+                <!-- Botones de compra  -->
+                <div class="row text-center my-5">
+                    <div class="col-md-1"></div>
+
+                    <!-- Añadir al carrito -->
+                    <div class="col-sm-12 col-md-10 my-1 d-flex justify-content-center">
+                        <p>
+                            <a href="#" class="btn btn-warning  mx-3">
+                                <b>Añadir a la bolsa <img src="./../assets/ico/Bolsa de compra.png"
+                                        alt="bolsa de compra" class="buy_icos mx-2"></b>
+                            </a>
+                        </p>
+
+                        <!-- Wishlist -->
+                        <p>
+                            <a href="#" class="btn btn-dark rounded-circle mx-3">
+                                <b class=" blanco"><img src="./../assets/ico/white-wish.png" alt="wishlist"
+                                        class="buy_icos my-1" id="wish"></b>
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-1"></div>
+                </div>
             </div>
-        </div>
         </div>
 
         <!-------Otras Ofertas------->
