@@ -221,9 +221,9 @@ let elementoBotonRegistro = document.querySelector('#btnRegistrar');
 elementoBotonRegistro.addEventListener('click', registrarUsuario)
 
 function registrarUsuario(){
-    let bUsuario = document.querySelector('#usuario'),
+    let bUsuario = document.querySelector('#usuario').value,
         bNombre = document.querySelector('#nombre').value,
-        bPassword = document.querySelector('#password'),
+        bPassword = document.querySelector('#password').value,
         bPassword2 = document.querySelector('#password2').value,
         bCorreo = document.querySelector('#correo').value,
         bTelefono = document.querySelector('#telefono').value;

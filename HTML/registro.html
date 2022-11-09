@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../CSS/registro.css" />
     <link rel="stylesheet" href="../CSS/styles.css" />
+    <!-- Fuentes extraidas de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="./../CSS/styles.css" />
     <!--ENLACE Bootstrap-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -17,7 +26,7 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="../assets/img/logo/ws-boton.png"
+      href="./../assets/img/logo/ws-boton.png"
     />
     <!--ENLACE CDN Font Awesome-->
     <link
@@ -31,106 +40,102 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
-    <title>Registro</title>
   </head>
+
   <body>
-    <!--ENCABEZADO BASE PAGINA PRINCIPAL-->
-    <!--LOGO PRINCPIPAL-->
-    <img
-      src="../assets/img/logo/wicsha-logo-principal.png"
-      class="img-fluid"
-      align="top-left"
-      alt="wicsha-logo-principal"
-      id="logoPrincipal"
-    />
+    <!-- HEADER -->
+    <header class="row-fluid position-fixed border-bottom">
+      <!--ENCABEZADO BASE PAGINA PRINCIPAL-->
+      <!--LOGO PRINCPIPAL-->
+      <a href="../index.html"
+        ><img
+          src="../assets/img/logo/wicsha-logo-secundario.png"
+          class="img-fluid"
+          align="top-left"
+          alt="wicsha-logo-principal"
+          id="logoPrincipal"
+      /></a>
 
-    <!--BARRA DE NAVEGACION-->
-    <!--<div class="container-sm mt-2">-->
-    <nav class="navbar navbar-expand-sm">
-      <div class="container-fluid mt-4">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse text-center justify-content-center"
-          id="navbarSupportedContent"
-        >
-          <a
-            class="nav-link"
-            target="_blank"
-            href="https://www.instagram.com/wicsha.mx"
-            >Dama</a
-          >
-          <a
-            class="nav-link"
-            target="_blank"
-            href="https://www.instagram.com/wicsha.mx"
-            >Caballero</a
-          >
-          <a
-            class="nav-link"
-            target="_blank"
-            href="https://www.instagram.com/wicsha.mx"
-            >Accesorios</a
-          >
-        </div>
-        <div class="text-center justify-content-between">
-          <form class="d-flex" role="Buscar">
-            <input
-              class="icon-placeholder"
-              type="search"
-              placeholder="   B u s c a r "
-              style="width: 228px; height: 25px"
-              aria-label="Search"
-            />
-            <!--ICONOS superiores-->
-            <div class="dropdown-center">
-              <img
-                class="icon dropdown"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                src="../assets/img/ico/usuario barra principal.png"
-              />
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Perfil</a></li>
-                <li>
-                  <a class="dropdown-item" href="./html/registro.html"
-                    >Registrarse</a
-                  >
-                </li>
-              </ul>
-
-              <a href="prueba.html"
-                ><img class="icon" src="../assets/img/ico/Bolsa de compra.png"
-              /></a>
-              <a href="prueba.html"
-                ><img
-                  class="icon-last"
-                  src="../assets/img/ico/Wish.png"
-                  class="float-end"
-              /></a>
+      <!--BARRA DE NAVEGACION-->
+      <!--<div class="container-sm mt-2">-->
+      <nav class="navbar navbar-expand-sm">
+        <div class="container mt-4 gap-2 gap-lg-4" style="padding-bottom: 10px;">
+          <!--  -->
+          <div class="d-flex flex-grow-1 flex-sm-grow-0 gap-2 order-sm-1">
+            <button
+              class="navbar-toggler px-2"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="text-center d-flex flex-grow-1 justify-content-end gap-2 gap-lg-4"
+            >
+              <form
+                class="d-flex flex-grow-1 flex-sm-grow-0 justify-content-end"
+                style="min-width: 200px"
+                role="Buscar"
+              >
+                <input
+                  class="icon-placeholder w-100 m-0"
+                  type="search"
+                  placeholder="   B u s c a r "
+                  aria-label="Search"
+                />
+              </form>
+              <!--ICONOS superiores-->
+              <div class="dropdown-center d-flex gap-2">
+                <div
+                  class="d-flex gap-3 gap-lg-4 justify-content-center align-items-center"
+                >
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+                    <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                  </ul>
+                  <img
+                    class="icon mx-auto dropdown"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    src="../assets/img/ico/usuario barra principal.png"
+                  />
+                  <a class="d-flex" href="prueba.html"
+                    ><img
+                      class="icon mx-auto"
+                      src="../assets/img/ico/Bolsa de compra.png"
+                  /></a>
+                  <a class="d-flex" href="prueba.html"
+                    ><img
+                      class="icon mx-auto"
+                      src="../assets/img/ico/Wish.png"
+                      class="float-end"
+                  /></a>
+                </div>
+              </div>
             </div>
-          </form>
-        </div>
-      </div>
-    </nav>
+          </div>
 
-    <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+          <!-- Enlaces -->
+          <div
+            class="collapse navbar-collapse text-center justify-content-center gap-2 gap-lg-5 order-sm-0 flex-sm-grow-1"
+            id="navbarSupportedContent"
+          >
+            <a class="nav-link py-2 py-sm-0" href="productos.html">Todes</a>
+            <a class="nav-link py-2 py-sm-0" href="productos.html">Ellas</a>
+            <a class="nav-link py-2 py-sm-0" href="productos.html">Ellos</a>
+            <a class="nav-link py-2 py-sm-0" href="productos.html"
+              >Accesorios</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
 
     <!-- Registro -->
     <main>
