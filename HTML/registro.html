@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -26,7 +27,7 @@
 
 <body>
    <!-- HEADER -->
-   <header class="row-fluid position-fixed border-bottom">
+   <header class="row-fluid sticky-top border-bottom">
        <!--ENCABEZADO BASE PAGINA PRINCIPAL-->
        <!--LOGO PRINCPIPAL-->
        <a href="../index.html"><img src="../assets/img/logo/wicsha-logo-secundario.png" class="img-fluid"
@@ -75,38 +76,32 @@
            </div>
        </nav>
    </header>
-
-
     <!-- Registro -->
     <main>
       <div class="container">
-        <div class="text-center">
-          <!-- Titulo -->
-          <h3>Welcome to Wicsha</h3>
-        </div>
-        <div class="Cont_todo">
-          <div class="caja_tras">
-            <!-- Se crea las cajas de atras  -->
-            <div class="inputLogin">
-              <!-- Link a inicio de sesion -->
+        <div class="contenedor__todo">
+          <!-- CAJA TRASERA -->
+          <div class="caja__trasera gap-5 gap-lg-3">
+            <!-- CAMBIAR A LOGIN -->
+            <div class="caja__trasera-login">
               <h3>Inicia sesion</h3>
               <p>Inicia sesion para poder seguir comprando</p>
-              <button id="btn_Inicio">Iniciar sesion</button>
+              <button id="btn_Inicio">Iniciar Sesión</button>
             </div>
-
-            <!-- Parte trasera registro -->
-            <div class="inputRegistro">
+            <!-- CAMBIAR A REGISTRO -->
+            <div class="caja__trasera-register">
               <h3>¿No tienes cuenta?</h3>
               <p>Registrate para empezar a comprar en Wicsha</p>
-              <button id="btn_Registro">Registrarme</button>
+              <button id="btn_Registro">Regístrarse</button>
             </div>
+
           </div>
 
-          <!--Contenedor cajaDelantera  -->
-          <div class="caja_frente col-md-12">
-            <!-- Formulario inicio de sesion -->
-            <form action="" class="form-inicio">
-              <h2>Inicia sesión</h2>
+      <!-- CAJA DELANTERA -->
+      <div class="contenedor__login-register">
+
+          <form action="POST" class="formulario__login border border-4">
+            <h2>Iniciar Sesión</h2>
               <div class="col-md-12">
                 <input
                   type="text"
@@ -127,16 +122,16 @@
                   placeholder="Contraseña"
                 />
               </div>
-              <div id="inicioSesionBoton">
+              <div class="mt-3" id="inicioSesionBoton">
                 <button type="button" id="botonInicio" class="btn btn-dark">
                   Iniciar sesión
                 </button>
               </div>
             </form>
 
-            <!-- Formulario registro-->
-            <form class="form-registro" id="formulario">
-              <h3>Bienvenido</h3>
+            <!-- FORMULARIO REGISTRO -->
+          <form action="POST" class="formulario__register border border-4">
+            <h2>Bienvenido</h2>
 
               <div class="formulario__grupo" id="grupo__usuario">
                 <div class="formulario__grupo-input">
@@ -259,15 +254,17 @@
 
               <!-- Grupo: Terminos y Condiciones -->
               <div class="formulario__grupo" id="grupo__terminos">
-                <label class="formulario__label">
+                <div class="d-flex">
                   <input
-                    class="formulario__checkbox"
+                    class="formulario__checkbox m-2 flex-shrink-1"
                     type="checkbox"
                     name="terminos"
                     id="terminos"
-                  />
-                  Acepto los Terminos y Condiciones
-                </label>
+                    />
+                  <label class="formulario__label flex-shrink-0" for="terminos">
+                    Acepto los Terminos y Condiciones
+                  </label>
+                </div>
               </div>
 
               <div class="formulario__mensaje" id="formulario__mensaje">
