@@ -430,7 +430,6 @@ justify-content: center;
 }
 
 .otros_productos {
-  margin: 0;
   color: #ffffff;
   background-color: black;
 }
@@ -485,6 +484,31 @@ div.inactive {
   ;
 }
 
+/* =================================================================EXPERIMENTO PRODUCT DETAIL======================================================= */
+
+/* --------------------Imagen del producto-------------------------- */
+/* --------------------Grupo de imagenes pequeñas-------------------------- */
+.small-img-group{
+  display: flex;
+  justify-content: space-between;
+}
+.small-img-col{
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+
+/* -----Botón añadir al carrito------ */
+.sizeGuide{
+  color: deepskyblue;
+  text-decoration: none;
+}
+.sizeGuide:hover{
+  color: aqua;
+}
+.cantidadItem{
+  width: 15%
+}
 
 @media (max-width: 991px) {
   .contendorImg {
