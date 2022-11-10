@@ -11,6 +11,22 @@ function clickABolsa(){
 console.log("hola"); //Hay que quitar esta también
 
 /* =================== Funcionalidad Fotografía del producto ============= */
+let imgPrincipal = document.getElementById('imgPrincipal');
+let imgPequeña = document.getElementsByClassName('imgPequeña');
+
+imgPequeña[0].addEventListener('click', function(){
+    imgPrincipal.src = imgPequeña[0].src;
+});
+imgPequeña[1].addEventListener('click', function(){
+    imgPrincipal.src = imgPequeña[1].src;
+});
+imgPequeña[2].addEventListener('click', function(){
+    imgPrincipal.src = imgPequeña[2].src;
+});
+imgPequeña[3].addEventListener('click', function(){
+    imgPrincipal.src = imgPequeña[3].src;
+});
+
 
 
 

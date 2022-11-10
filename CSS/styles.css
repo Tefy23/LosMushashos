@@ -494,8 +494,12 @@ div.inactive {
 }
 .small-img-col{
   flex-basis: 24%;
-  cursor: pointer;
 }
+.small-img-col:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
 
 
 /* -----Botón añadir al carrito------ */
