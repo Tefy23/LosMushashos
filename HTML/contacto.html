@@ -121,7 +121,7 @@
       <h2 style="color:black"> Déjanos un mensaje</h2>
 
       <div class="form-floating mb-3">
-        <input name="nombre" type="text" class="form-control bg-secondary text-light" id="floatingInput" placeholder="Escribe tu nombre">
+        <input name="name" type="text" class="form-control bg-secondary text-light" id="floatingInput" placeholder="Escribe tu nombre">
         <label class="text-light" type="text" for="floatingInput">Nombre</label>
         <p class="msj-error" id="errorNombre"></p>
       </div>
@@ -132,7 +132,7 @@
         <p class="msj-error" id="errorEmail"></p>
       </div>
 
-      <div class="form-floating mb-3">
+      <!-- <div class="form-floating mb-3">
         <select class="form-select bg-secondary text-light" id="floatingSelect" aria-label="Floating label select example">
           <option selected="">...</option>
           <option value="compra">Problemas con una compra</option>
@@ -141,16 +141,18 @@
           <option value="Reembolso">Trabaja con nosotros</option>
         </select>
         <label class="text-light" for="floatingSelect">Asunto</label>
-      </div>
+      </div> -->
 
         <div class="form-floating mb-3">
-          <textarea name="mensaje" class="form-control bg-secondary text-light" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
+          <textarea name="mensaje" type="text" class="form-control bg-secondary text-light" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
           <label class ="text-light" for="floatingTextarea2">Escribe tu mensaje</label>
           <p class="msj-error" id="errorMensaje"></p>
         </div>
 
+        <!-- Envío de comentarios al correo con formsubmit -->
+        <form action="https://formsubmit.co/wicsha.mx@gmail.com" method="POST">
           <!-- BUTTON -->
-          <button>
+          <button type="submit">
             <div class="svg-wrapper-1">
               <div class="svg-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
@@ -161,6 +163,9 @@
             </div>
             <span>Enviar</span>
           </button>
+        </form>
+          
+
     </div> 
     <br><br><br>
 </div>
