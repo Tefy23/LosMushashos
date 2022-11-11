@@ -516,10 +516,3 @@ div.inactive {
     transition: 1s;
   }
 }
-
-:target {
-  display: block;
-  position: relative;
-  top: -120px; 
-  visibility: hidden;
-}
