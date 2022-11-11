@@ -27,7 +27,7 @@ imgPequeña[3].addEventListener('click', function(){
     imgPrincipal.src = imgPequeña[3].src;
 });
 
-
+/* =================== Funcionalidad Fotografía del producto ============= */
 
 
 /* ===================Funcionalidad OTRAS OFERTAS======================= */
