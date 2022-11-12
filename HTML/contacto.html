@@ -121,30 +121,32 @@
       <h2 style="color:black"> Déjanos un mensaje</h2>
       
     <!-- Envío de comentarios al correo con formsubmit -->
-    <form action="https://formsubmit.co/wicsha.mx@gmail.com" method="POST">
+    <!-- <form action="https://formsubmit.co/wicsha.mx@gmail.com" method="POST"> -->
+    <form action="https://formsubmit.co/victor.rodi25@gmail.com" method="POST">
 
       <div class="form-floating mb-3">
-        <input name="name" type="text" class="form-control bg-secondary text-light" id="floatingInput" placeholder="Escribe tu nombre">
+        <input name="name" type="text" class="form-control bg-secondary text-light" id="floatingInput" placeholder="Escribe tu nombre" required>
         <label class="text-light" type="text" for="floatingInput">Nombre</label>
         <p class="msj-error" id="errorNombre"></p>
       </div>
-      
+
       <div class="form-floating mb-3">
-        <input name="email" type="email" class="form-control bg-secondary text-light" id="floatingInput" placeholder="Escribe tu correo ej. name@example.com">
+        <input name="email" type="email" class="form-control bg-secondary text-light" id="floatingInput" placeholder="Escribe tu correo ej. name@example.com" required>
         <label class="text-light" for="floatingInput">Correo</label>
         <p class="msj-error" id="errorEmail"></p>
       </div>
 
-      <!-- <div class="form-floating mb-3">
-        <select class="form-select bg-secondary text-light" id="floatingSelect" aria-label="Floating label select example">
+    <div class="form-floating mb-3">
+        <select name="asunto" class="form-select bg-secondary text-light" id="floatingSelect" aria-label="Floating label select example" required>
           <option selected="">...</option>
-          <option value="compra">Problemas con una compra</option>
-          <option value="prenda">¿No te quedó la prenda?</option>
+          <option value="Problemas con una compra">Problemas con una compra</option>
+          <option value="¿No te quedó la prenda?">¿No te quedó la prenda?</option>
           <option value="Reembolso">Reembolso</option>
-          <option value="Reembolso">Trabaja con nosotros</option>
+          <option value="Trabaja con nosotros">Trabaja con nosotros</option>
+          <option value="Otro">Otro</option>
         </select>
         <label class="text-light" for="floatingSelect">Asunto</label>
-      </div> -->
+      </div>
 
         <div class="form-floating mb-3">
           <textarea name="mensaje" type="text" class="form-control bg-secondary text-light" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
@@ -164,7 +166,10 @@
             </div>
             <span>Enviar</span>
           </button>
-
+      <!-- Disable reCAPTCHA -->
+      <input type="hidden" name="_captcha" value="false">
+      <!-- Redireccionamos a nuestra pagina de gracias. -->
+      <input type="hidden" name="_next" value="https://wicsha.netlify.app/html/contacto">
     </form>
     </div> 
 
