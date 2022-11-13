@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gracias</title>
+  <title>Pago</title>
   <!-- Fuentes extraidas de Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <!-- Estilos propios -->
   <link rel="stylesheet" href="./../CSS/styles.css">
-  <link rel="stylesheet" href="../CSS/contacto.css">
+  <link rel="stylesheet" href="../CSS/direccionpago.css">
   <!--ENLACE Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -78,18 +78,181 @@
 </header>
 
   <main>
-<div class="card-header" style="background-image: url('../assets/img/logo/ellas-01-v2.jpg');">
-  <br><br><br>
-  <div class="container-md">
-    <h1 style="color:black"> ¡ Muchas gracias por tu mensaje !</h1>
-    <div class="card bg-secondary text-center">
-      <h2>
-       Nos contactaremos pronto contigo 
-      </h3>
+<div class="card-header" style="background-image: url('../assets/img/logo/ellas\ fondo\ jpg.jpg');">
+    
+    <!-- Ingresar datos de direccion -->
+
+    <div class="container">
+      <h1 class="" id="contacto">Ingresa tus datos de entrega</h1>
+      <div class="row">
+        <div class="col">
+          <form>
+
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="form-group col-md-12">
+                    <label for="inputNombre">Nombre</label>
+                    <input type="text" class="form-control" name="nombre" required />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group col-md-12">
+                    <label for="inputNombre">Apellido</label>
+                    <input type="text" class="form-control" name="apellido" required />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="form-group col-md-12">
+                    <label for="inputNombre">Teléfono celular</label>
+                    <input type="text" class="form-control" name="tel" maxlength="10" required />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group col-md-12">
+                    <label for="Correo">Correo electrónico </label>
+                    <input type="email" class="form-control" name="correo" required />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="form-group col-md-12">
+                    <label for="inputAddress">Calle</label>
+                    <input type="text" class="form-control" name="address" required />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group col-md-12">
+                    <label for="inputNum">Num</label>
+                    <input type="text" class="form-control" name="num" maxlength="5" required />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group col-md-12">
+                      <label for="inputCity">Estado</label>
+                      <p class="msj-error" id="valEstado"></p>
+                      <select id="inputState" class="form-control">
+                        <option value="">Selecciona...</option>
+                        <option value="">Aguascalientes</option>
+                        <option value="">Baja California</option>
+                        <option value="">Baja California Sur</option>
+                        <option value="">Campeche</option>
+                        <option value="">Chiapas</option>
+                        <option value="">Chihuahua</option>
+                        <option value="">Ciudad de México</option>
+                        <option value="">Coahuila</option>
+                        <option value="">Colima</option>
+                        <option value="">Durango</option>
+                        <option value="">Estado de México</option>
+                        <option value="">Guanajuato</option>
+                        <option value="">Guerrero</option>
+                        <option value="">Hidalgo</option>
+                        <option value="">Jalisco</option>
+                        <option value="">Michoacán</option>
+                        <option value="">Morelos</option>
+                        <option value="">Nayarit</option>
+                        <option value="">Nuevo León</option>
+                        <option value="">Oaxaca</option>
+                        <option value="">Puebla</option>
+                        <option value="">Querétaro</option>
+                        <option value="">Quintana Roo</option>
+                        <option value="">San Luis Potosí</option>
+                        <option value="">Sinaloa</option>
+                        <option value="">Sonora</option>
+                        <option value="">Tabasco</option>
+                        <option value="">Tamaulipas</option>
+                        <option value="">Tlaxcala</option>
+                        <option value="">Veracruz</option>
+                        <option value="">Yucatán</option>
+                        <option value="">Zacatecas</option>
+                      </select>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group col-md-12">
+                    <label for="inputCP">C.P.</label>
+                    <input type="text" class="form-control" name="cp" maxlength="5" required />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
     </div>
-    <h3 style="color:black"> Recuerda que igual nos puedes contactar a través de nuestras redes sociales  </h3>
-  </div>
-  <br><br><br>
+
+    <!-- Ingresar datos de tarjeta -->
+
+    <div class="container">
+      <h1 class="" id="contacto">Ingresa tus datos de pago</h1>
+      <div class="row">
+        <div class="col">
+
+          <form> <!-- Pensar si dejarlo o no -->
+
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="form-group col-md-12">
+                    <label for="inputNombretarjeta">Nombre del tarjetahabiente</label>
+                    <input type="text" class="form-control" name="nombretarjeta" required placeholder="Nombre que aparece en la tarjeta"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="form-group col-md-12">
+                    <label for="inputNumTarjeta">Número de tarjeta</label>
+                    <input type="text" class="form-control" name="NumTarjeta" maxlength="16" required placeholder="16 dígitos"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="form-group col-md-12">
+                    <label for="inputFechaExpiracion">Fecha de Expiración</label>
+                    <input type="text" class="form-control" name="FechaExpiracion" maxlength="5" required placeholder="MM/YY" />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group col-md-12">
+                    <label for="inputCP">CVV</label>
+                    <input type="text" class="form-control" name="cp" maxlength="3" required placeholder="3 dígitos al reverso de la tarjeta"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <br><br><br>
 </div>
 
 

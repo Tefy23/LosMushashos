@@ -1,0 +1,98 @@
+/*ENCABEZADO-----------------------------------------------------------------------------------------------------------
+Este código de estilo es para que los botones de "Dama", "Caballero" y "Accesorios" cambien de color al hacer click.*/
+a.nav-link {
+  border: none;
+color: black;
+width: 100%;
+font-size: 18px;
+border-radius: 200px
+}
+
+a.nav-link:hover {
+  background-color:black;
+  color: white;
+  background-color:black;
+}
+img, svg {
+  margin: 4px;
+}
+
+/*----------------INPUT PARA BÚSQUEDA----------------------------------*/
+
+.icon-placeholder {
+PADDING: 0.25em 0.6em;
+border-radius: 0.3rem;
+border: 1px solid #d3d6e4;
+text-align: center;
+font-size: small;
+box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+width: 25%;
+margin-right: .80em;
+}
+.icon-placeholder::placeholder {
+font-family: "Font Awesome 5 Free"; 
+font-weight: 900; 
+}
+.icon-placeholder:focus {
+outline: none;
+}
+/*---------------- ICON STYLE------------------------------------------*/
+.icon {
+width: 20px; 
+height: 23px;
+margin-right: .40em;
+}
+.icon-last{
+width: 20px; 
+height: 23px;
+margin-right: 5em;
+margin-left: .40em;
+}
+
+body {
+background: #EEE;
+}
+
+
+/*.............................................................*/
+
+h1, h2, h3, h6{
+  text-align:center;
+}
+
+/* Info */
+.rectangle{
+  width: 40%;
+  height: 300px;
+  background: gray;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+/* Info */
+
+.container{
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.card{
+  padding: 20px;
+  margin-bottom: 20px;
+  background: gray;
+}
+
+.msj-error{
+	margin: 0;
+	color: black;
+}
+
+/* Form */
+form { 
+  width: 50%;
+  margin-left : 25%
+}
+/*  */
