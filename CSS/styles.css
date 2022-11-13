@@ -14,20 +14,20 @@ a.nav-link:hover {
   background-color: black;
 }
 
-img,
+/* img,
 svg {
   margin: 4px;
-}
+} */
 
 header {
   background-color: #ffffff;
   width: 100%;
   z-index: 10;
 }
-
+/* 
 main {
   padding-top: 200px;
-}
+} */
 
 /*----------------INPUT PARA BÚSQUEDA----------------------------------*/
 
@@ -68,14 +68,12 @@ main {
 body {
   background: #EEE;
 }
-
 /*---Cookies--*/
 
 .cookies {
   height: 10rem;
   border-color: #000000;
 }
-
 /*------------cookies--------------*/
 
 .cajacookies {
@@ -105,6 +103,11 @@ body {
 background: #EEE;
 }
 
+li {
+list-style: none;
+padding: 0;
+}
+
 /* .cuadro {
   display: flex;
    flex-wrap: wrap;
@@ -118,11 +121,12 @@ justify-content: center;
 .carousel {
   display: flex;
   border-radius: 8px;
-
+  
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   background: white;
   transform: translateZ(0);
-  height: 350px;
+  height: 300px;
+  /* height: 350px; */
   -webkit-overflow-scrolling: touch;
   /* for tablets */
 }
@@ -133,12 +137,12 @@ justify-content: center;
 
 .carousel[data-at*=left]>.wrap::before {
   opacity: 1;
-  text-indent: -50px;
+  text-indent: -35px;
 }
 
 .carousel[data-at*=right]>.wrap::after {
   opacity: 1;
-  text-indent: -50px;
+  text-indent: -35px;
 }
 
 .carousel::after {
@@ -157,11 +161,15 @@ justify-content: center;
   transition: opacity 0.2s, bottom 0.2s;
 }
 
-.carousel>.wrap {
-  overflow: hidden;
-  border-radius: 4px;
+.carousel > .wrap {
+overflow: hidden;
+border-radius: 4px;
+height: inherit;
 }
 
+
+
+@media (min-width: 768px) {
 .carousel>.wrap::before,
 .carousel>.wrap::after {
   content: "‹";
@@ -182,6 +190,10 @@ justify-content: center;
   pointer-events: none;
   transition: 0.2s ease-out;
   background: linear-gradient(to right, rgba(80, 80, 80, 0.15), transparent);
+
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .carousel>.wrap::after {
@@ -190,34 +202,37 @@ justify-content: center;
   right: 0;
 }
 
+}
+
+
+
+
 .carousel>.wrap>ul {
   list-style: none;
   white-space: nowrap;
-  height: 300px;
-
+  height: inherit;
+  padding: 0;
+}
+.carousel > .wrap > ul > li {
+display: inline-block;
+vertical-align: middle;
+height: inherit;
+margin: 0 0 0 5px;
+position: relative;
+overflow: hidden;
+transition: 1s ease-out;
 }
 
-.carousel>.wrap>ul>li {
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
-  margin: 0 0 0 5px;
-  position: relative;
-  overflow: hidden;
-  transition: 1s ease-out;
-}
-
-.carousel>.wrap>ul>li:first-child {
+.carousel>.wr > ul > li:first-child {
   margin: 0;
 }
-
-.carousel>.wrap>ul>li>img {
-  display: block;
-  height: 90%;
-  margin: auto;
-  position: relative;
-  z-index: 1;
-  transition: 3s ease;
+.carousel > .wrap > ul > li > img {
+display: block;
+height: 100%;
+margin: auto;
+position: relative;
+z-index: 1;
+transition: 3s ease;
 }
 
 .carousel {
@@ -227,7 +242,7 @@ justify-content: center;
   bottom: 0;
   left: 0;
   width: 100%;
-
+ 
   margin: auto;
   box-shadow: 0 2px 3px rgba(80, 80, 80, 0.15);
 }
@@ -236,17 +251,18 @@ justify-content: center;
 /*---------------CONTENERDOR DE IMAGEN BITTERSWEET---------------------*/
 .bitter {
   background-image: url(/assets/img/logo/Mesa\ de\ trabajo\ 5.png);
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  height: 33em;
-  display: block;
-  place-content: center;
+  /* background-attachment: fixed; */
+  /* background-size: 100% 100%; */
+  /* height: 33em; */
+  background-size: cover;
+  /* display: block; */
+  /* place-content: center; */
   box-shadow: 0 0 30px 0 black;
 }
-.bitterOculto{
+/* .bitterOculto{
   background-image: url(/assets/img/logo/coleccion-bittersweet-01-01.png);
-}
-.coleccion{
+} */
+/* .coleccion{
   display: grid;
   place-content: center;
   margin: 0;
@@ -256,19 +272,19 @@ justify-content: center;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   grid-template-columns: auto auto auto;
-}
+} */
 
 
 /*---------------CONTENERDOR DE CABALLERO------------------------*/
 .man {
   background-image: url(/assets/img/logo/Mesa\ de\ trabajo\ 7.png);
-  background-attachment: fixed;
-  background-size: 100% 100%;
+  /* background-attachment: fixed;
+  background-size: 100% 100%; */
+  background-size: cover;
   box-shadow: 0 0 30px 0 black;
-  height: 45rem;
+  /* height: 45rem; */
 }
-
-.ellos {
+.ellos{
   height: 5rem;
   width: 10rem;
 }
@@ -284,9 +300,8 @@ justify-content: center;
   box-shadow: 0px 0px 26px 1px rgb(0, 0, 0);
  
 }
-
-/*------------CODIGO DE BOTON SHOP NOW CABALLERO---------*/
-
+              /*------------CODIGO DE BOTON SHOP NOW CABALLERO---------*/
+              
 .cta {
   border: none;
   background: none;
@@ -337,16 +352,25 @@ justify-content: center;
   transform-origin: bottom left;
 }
 
-/*-------------ICONOS DE CATEGORIA - ROPA -----*/
+/*-------------ICONOS DE CATEGORIA - ROPA ---cont'--*/
 .categoria {
   background-image: url(/assets/img/logo/Mesa\ de\ trabajo\ 8.png);
-  background-attachment: fixed;
-  background-size: 100% 100%;
+  /* background-attachment: fixed;
+  background-size: 100% 100%; */
+  background-size: cover;
 }
-
+.categoria__container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .categoria__container {
+    max-width: 75%;
+  }
+}
 .iconoropa {
   height: 150px;
-  width: 150px;
+  width:  150px;
   padding: 15px;
 }
 
@@ -361,13 +385,12 @@ justify-content: center;
   background-color: #000000;
   color: white;
   box-shadow: 0px 0px 12px 1px rgb(0, 0, 0);
-  height: 35rem;
+  /* height: 35rem; */
 }
-
 .btn-comunidad {
   height: 10rem;
   width: 10rem;
-
+  
 }
 
 /*-----------Imagen del producto----------------------------------------------------------------*/
@@ -465,18 +488,6 @@ label.aro {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-}
-
-/*------------Carrito de compras---------------- */
-.card-cart {
-  top: 151px;
-}
-
-div.inactive {
-  display: none;
-}
-.clickCarrito:hover{
-  cursor: pointer;
 }
 
 /* -------FUENTE GENERAL--------- */
