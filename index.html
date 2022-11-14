@@ -55,9 +55,9 @@
               <div class="d-flex gap-3 gap-lg-4 justify-content-center align-items-center">
                 <img class="icon mx-auto dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false"
                   src="../assets/img/ico/usuario barra principal.png">
-                <a class="d-flex" href="prueba.html"><img class="icon mx-auto"
+                <a class="d-flex clickCarrito" href="#" id="clickCarrito"><img class="icon mx-auto"
                     src="../assets/img/ico/Bolsa de compra.png"></a>
-                <a class="d-flex" href="prueba.html"><img class="icon mx-auto" src="../assets/img/ico/Wish.png"
+                <a class="d-flex" href="#"><img class="icon mx-auto" src="../assets/img/ico/Wish.png"
                     class="float-end"></a>
               </div>
             </div>
@@ -75,6 +75,18 @@
         </div>
       </div>
     </nav>
+     <!-- Carrito de compras -->
+     <div class="card card-cart position-absolute end-0 inactive" style="width: 18rem;">
+      <div class="card-header text-center fw-bolder">
+         Tu Bolsa
+      </div>
+      <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+      </ul>
+      <a href="#" class="btn btn-warning btn-sm gocart">Ir a la bolsa <img
+              src="./../assets/ico/Bolsa de compra.png" alt="bolsa de compra" class="buy_icos mx-2"></a>
+      <a href="#" class="btn btn-warning btn-sm border border-2 border-dark mt-1 buyNow"><b>Comprar ahora</b></a>
+  </div>
   </header>
 
 <!--DIVISION DE PÀGINA Y COLECCION-->
@@ -349,6 +361,7 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
     <script src="./JS/cookies.js"></script>
+    <script src="./../JS/descripcion.js"></script>
 </body>
 
 </html>
