@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pago</title>
+  <!-- Fuentes extraidas de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="./../CSS/styles.css">
+  <link rel="stylesheet" href="../CSS/direccionpago.css">
+  <!--ENLACE Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!--Icono Superior con Logo WS-->
+  <link rel="icon" type="image/x-icon" href="./../assets/img/logo/ws-boton.png">
+  <!--ENLACE CDN Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+   <!-- HEADER -->
+   <header class="row-fluid position-fixed border-bottom">
+    <!--ENCABEZADO BASE PAGINA PRINCIPAL-->
+    <!--LOGO PRINCPIPAL-->
+    <a href="../index.html"><img src="../assets/img/logo/wicsha-logo-secundario.png" class="img-fluid"
+            align="top-left" alt="wicsha-logo-principal" id="logoPrincipal"></a>
+
+    <!--BARRA DE NAVEGACION-->
+    <!--<div class="container-sm mt-2">-->
+    <nav class="navbar navbar-expand-sm">
+        <div class="container mt-4 gap-2 gap-lg-4">
+            <!--  -->
+            <div class="d-flex flex-grow-1 flex-sm-grow-0 gap-2 order-sm-1">
+                <button class="navbar-toggler px-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="text-center d-flex flex-grow-1 justify-content-end gap-2 gap-lg-4">
+                    <form class="d-flex flex-grow-1 flex-sm-grow-0 justify-content-end" style="min-width: 200px;"
+                        role="Buscar">
+                        <input class="icon-placeholder w-100 m-0" type="search" placeholder="   B u s c a r "
+                            aria-label="Search">
+                    </form>
+                    <!--ICONOS superiores-->
+        <div class="dropdown-center d-flex gap-2">              
+          <div class="d-flex gap-3 gap-lg-4 justify-content-center align-items-center">
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Perfil</a></li>
+              <li><a class="dropdown-item" href="/HTML/registro.html">Registrarse</a></li>
+            </ul>
+            <img class="icon mx-auto dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" src="../assets/img/ico/usuario barra principal.png">
+            <a class="d-flex" href="prueba.html"><img class="icon mx-auto" src="../assets/img/ico/Bolsa de compra.png"></a>
+            <a class="d-flex" href="prueba.html"><img class="icon mx-auto" src="../assets/img/ico/Wish.png" class="float-end"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+            <!-- Enlaces -->
+            <div class="collapse navbar-collapse text-center justify-content-center gap-2 gap-lg-5 order-sm-0 flex-sm-grow-1"
+                id="navbarSupportedContent">
+                <a class="nav-link py-2 py-sm-0" href="productos.html">Todes</a>
+                <a class="nav-link py-2 py-sm-0" href="productos.html">Ellas</a>
+                <a class="nav-link py-2 py-sm-0" href="productos.html">Ellos</a>
+                <a class="nav-link py-2 py-sm-0" href="productos.html">Accesorios</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+  <main>
+<div class="card-header" style="background-image: url('../assets/img/logo/ellas\ fondo\ jpg.jpg');">
+    
+    <!-- Ingresar datos de direccion -->
+
+    <div class="container">
+      <h1 class="" id="contacto">Ingresa tus datos de entrega</h1>
+      <div class="row">
+        <div class="col">
+          <form>
+
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="form-group col-md-12">
+                    <label for="inputNombre">Nombre</label>
+                    <input type="text" class="form-control" name="nombre" required />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group col-md-12">
+                    <label for="inputNombre">Apellido</label>
+                    <input type="text" class="form-control" name="apellido" required />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="form-group col-md-12">
+                    <label for="inputNombre">Teléfono celular</label>
+                    <input type="text" class="form-control" name="tel" maxlength="10" required />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group col-md-12">
+                    <label for="Correo">Correo electrónico </label>
+                    <input type="email" class="form-control" name="correo" required />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="form-group col-md-12">
+                    <label for="inputAddress">Calle</label>
+                    <input type="text" class="form-control" name="address" required />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group col-md-12">
+                    <label for="inputNum">Num</label>
+                    <input type="text" class="form-control" name="num" maxlength="5" required />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group col-md-12">
+                      <label for="inputCity">Estado</label>
+                      <p class="msj-error" id="valEstado"></p>
+                      <select id="inputState" class="form-control">
+                        <option value="">Selecciona...</option>
+                        <option value="">Aguascalientes</option>
+                        <option value="">Baja California</option>
+                        <option value="">Baja California Sur</option>
+                        <option value="">Campeche</option>
+                        <option value="">Chiapas</option>
+                        <option value="">Chihuahua</option>
+                        <option value="">Ciudad de México</option>
+                        <option value="">Coahuila</option>
+                        <option value="">Colima</option>
+                        <option value="">Durango</option>
+                        <option value="">Estado de México</option>
+                        <option value="">Guanajuato</option>
+                        <option value="">Guerrero</option>
+                        <option value="">Hidalgo</option>
+                        <option value="">Jalisco</option>
+                        <option value="">Michoacán</option>
+                        <option value="">Morelos</option>
+                        <option value="">Nayarit</option>
+                        <option value="">Nuevo León</option>
+                        <option value="">Oaxaca</option>
+                        <option value="">Puebla</option>
+                        <option value="">Querétaro</option>
+                        <option value="">Quintana Roo</option>
+                        <option value="">San Luis Potosí</option>
+                        <option value="">Sinaloa</option>
+                        <option value="">Sonora</option>
+                        <option value="">Tabasco</option>
+                        <option value="">Tamaulipas</option>
+                        <option value="">Tlaxcala</option>
+                        <option value="">Veracruz</option>
+                        <option value="">Yucatán</option>
+                        <option value="">Zacatecas</option>
+                      </select>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group col-md-12">
+                    <label for="inputCP">C.P.</label>
+                    <input type="text" class="form-control" name="cp" maxlength="5" required />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ingresar datos de tarjeta -->
+
+    <div class="container">
+      <h1 class="" id="contacto">Ingresa tus datos de pago</h1>
+      <div class="row">
+        <div class="col">
+
+          <form> <!-- Pensar si dejarlo o no -->
+
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="form-group col-md-12">
+                    <label for="inputNombretarjeta">Nombre del tarjetahabiente</label>
+                    <input type="text" class="form-control" name="nombretarjeta" required placeholder="Nombre que aparece en la tarjeta"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="form-group col-md-12">
+                    <label for="inputNumTarjeta">Número de tarjeta</label>
+                    <input type="text" class="form-control" name="NumTarjeta" maxlength="16" required placeholder="16 dígitos"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="form-group col-md-12">
+                    <label for="inputFechaExpiracion">Fecha de Expiración</label>
+                    <input type="text" class="form-control" name="FechaExpiracion" maxlength="5" required placeholder="MM/YY" />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group col-md-12">
+                    <label for="inputCP">CVV</label>
+                    <input type="text" class="form-control" name="cp" maxlength="3" required placeholder="3 dígitos al reverso de la tarjeta"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <br><br><br>
+</div>
+
+
+  </main>
+    <!-------------------------- Footer de la pagina ------------------------>
+    <hr>
+    <footer class="container text-center ">
+
+        <div class="d-md-none">
+            <!-- FOOTER MOBILE -->
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- CONTACTO -->
+                    <p>
+                        <!-- boton que despliega -->
+                        <a class="d-grid btn btn-light collapsed" data-bs-toggle="collapse" href="#collapseContacto"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            CONTACTO
+                        </a>
+                    </p>
+                    <div class="collapse list-group" id="collapseContacto">
+                        <!-- Contenido que despliega el boton -->
+                        <a href="contacto.html" class="list-group-item list-group-item-action">Envianos un
+                            Mensaje</a>
+                        <a href="https://wa.me/525562280518" class="list-group-item list-group-item-action" > Chat en WhatsApp </a>
+                        
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <!-- AYUDA -->
+                    <p>
+                        <!-- boton que despliega -->
+                        <a class="d-grid btn btn-light collapsed" data-bs-toggle="collapse" href="#collapseAyuda"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            AYUDA
+                        </a>
+                    </p>
+                    <div class="collapse list-group" id="collapseAyuda">
+                        <!-- Contenido que despliega el boton -->
+                        <a href="" class="list-group-item list-group-item-action">Preguntas Frecuentes</a>
+                        <a href="" class="list-group-item list-group-item-action">Estatus de Pedido</a>
+                        <a href="" class="list-group-item list-group-item-action">Envíos</a>
+                        <a href="" class="list-group-item list-group-item-action">Factura</a>
+                        <a href="" class="list-group-item list-group-item-action">Devoluciones</a>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <!-- SOBRE NOSOTROS -->
+                    <p>
+                        <!-- boton que despliega -->
+                        <a class="d-grid btn btn-light collapsed" data-bs-toggle="collapse" href="#collapseNosotros"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            SOBRE NOSOTROS
+                        </a>
+                    </p>
+                    <div class="collapse list-group" id="collapseNosotros">
+                        <!-- Contenido que despliega el boton -->
+                        <a href="acercade.html#nosotros" class="list-group-item list-group-item-action">¿Quiénes
+                            somos?</a>
+                        <a href="acercade.html#colabora" class="list-group-item list-group-item-action">Trabaja
+                            con Nosotros</a>
+                        <a href="acercade.html#comunidad"
+                            class="list-group-item list-group-item-action">Comunidad</a>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="row">
+                <!-- REDES SOCIALES -->
+
+                <div class="col"><a href=""><i class="bi bi-facebook"></i></a> </div>
+                <div class="col"><a href=""><i class="bi bi-instagram" style="color:palevioletred;"></i></a> </div>
+                <div class="col"><a href=""><i class="bi bi-tiktok" style="color:black;"></i></a> </div>
+                <div class="col"><a href=""><i class="bi bi-pinterest" style="color:red;"></i></a> </div>
+            </div>
+        </div>
+
+        <!-- ======================================================= -->
+
+        <div class="d-none d-md-block">
+            <!-- FOOTER WEB -->
+            <div class="row">
+
+                <div class="col-md-3">
+                    <!--CONTACTO -->
+                    <ul class="list-group list-group-flush">
+                        <p class="list-group">CONTACTO</p>
+                        <a href="contacto.html" class="list-group-item">Envianos un mensaje</a>                        
+                        <a href="https://wa.me/525562280518" class="list-group-item" > Chat en WhatsApp </a>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <!--AYUDA -->
+                    <ul class="list-group list-group-flush">
+                        <p class="list-group">AYUDA</p>
+                        <a class="list-group-item">Preguntas Frecuentes</a>
+                        <a class="list-group-item">Estatus de Pedido</a>
+                        <a class="list-group-item">Envíos</a>
+                        <a class="list-group-item">Factura</a>
+                        <a class="list-group-item">Devoluciones</a>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <!--SOBRE NOSOTROS -->
+                    <ul class="list-group list-group-flush">
+                        <p class="list-group">SOBRE NOSOTROS</p>
+                        <a href="acercade.html#nosotros" class="list-group-item">¿Quiénes somos?</a>
+                        <a href="acercade.html#colabora" class="list-group-item">Trabaja con Nosotros</a>
+                        <a href="acercade.html#comunidad" class="list-group-item">Comunidad</a>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <!--REDES SOCIALES -->
+                    <ul class="list-group list-group-flush">
+                        <p class="list-group">REDES SOCIALES</p>
+                        <li class="list-group-item">
+                            <br>
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-4"><a href=""><i class="bi bi-facebook"></i></a></div>
+                                <div class="col-md-4"><a href=""><i class="bi bi-instagram"
+                                            style="color:palevioletred;"></i></a></div>
+                                <div class="col-md-2"></div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-4"><a href=""><i class="bi bi-tiktok" style="color:black;"></i></a>
+                                </div>
+                                <div class="col-md-4"><a href=""><i class="bi bi-pinterest" style="color:red;"></i></a>
+                                </div>
+                                <div class="col-md-2"></div>
+                            </div>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <!-- Terminos y condiciones -->
+            <div class="col-md-6">
+              <p>Copyright 2022 WICSHA</p>
+            </div>
+            <div class="col-md-6">
+              <a href="../PDF/Condiciones-de-uso-Wicsha.pdf" target="_blank">Términos y condiciones</a>
+              <span> | </span>
+              <a href="../HTML/cookies.html" target="_blank">Políticas de cookies</a>
+              <span> | </span>
+              <a href="../PDF/Política-de-Privacidad-Wicsha.pdf" target="_blank">Políticas de Privacidad</a>
+            </div>
+          </div>
+    </footer>
+     <!--Cookies-->
+ 
+
+     <section class="cajacookies" id="caja">
+        <h2>¿Aceptas nuestras Cookies?</h2> 
+        <p>Éste sitio web usa cookies, si permanece aquí acepta su uso.
+          Puede leer más sobre el uso de cookies en nuestra <a href="../PDF/Política-de-Privacidad-Wicsha.pdf">política de privacidad</a>.</p>
+        
+           <p> <button onclick="aceptarCookies()" class="pull-right" id="datosLocal"><i class="fa fa-times"></i> Aceptar y cerrar éste mensaje</button></p>
+           
+       
+    </section>
+  <!--****SCRIPT*******-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="../JS/scripts.js"></script>
+  <script src="../JS/contacto.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+    <script src="../JS/cookies.js"></script>
+</body>
+
+</html>
