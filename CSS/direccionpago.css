@@ -90,84 +90,9 @@ h1, h2, h3, h6{
 	color: black;
 }
 
-/* BOTTON */
-/* From uiverse.io by @adamgiebl */
-button {
-  font-family: inherit;
-  font-size: 20px;
-  background: palevioletred;
-  color: white;
-  padding: 12px 20px;
-  padding-left: 12px;
-  display: flex;
-  align-items: center;
-  border: none;
-  border-radius: 16px;
-  overflow: hidden;
-  transition: all 0.2s;
-  float: right;
- }
- 
- button span {
-  display: block;
-  margin-left: 0.3em;
-  transition: all 0.3s ease-in-out;
- }
- 
- button svg {
-  display: block;
-  transform-origin: center center;
-  transition: transform 0.3s ease-in-out;
- }
- 
- button:hover .svg-wrapper {
-  animation: fly-1 0.6s ease-in-out infinite alternate;
- }
- 
- button:hover svg {
-  transform: translateX(1.2em) rotate(45deg) scale(1.1);
- }
- 
- button:hover span {
-  transform: translateX(5em);
- }
- 
- button:active {
-  transform: scale(0.95);
- }
- 
- @keyframes fly-1 {
-  from {
-   transform: translateY(0.1em);
-  }
- 
-  to {
-   transform: translateY(-0.1em);
-  }
- }
-
-
-/* FIN BOTTON */
-
-
-
-/* ESTILO DE ICONOS */
-img.circle-icon {
-  background:gray;
-  width: 80px;
-  height: 80px;
-  border-radius: 40%;
-  text-align: center;
-  line-height: 100px;
-  vertical-align: middle;
-  padding: 20px;
+/* Form */
+form { 
+  width: 50%;
+  margin-left : 25%
 }
-/* ----------------- */
-
-
-
-
-
-
-
 /*  */

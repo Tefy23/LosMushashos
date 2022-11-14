@@ -26,131 +26,206 @@
 </head>
 
 <body>
-   <!-- HEADER -->
-   <header class="row-fluid position-fixed border-bottom">
+  <!-- HEADER -->
+  <header class="row-fluid position-fixed border-bottom">
     <!--ENCABEZADO BASE PAGINA PRINCIPAL-->
     <!--LOGO PRINCPIPAL-->
-    <a href="../index.html"><img src="../assets/img/logo/wicsha-logo-secundario.png" class="img-fluid"
-            align="top-left" alt="wicsha-logo-principal" id="logoPrincipal"></a>
+    <a href="../index.html"><img src="../assets/img/logo/wicsha-logo-secundario.png" class="img-fluid" align="top-left"
+        alt="wicsha-logo-principal" id="logoPrincipal"></a>
 
     <!--BARRA DE NAVEGACION-->
     <!--<div class="container-sm mt-2">-->
     <nav class="navbar navbar-expand-sm">
-        <div class="container mt-4 gap-2 gap-lg-4">
-            <!--  -->
-            <div class="d-flex flex-grow-1 flex-sm-grow-0 gap-2 order-sm-1">
-                <button class="navbar-toggler px-2" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="text-center d-flex flex-grow-1 justify-content-end gap-2 gap-lg-4">
-                    <form class="d-flex flex-grow-1 flex-sm-grow-0 justify-content-end" style="min-width: 200px;"
-                        role="Buscar">
-                        <input class="icon-placeholder w-100 m-0" type="search" placeholder="   B u s c a r "
-                            aria-label="Search">
-                    </form>
-                    <!--ICONOS superiores-->
-        <div class="dropdown-center d-flex gap-2">              
-          <div class="d-flex gap-3 gap-lg-4 justify-content-center align-items-center">
-            <ul class="dropdown-menu dropdown-menu-end">
-              <li><a class="dropdown-item" href="#">Perfil</a></li>
-              <li><a class="dropdown-item" href="/HTML/registro.html">Registrarse</a></li>
-            </ul>
-            <img class="icon mx-auto dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" src="../assets/img/ico/usuario barra principal.png">
-            <a class="d-flex" href="prueba.html"><img class="icon mx-auto" src="../assets/img/ico/Bolsa de compra.png"></a>
-            <a class="d-flex" href="prueba.html"><img class="icon mx-auto" src="../assets/img/ico/Wish.png" class="float-end"></a>
+      <div class="container mt-4 gap-2 gap-lg-4">
+        <!--  -->
+        <div class="d-flex flex-grow-1 flex-sm-grow-0 gap-2 order-sm-1">
+          <button class="navbar-toggler px-2" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="text-center d-flex flex-grow-1 justify-content-end gap-2 gap-lg-4">
+            <form class="d-flex flex-grow-1 flex-sm-grow-0 justify-content-end" style="min-width: 200px;" role="Buscar">
+              <input class="icon-placeholder w-100 m-0" type="search" placeholder="   B u s c a r "
+                aria-label="Search">
+            </form>
+            <!--ICONOS superiores-->
+            <div class="dropdown-center d-flex gap-2">
+              <div class="d-flex gap-3 gap-lg-4 justify-content-center align-items-center">
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Perfil</a></li>
+                  <li><a class="dropdown-item" href="/HTML/registro.html">Registrarse</a></li>
+                </ul>
+                <img class="icon mx-auto dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                  src="../assets/img/ico/usuario barra principal.png">
+                <a class="d-flex" href="prueba.html"><img class="icon mx-auto"
+                    src="../assets/img/ico/Bolsa de compra.png"></a>
+                <a class="d-flex" href="prueba.html"><img class="icon mx-auto" src="../assets/img/ico/Wish.png"
+                    class="float-end"></a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-            <!-- Enlaces -->
-            <div class="collapse navbar-collapse text-center justify-content-center gap-2 gap-lg-5 order-sm-0 flex-sm-grow-1"
-                id="navbarSupportedContent">
-                <a class="nav-link py-2 py-sm-0" href="productos.html">Todes</a>
-                <a class="nav-link py-2 py-sm-0" href="productos.html">Ellas</a>
-                <a class="nav-link py-2 py-sm-0" href="productos.html">Ellos</a>
-                <a class="nav-link py-2 py-sm-0" href="productos.html">Accesorios</a>
-            </div>
+        <!-- Enlaces -->
+        <div
+          class="collapse navbar-collapse text-center justify-content-center gap-2 gap-lg-5 order-sm-0 flex-sm-grow-1"
+          id="navbarSupportedContent">
+          <a class="nav-link py-2 py-sm-0" href="productos.html">Todes</a>
+          <a class="nav-link py-2 py-sm-0" href="productos.html">Ellas</a>
+          <a class="nav-link py-2 py-sm-0" href="productos.html">Ellos</a>
+          <a class="nav-link py-2 py-sm-0" href="productos.html">Accesorios</a>
         </div>
+      </div>
     </nav>
-</header>
+    <!-- Carrito de compras -->
+    <div class="card card-cart position-absolute end-0 inactive" style="width: 18rem;">
+      <div class="card-header text-center fw-bolder">
+        Carrito
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">An item</li>
+      </ul>
+      <a href="#" class="btn btn-warning btn-sm gocart">Ir a la bolsa <img src="./../assets/ico/Bolsa de compra.png"
+          alt="bolsa de compra" class="buy_icos mx-2"></a>
+      <a href="#" class="btn btn-warning btn-sm border border-2 border-dark mt-1 buyNow"><b>Comprar ahora</b></a>
+    </div>
+  </header>
 
   <main>
-<div class="card-header" style="background-image: url('../assets/img/logo/ellas-01.png');">
-    <!-- TITLE -->
-    <div class="container">
-      <h1 class="" id="contacto">PONERSE EN CONTACTO</h1>
-    </div>
-    <div class="card bg-secondary text-center">
+    <div class="card-header" style="background-image: url('../assets/img/logo/ellas-01.png');">
+      <!-- TITLE -->
+      <div class="container">
+        <h1 class="" id="contacto">PONERSE EN CONTACTO</h1>
+      </div>
+      <div class="card bg-secondary text-center">
         <h3>
           Si deseas consultar mayor información sobre nuestros productos o tienes alguna duda al respecto, no dudes en
           escribirnos por cualquiera de los siguientes medios.
-          </h3>
-    </div>
+        </h3>
+      </div>
 
-    <!-- TIPOS DE CONTACTOS -->
-    <div class="container text-center">
-      <div class="row">
-        <div class="col">
-          <div><img src="../assets/img/ico/location.png" alt="iconTelefono" class="circle-icon"></div>
-          <strong>Dirección.</strong>
-          <div class="col"> <a
-              href="https://www.google.com.mx/maps/place/San+Guillermo+553,+Ajusco,+Coyoac%C3%A1n,+04600+Ciudad+de+M%C3%A9xico,+CDMX/@19.3129734,-99.1705441,17z/data=!4m5!3m4!1s0x85ce004128ea6b09:0xabbc212403ad7e8!8m2!3d19.3108864!4d-99.1628049"
-              style="text-decoration: none ; color:black">Tlalpán, CDMX. CP 14490 </a> </div>
-        </div>
-        <div class="col">
-          <div><img src="../assets/img/ico/telefono.png" alt="iconTelefono" class="circle-icon"></div>
-          <strong>Teléfono.</strong>
-          <div class="col"> <a href="tel:5562280518" style="text-decoration: none ; color:black">+52
-              5562280518</a></div>
-        </div>
-        <div class="col">
-          <div><img src="../assets/img/ico/correo.png" alt="iconTelefono" class="circle-icon"></div>
-          <strong>Correo.</strong>
-          <div class="col"> <a href="mailto:wicsha.mx@gmail.com"
-              style="text-decoration: none ; color:black">wicsha.mx@gmail.com</a></div>
+      <!-- TIPOS DE CONTACTOS -->
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div><img src="../assets/img/ico/location.png" alt="iconTelefono" class="circle-icon"></div>
+            <strong>Dirección.</strong>
+            <div class="col"> <a
+                href="https://www.google.com.mx/maps/place/San+Guillermo+553,+Ajusco,+Coyoac%C3%A1n,+04600+Ciudad+de+M%C3%A9xico,+CDMX/@19.3129734,-99.1705441,17z/data=!4m5!3m4!1s0x85ce004128ea6b09:0xabbc212403ad7e8!8m2!3d19.3108864!4d-99.1628049"
+                style="text-decoration: none ; color:black">Tlalpán, CDMX. CP 14490 </a> </div>
+          </div>
+          <div class="col">
+            <div><img src="../assets/img/ico/telefono.png" alt="iconTelefono" class="circle-icon"></div>
+            <strong>Teléfono.</strong>
+            <div class="col"> <a href="tel:5562280518" style="text-decoration: none ; color:black">+52
+                5562280518</a></div>
+          </div>
+          <div class="col">
+            <div><img src="../assets/img/ico/correo.png" alt="iconTelefono" class="circle-icon"></div>
+            <strong>Correo.</strong>
+            <div class="col"> <a href="mailto:wicsha.mx@gmail.com"
+                style="text-decoration: none ; color:black">wicsha.mx@gmail.com</a></div>
+          </div>
         </div>
       </div>
+
+
+<<<<<<< HEAD
+      <!-- DEJAR EL MENSAJE / RELLENAR -->
+      <div class="container-md">
+        <h2 style="color:black"> Déjanos un mensaje</h2>
+
+        <div class="form-floating mb-3">
+          <input name="nombre" type="text" class="form-control bg-secondary text-light" id="floatingInput"
+            placeholder="Escribe tu nombre">
+          <label class="text-light" type="text" for="floatingInput">Nombre</label>
+          <p class="msj-error" id="errorNombre"></p>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input name="email" type="email" class="form-control bg-secondary text-light" id="floatingInput"
+            placeholder="Escribe tu correo ej. name@example.com">
+          <label class="text-light" for="floatingInput">Correo</label>
+          <p class="msj-error" id="errorEmail"></p>
+        </div>
+
+        <div class="form-floating mb-3">
+          <select class="form-select bg-secondary text-light" id="floatingSelect"
+            aria-label="Floating label select example">
+            <option selected="">...</option>
+            <option value="compra">Problemas con una compra</option>
+            <option value="prenda">¿No te quedó la prenda?</option>
+            <option value="Reembolso">Reembolso</option>
+            <option value="Reembolso">Trabaja con nosotros</option>
+          </select>
+          <label class="text-light" for="floatingSelect">Asunto</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <textarea name="mensaje" class="form-control bg-secondary text-light" placeholder="Leave a comment here"
+            id="floatingTextarea2" style="height: 200px"></textarea>
+          <label class="text-light" for="floatingTextarea2">Escribe tu mensaje</label>
+          <p class="msj-error" id="errorMensaje"></p>
+        </div>
+
+        <!-- BUTTON -->
+        <button>
+          <div class="svg-wrapper-1">
+            <div class="svg-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path fill="currentColor"
+                  d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                </path>
+              </svg>
+            </div>
+          </div>
+          <span>Enviar</span>
+        </button>
+      </div>
+      <br><br><br>
     </div>
-
-
+=======
     <!-- DEJAR EL MENSAJE / RELLENAR -->
     <div class="container-md">
-      <h2> Déjanos un mensaje</h2>
+      <h2 style="color:black"> Déjanos un mensaje</h2>
+      
+    <!-- Envío de comentarios al correo con formsubmit -->
+    <form action="https://formsubmit.co/wicsha.mx@gmail.com" method="POST">
 
       <div class="form-floating mb-3">
-        <input name="nombre" type="text" class="form-control bg-secondary text-light" id="floatingInput" placeholder="Escribe tu nombre">
+        <input name="name" type="text" class="form-control bg-secondary text-light" id="floatingInput" placeholder="Escribe tu nombre" required>
         <label class="text-light" type="text" for="floatingInput">Nombre</label>
         <p class="msj-error" id="errorNombre"></p>
       </div>
-      
+
       <div class="form-floating mb-3">
-        <input name="email" type="email" class="form-control bg-secondary text-light" id="floatingInput" placeholder="Escribe tu correo ej. name@example.com">
+        <input name="email" type="email" class="form-control bg-secondary text-light" id="floatingInput" placeholder="Escribe tu correo ej. name@example.com" required>
         <label class="text-light" for="floatingInput">Correo</label>
         <p class="msj-error" id="errorEmail"></p>
       </div>
 
-      <div class="form-floating mb-3">
-        <select class="form-select bg-secondary text-light" id="floatingSelect" aria-label="Floating label select example">
+    <div class="form-floating mb-3">
+        <select name="asunto" class="form-select bg-secondary text-light" id="floatingSelect" aria-label="Floating label select example" required>
           <option selected="">...</option>
-          <option value="compra">Problemas con una compra</option>
-          <option value="prenda">¿No te quedó la prenda?</option>
+          <option value="Problemas con una compra">Problemas con una compra</option>
+          <option value="¿No te quedó la prenda?">¿No te quedó la prenda?</option>
           <option value="Reembolso">Reembolso</option>
-          <option value="Reembolso">Trabaja con nosotros</option>
+          <option value="Trabaja con nosotros">Trabaja con nosotros</option>
+          <option value="Otro">Otro</option>
         </select>
         <label class="text-light" for="floatingSelect">Asunto</label>
       </div>
 
         <div class="form-floating mb-3">
-          <textarea name="mensaje" class="form-control bg-secondary text-light" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
+          <textarea name="mensaje" type="text" class="form-control bg-secondary text-light" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
           <label class ="text-light" for="floatingTextarea2">Escribe tu mensaje</label>
           <p class="msj-error" id="errorMensaje"></p>
         </div>
 
           <!-- BUTTON -->
-          <button>
+          <button type="submit">
             <div class="svg-wrapper-1">
               <div class="svg-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
@@ -161,185 +236,190 @@
             </div>
             <span>Enviar</span>
           </button>
+      <!-- Disable reCAPTCHA -->
+      <input type="hidden" name="_captcha" value="false">
+      <!-- Redireccionamos a nuestra pagina de gracias. -->
+      <input type="hidden" name="_next" value="https://wicsha.netlify.app/html/gracias">
+    </form>
     </div> 
-    <br><br>
+
+    <br><br><br>
 </div>
+>>>>>>> e965cd5cd9f835b61f925fa01b3ba4908764efc4
 
 
   </main>
-    <!-------------------------- Footer de la pagina ------------------------>
-    <hr>
-    <footer class="container text-center ">
+  <!-------------------------- Footer de la pagina ------------------------>
+  <hr>
+  <footer class="container text-center ">
 
-        <div class="d-md-none">
-            <!-- FOOTER MOBILE -->
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- CONTACTO -->
-                    <p>
-                        <!-- boton que despliega -->
-                        <a class="d-grid btn btn-light collapsed" data-bs-toggle="collapse" href="#collapseContacto"
-                            role="button" aria-expanded="false" aria-controls="collapseExample">
-                            CONTACTO
-                        </a>
-                    </p>
-                    <div class="collapse list-group" id="collapseContacto">
-                        <!-- Contenido que despliega el boton -->
-                        <a href="contacto.html" class="list-group-item list-group-item-action">Envianos un
-                            Mensaje</a>
-                        <a href="contacto.html" class="list-group-item list-group-item-action">TEL: 52+
-                            5612124578</a>
-                        <a href="contacto.html" class="list-group-item list-group-item-action">Iniciar Chat</a>
-                    </div>
-                </div>
+    <div class="d-md-none">
+      <!-- FOOTER MOBILE -->
+      <div class="row">
+        <div class="col-md-12">
+          <!-- CONTACTO -->
+          <p>
+            <!-- boton que despliega -->
+            <a class="d-grid btn btn-light collapsed" data-bs-toggle="collapse" href="#collapseContacto" role="button"
+              aria-expanded="false" aria-controls="collapseExample">
+              CONTACTO
+            </a>
+          </p>
+          <div class="collapse list-group" id="collapseContacto">
+            <!-- Contenido que despliega el boton -->
+            <a href="contacto.html" class="list-group-item list-group-item-action">Envianos un
+              Mensaje</a>
+            <a href="https://wa.me/525562280518" class="list-group-item list-group-item-action"> Chat en WhatsApp </a>
 
-                <div class="col-md-12">
-                    <!-- AYUDA -->
-                    <p>
-                        <!-- boton que despliega -->
-                        <a class="d-grid btn btn-light collapsed" data-bs-toggle="collapse" href="#collapseAyuda"
-                            role="button" aria-expanded="false" aria-controls="collapseExample">
-                            AYUDA
-                        </a>
-                    </p>
-                    <div class="collapse list-group" id="collapseAyuda">
-                        <!-- Contenido que despliega el boton -->
-                        <a href="" class="list-group-item list-group-item-action">Preguntas Frecuentes</a>
-                        <a href="" class="list-group-item list-group-item-action">Estatus de Pedido</a>
-                        <a href="" class="list-group-item list-group-item-action">Envíos</a>
-                        <a href="" class="list-group-item list-group-item-action">Factura</a>
-                        <a href="" class="list-group-item list-group-item-action">Devoluciones</a>
-
-
-                    </div>
-                </div>
-
-                <div class="col-md-12">
-                    <!-- SOBRE NOSOTROS -->
-                    <p>
-                        <!-- boton que despliega -->
-                        <a class="d-grid btn btn-light collapsed" data-bs-toggle="collapse" href="#collapseNosotros"
-                            role="button" aria-expanded="false" aria-controls="collapseExample">
-                            SOBRE NOSOTROS
-                        </a>
-                    </p>
-                    <div class="collapse list-group" id="collapseNosotros">
-                        <!-- Contenido que despliega el boton -->
-                        <a href="acercade.html#nosotros" class="list-group-item list-group-item-action">¿Quiénes
-                            somos?</a>
-                        <a href="acercade.html#colabora" class="list-group-item list-group-item-action">Trabaja
-                            con Nosotros</a>
-                        <a href="acercade.html#redes"
-                            class="list-group-item list-group-item-action">Colaboraciones</a>
-                    </div>
-                </div>
-
-            </div>
-            <hr>
-            <div class="row">
-                <!-- REDES SOCIALES -->
-
-                <div class="col"><a href=""><i class="bi bi-facebook"></i></a> </div>
-                <div class="col"><a href=""><i class="bi bi-instagram" style="color:palevioletred;"></i></a> </div>
-                <div class="col"><a href=""><i class="bi bi-tiktok" style="color:black;"></i></a> </div>
-                <div class="col"><a href=""><i class="bi bi-pinterest" style="color:red;"></i></a> </div>
-            </div>
-        </div>
-
-        <!-- ======================================================= -->
-
-        <div class="d-none d-md-block">
-            <!-- FOOTER WEB -->
-            <div class="row">
-
-                <div class="col-md-3">
-                    <!--CONTACTO -->
-                    <ul class="list-group list-group-flush">
-                        <p class="list-group">CONTACTO</p>
-                        <a href="contacto.html" class="list-group-item">Envianos un mensaje</a>
-                        <a href="contacto.html" class="list-group-item">52+ 5612124578</a>
-                        <a href="contacto.html" class="list-group-item">Iniciar Chat</a>
-                    </ul>
-                </div>
-
-                <div class="col-md-3">
-                    <!--AYUDA -->
-                    <ul class="list-group list-group-flush">
-                        <p class="list-group">AYUDA</p>
-                        <a class="list-group-item">Preguntas Frecuentes</a>
-                        <a class="list-group-item">Estatus de Pedido</a>
-                        <a class="list-group-item">Envíos</a>
-                        <a class="list-group-item">Factura</a>
-                        <a class="list-group-item">Devoluciones</a>
-                    </ul>
-                </div>
-
-                <div class="col-md-3">
-                    <!--SOBRE NOSOTROS -->
-                    <ul class="list-group list-group-flush">
-                        <p class="list-group">SOBRE NOSOTROS</p>
-                        <a href="acercade.html#nosotros" class="list-group-item">¿Quiénes somos?</a>
-                        <a href="acercade.html#colabora" class="list-group-item">Trabaja con Nosotros</a>
-                        <a href="acercade.html#redes" class="list-group-item">Colaboraciones</a>
-                    </ul>
-                </div>
-
-                <div class="col-md-3">
-                    <!--REDES SOCIALES -->
-                    <ul class="list-group list-group-flush">
-                        <p class="list-group">REDES SOCIALES</p>
-                        <li class="list-group-item">
-                            <br>
-                            <div class="row">
-                                <div class="col-md-2"></div>
-                                <div class="col-md-4"><a href=""><i class="bi bi-facebook"></i></a></div>
-                                <div class="col-md-4"><a href=""><i class="bi bi-instagram"
-                                            style="color:palevioletred;"></i></a></div>
-                                <div class="col-md-2"></div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-md-2"></div>
-                                <div class="col-md-4"><a href=""><i class="bi bi-tiktok" style="color:black;"></i></a>
-                                </div>
-                                <div class="col-md-4"><a href=""><i class="bi bi-pinterest" style="color:red;"></i></a>
-                                </div>
-                                <div class="col-md-2"></div>
-                            </div>
-
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <!-- Terminos y condiciones -->
-            <div class="col-md-6">
-              <p>Copyright 2022 WICSHA</p>
-            </div>
-            <div class="col-md-6">
-              <a href="../PDF/Condiciones-de-uso-Wicsha.pdf" target="_blank">Términos y condiciones</a>
-              <span> | </span>
-              <a href="../HTML/cookies.html" target="_blank">Políticas de cookies</a>
-              <span> | </span>
-              <a href="../PDF/Política-de-Privacidad-Wicsha.pdf" target="_blank">Políticas de Privacidad</a>
-            </div>
           </div>
-    </footer>
-     <!--Cookies-->
- 
+        </div>
 
-     <section class="cajacookies" id="caja">
-        <h2>¿Aceptas nuestras Cookies?</h2> 
-        <p>Éste sitio web usa cookies, si permanece aquí acepta su uso.
-          Puede leer más sobre el uso de cookies en nuestra <a href="../PDF/Política-de-Privacidad-Wicsha.pdf">política de privacidad</a>.</p>
-        
-           <p> <button onclick="aceptarCookies()" class="pull-right" id="datosLocal"><i class="fa fa-times"></i> Aceptar y cerrar éste mensaje</button></p>
-           
-       
-    </section>
+        <div class="col-md-12">
+          <!-- AYUDA -->
+          <p>
+            <!-- boton que despliega -->
+            <a class="d-grid btn btn-light collapsed" data-bs-toggle="collapse" href="#collapseAyuda" role="button"
+              aria-expanded="false" aria-controls="collapseExample">
+              AYUDA
+            </a>
+          </p>
+          <div class="collapse list-group" id="collapseAyuda">
+            <!-- Contenido que despliega el boton -->
+            <a href="" class="list-group-item list-group-item-action">Preguntas Frecuentes</a>
+            <a href="" class="list-group-item list-group-item-action">Estatus de Pedido</a>
+            <a href="" class="list-group-item list-group-item-action">Envíos</a>
+            <a href="" class="list-group-item list-group-item-action">Factura</a>
+            <a href="" class="list-group-item list-group-item-action">Devoluciones</a>
+
+
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <!-- SOBRE NOSOTROS -->
+          <p>
+            <!-- boton que despliega -->
+            <a class="d-grid btn btn-light collapsed" data-bs-toggle="collapse" href="#collapseNosotros" role="button"
+              aria-expanded="false" aria-controls="collapseExample">
+              SOBRE NOSOTROS
+            </a>
+          </p>
+          <div class="collapse list-group" id="collapseNosotros">
+            <!-- Contenido que despliega el boton -->
+            <a href="acercade.html#nosotros" class="list-group-item list-group-item-action">¿Quiénes
+              somos?</a>
+            <a href="acercade.html#colabora" class="list-group-item list-group-item-action">Trabaja
+              con Nosotros</a>
+            <a href="acercade.html#comunidad" class="list-group-item list-group-item-action">Comunidad</a>
+          </div>
+        </div>
+
+      </div>
+      <hr>
+      <div class="row">
+        <!-- REDES SOCIALES -->
+
+        <div class="col"><a href=""><i class="bi bi-facebook"></i></a> </div>
+        <div class="col"><a href=""><i class="bi bi-instagram" style="color:palevioletred;"></i></a> </div>
+        <div class="col"><a href=""><i class="bi bi-tiktok" style="color:black;"></i></a> </div>
+        <div class="col"><a href=""><i class="bi bi-pinterest" style="color:red;"></i></a> </div>
+      </div>
+    </div>
+
+    <!-- ======================================================= -->
+
+    <div class="d-none d-md-block">
+      <!-- FOOTER WEB -->
+      <div class="row">
+
+        <div class="col-md-3">
+          <!--CONTACTO -->
+          <ul class="list-group list-group-flush">
+            <p class="list-group">CONTACTO</p>
+            <a href="contacto.html" class="list-group-item">Envianos un mensaje</a>
+            <a href="https://wa.me/525562280518" class="list-group-item"> Chat en WhatsApp </a>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <!--AYUDA -->
+          <ul class="list-group list-group-flush">
+            <p class="list-group">AYUDA</p>
+            <a class="list-group-item">Preguntas Frecuentes</a>
+            <a class="list-group-item">Estatus de Pedido</a>
+            <a class="list-group-item">Envíos</a>
+            <a class="list-group-item">Factura</a>
+            <a class="list-group-item">Devoluciones</a>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <!--SOBRE NOSOTROS -->
+          <ul class="list-group list-group-flush">
+            <p class="list-group">SOBRE NOSOTROS</p>
+            <a href="acercade.html#nosotros" class="list-group-item">¿Quiénes somos?</a>
+            <a href="acercade.html#colabora" class="list-group-item">Trabaja con Nosotros</a>
+            <a href="acercade.html#comunidad" class="list-group-item">Comunidad</a>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <!--REDES SOCIALES -->
+          <ul class="list-group list-group-flush">
+            <p class="list-group">REDES SOCIALES</p>
+            <li class="list-group-item">
+              <br>
+              <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4"><a href=""><i class="bi bi-facebook"></i></a></div>
+                <div class="col-md-4"><a href=""><i class="bi bi-instagram" style="color:palevioletred;"></i></a></div>
+                <div class="col-md-2"></div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4"><a href=""><i class="bi bi-tiktok" style="color:black;"></i></a>
+                </div>
+                <div class="col-md-4"><a href=""><i class="bi bi-pinterest" style="color:red;"></i></a>
+                </div>
+                <div class="col-md-2"></div>
+              </div>
+
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <!-- Terminos y condiciones -->
+      <div class="col-md-6">
+        <p>Copyright 2022 WICSHA</p>
+      </div>
+      <div class="col-md-6">
+        <a href="../PDF/Condiciones-de-uso-Wicsha.pdf" target="_blank">Términos y condiciones</a>
+        <span> | </span>
+        <a href="../HTML/cookies.html" target="_blank">Políticas de cookies</a>
+        <span> | </span>
+        <a href="../PDF/Política-de-Privacidad-Wicsha.pdf" target="_blank">Políticas de Privacidad</a>
+      </div>
+    </div>
+  </footer>
+  <!--Cookies-->
+
+
+  <section class="cajacookies" id="caja">
+    <h2>¿Aceptas nuestras Cookies?</h2>
+    <p>Éste sitio web usa cookies, si permanece aquí acepta su uso.
+      Puede leer más sobre el uso de cookies en nuestra <a href="../PDF/Política-de-Privacidad-Wicsha.pdf">política de
+        privacidad</a>.</p>
+
+    <p> <button onclick="aceptarCookies()" class="pull-right" id="datosLocal"><i class="fa fa-times"></i> Aceptar y
+        cerrar éste mensaje</button></p>
+
+
+  </section>
   <!--****SCRIPT*******-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="../JS/scripts.js"></script>
@@ -347,7 +427,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
-    <script src="../JS/cookies.js"></script>
+  <script src="../JS/cookies.js"></script>
 </body>
 
 </html>

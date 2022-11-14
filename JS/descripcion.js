@@ -1,7 +1,13 @@
-/* *********Funcionamiento del botón: Bolsa de compra********* */
+/* ===========Variables============= */
 const botonCarrito = document.querySelector('.clickCarrito')
 const iconoBolsa = document.querySelector('.card-cart')
+const imgPrincipal = document.getElementById('imgPrincipal');
+const imgPequeña = document.getElementsByClassName('imgPequeña');
+const nameItem = document.querySelector('#nameItem');
+const detailItem = document.getElementById('detailItem');
 
+
+/* *********Funcionamiento del botón: Bolsa de compra********* */
 botonCarrito.addEventListener('click', clickABolsa);
 
 function clickABolsa(){
@@ -10,95 +16,82 @@ function clickABolsa(){
 }
 console.log("hola"); //Hay que quitar esta también
 
+/* =================== Funcionalidad Fotografía del producto ============= */
+imgPequeña[0].addEventListener('click', function(){
+    imgPrincipal.src = imgPequeña[0].src;
+});
+imgPequeña[1].addEventListener('click', function(){
+    imgPrincipal.src = imgPequeña[1].src;
+});
+imgPequeña[2].addEventListener('click', function(){
+    imgPrincipal.src = imgPequeña[2].src;
+});
+imgPequeña[3].addEventListener('click', function(){
+    imgPrincipal.src = imgPequeña[3].src;
+});
 
-/* ************Creación dinámica de la ficha de producto************* */
-function addDescription(itemInfo){
-    const descriptionItem = `
-    <div class="col-sm-12 col-md-7 col-lg-8 border-end contendorImg">
-    <div class="d-none d-lg-block text-center">
-        <img src="${itemInfo.img}" alt="${itemInfo.name}" class="imgProduct">
-    </div>
+/* =================== Productos Dinámicos ============= */
+nameItem.addEventListener('click', cambiarNombre() 
+)
 
-    <div class="d-lg-none mt-2 text-center">
-        <img src="${itemInfo.imgAlterna}" alt="${itemInfo.name}" class="dinamicImgProduct">
-    </div>
-</div>
 
-<!-- Ficha del producto -->
-<div class="col-sm-12 col-md-5 col-lg-4 border-end">
-    <!-- Nombre del Item -->
-    <div class="row text-center">
-        <h2>${itemInfo.name}</h2>
-        <hr>
-    </div>
 
-    <!--Precio -->
-    <div class="row" id="price">
-        <p>${itemInfo.price}</p>
-    </div>
 
-    <div class="row justify-content-center">
-        <hr>
-        <div class="col-md-2"></div>
-        <div class="col-sm-12 col-md-8 text-center my-5 ">
-            <h6><b>Calificaciones del producto</b></h6>
-            <!-- ranking stars -->
-            <img src="./../assets/ico/estrella.png" alt="estrella()" class="star">
-            <img src="./../assets/ico/estrella.png" alt="estrella()" class="star">
-            <img src="./../assets/ico/estrella.png" alt="estrella()" class="star">
-            <img src="./../assets/ico/estrella.png" alt="estrella()" class="star">
-            <img src="./../assets/ico/estrella.png" alt="estrella()" class="star">
-
-            <!-- link de reviews -->
-            <a href="#" class="ranking ms-1 ms-3">reviews</a>
+/* ===================Funcionalidad OTRAS OFERTAS======================= */
+function addItem(item) {
+    const itemHTML = `
+        <div class="col p-2">
+            <a href="./descripcion.html" class="toDescription">
+                <div class="card h-100">
+                    <div class="p-4">
+                        <img src="${item.img}" class="card-img-top img-fluid" alt="image">
+                    </div>
+                    <div class="card-body border-top d-flex flex-column" >
+                        <h5 class="card-title">${item.name}</h5>
+                        <p class="card-text">${item.description}</p>
+                        <p class="card-text">$450</p>
+                    </div>
+                </div>
+            </a>
         </div>
-        <div class="col-md-2"></div>
-        <hr>
-
-    </div>
-    <!-- Descripción del producto -->
-    <div class="row">
-        <div class="col-2"></div>
-        <div class="col-md-8 text-start">
-            <h6><b>Descripción</b></h6>
-            <p>${itemInfo.description}</p>
-        </div>
-        <div class="col-md-2"></div>
-    </div>
-    `
+        `;
+        const itemsContainer = document.getElementById("list-items");
+        itemsContainer.innerHTML += itemHTML;
 }
 
+addItem({
+    'name': 'Top Valeria',
+    'img': '../assets/img/Articulos/top_valeria.jpg',
+    'description': 'Top negro con mangas acampanadas'
 
-
-/* Lista de descripción de productos */
-addDescription({
-    'name':"Top Valeria",
-    'img': "./../assets/img/itemDescription/card_topValeria.png",
-    'imgAlterna': "./..//assets/img/Articulos/top_valeria.jpg",
-    'price': "$ 450 mxn",
-    'description': "Top negro con mangas acampanadas"
 });
 
-addDescription({
-    'name':"Falda Alicia",
-    'img':"./../assets/img/itemDescription/card_faldaAlicia.png",
-    'imgAlterna':"./../assets/img/Articulos/falda_alicia.png",
-    'price':"$ 445 mxn",
-    'description':"Falda negra corta"
+addItem({
+    'name': 'Falda Alicia',
+    'img': '../assets/img/Articulos/falda_alicia.png',
+    'description': 'Falda negra corta'
+})
+
+addItem({
+    'name': 'Falda Pilar',
+    'img': '../assets/img/Articulos/falda_pilar.jpg',
+    'description': 'Falda negra con corte ondulado'
+})
+
+addItem({
+    'name': 'Jumpsuit Water',
+    'img': '../assets/img/Articulos/jumpsuit_vinipiel.jpg',
+    'description': 'Vinipiel'
 });
 
-addDescription({
-    'name':"Falda Pilar",
-    'img':"./../assets/img/itemDescription/card_faldaPilar.png",
-    'imgAlterna':"./../assets/img/Articulos/falda_pilar.jpg",
-    'price':"$ 450 mxn",
-    'description':"Falda negra con corte ondulado"
-});
+addItem({
+    'name': 'Abrigo Moon',
+    'img': '../assets/img/Articulos/abrigo_moon.jpg',
+    'description': 'Abrigo negro'
+})
 
-addDescription({
-    'name':"",
-    'img':"",
-    'imgAlterna':"",
-    'price':"",
-    'description':""
-});
+addItem({
+    'name': 'Jumpsuit Water',
+    'img': '../assets/img/Articulos/jumpsuit_animal_print.jpg',
+    'description': 'Animal Print'
+})

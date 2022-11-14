@@ -1,319 +1,214 @@
 <!DOCTYPE html>
 
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../CSS/registro.css" />
-    <link rel="stylesheet" href="../CSS/styles.css" />
-    <!-- Fuentes extraidas de Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Estilos propios -->
-    <link rel="stylesheet" href="./../CSS/styles.css" />
-    <!--ENLACE Bootstrap-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <!--Icono Superior con Logo WS-->
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="./../assets/img/logo/ws-boton.png"
-    />
-    <!--ENLACE CDN Font Awesome-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    />
-  </head>
 
-  <body>
-    <!-- HEADER -->
-    <header class="row-fluid sticky-top border-bottom">
-      <!--ENCABEZADO BASE PAGINA PRINCIPAL-->
-      <!--LOGO PRINCPIPAL-->
-      <a href="../index.html"
-        ><img
-          src="../assets/img/logo/wicsha-logo-secundario.png"
-          class="img-fluid"
-          align="top-left"
-          alt="wicsha-logo-principal"
-          id="logoPrincipal"
-      /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../CSS/registro.css" />
+  <link rel="stylesheet" href="../CSS/styles.css" />
+  <!-- Fuentes extraidas de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="./../CSS/styles.css">
+  <!--ENLACE Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!--Icono Superior con Logo WS-->
+  <link rel="icon" type="image/x-icon" href="./../assets/img/logo/ws-boton.png">
+  <!--ENLACE CDN Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
 
-      <!--BARRA DE NAVEGACION-->
-      <!--<div class="container-sm mt-2">-->
-      <nav class="navbar navbar-expand-sm">
-        <div class="container mt-4 gap-2 gap-lg-4" style="padding-bottom: 10px">
-          <!--  -->
-          <div class="d-flex flex-grow-1 flex-sm-grow-0 gap-2 order-sm-1">
-            <button
-              class="navbar-toggler px-2"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="text-center d-flex flex-grow-1 justify-content-end gap-2 gap-lg-4"
-            >
-              <form
-                class="d-flex flex-grow-1 flex-sm-grow-0 justify-content-end"
-                style="min-width: 200px"
-                role="Buscar"
-              >
-                <input
-                  class="icon-placeholder w-100 m-0"
-                  type="search"
-                  placeholder="   B u s c a r "
-                  aria-label="Search"
-                />
-              </form>
-              <!--ICONOS superiores-->
-              <div class="dropdown-center d-flex gap-2">
-                <div
-                  class="d-flex gap-3 gap-lg-4 justify-content-center align-items-center"
-                >
-                  <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item" href="#">Perfil</a></li>
-                    <li>
-                      <a class="dropdown-item" href="/HTML/registro.html"
-                        >Registrarse</a
-                      >
-                    </li>
-                  </ul>
-                  <img
-                    class="icon mx-auto dropdown"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    src="../assets/img/ico/usuario barra principal.png"
-                  />
-                  <a class="d-flex" href="prueba.html"
-                    ><img
-                      class="icon mx-auto"
-                      src="../assets/img/ico/Bolsa de compra.png"
-                  /></a>
-                  <a class="d-flex" href="prueba.html"
-                    ><img
-                      class="icon mx-auto"
-                      src="../assets/img/ico/Wish.png"
-                      class="float-end"
-                  /></a>
-                </div>
+<body>
+  <!-- HEADER -->
+  <header class="row-fluid sticky-top border-bottom">
+    <!--ENCABEZADO BASE PAGINA PRINCIPAL-->
+    <!--LOGO PRINCPIPAL-->
+    <a href="../index.html"><img src="../assets/img/logo/wicsha-logo-secundario.png" class="img-fluid" align="top-left"
+        alt="wicsha-logo-principal" id="logoPrincipal"></a>
+
+    <!--BARRA DE NAVEGACION-->
+    <!--<div class="container-sm mt-2">-->
+    <nav class="navbar navbar-expand-sm">
+      <div class="container mt-4 gap-2 gap-lg-4" style="padding-bottom: 10px;">
+        <!--  -->
+        <div class="d-flex flex-grow-1 flex-sm-grow-0 gap-2 order-sm-1">
+          <button class="navbar-toggler px-2" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="text-center d-flex flex-grow-1 justify-content-end gap-2 gap-lg-4">
+            <form class="d-flex flex-grow-1 flex-sm-grow-0 justify-content-end" style="min-width: 200px;" role="Buscar">
+              <input class="icon-placeholder w-100 m-0" type="search" placeholder="   B u s c a r "
+                aria-label="Search">
+            </form>
+            <!--ICONOS superiores-->
+            <div class="dropdown-center d-flex gap-2">
+              <div class="d-flex gap-3 gap-lg-4 justify-content-center align-items-center">
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Perfil</a></li>
+                  <li><a class="dropdown-item" href="/HTML/registro.html">Registrarse</a></li>
+                </ul>
+                <img class="icon mx-auto dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                  src="../assets/img/ico/usuario barra principal.png">
+                <a class="d-flex" href="prueba.html"><img class="icon mx-auto"
+                    src="../assets/img/ico/Bolsa de compra.png"></a>
+                <a class="d-flex" href="prueba.html"><img class="icon mx-auto" src="../assets/img/ico/Wish.png"
+                    class="float-end"></a>
               </div>
             </div>
-          </div>
-
-          <!-- Enlaces -->
-          <div
-            class="collapse navbar-collapse text-center justify-content-center gap-2 gap-lg-5 order-sm-0 flex-sm-grow-1"
-            id="navbarSupportedContent"
-          >
-            <a class="nav-link py-2 py-sm-0" href="productos.html">Todes</a>
-            <a class="nav-link py-2 py-sm-0" href="productos.html">Ellas</a>
-            <a class="nav-link py-2 py-sm-0" href="productos.html">Ellos</a>
-            <a class="nav-link py-2 py-sm-0" href="productos.html"
-              >Accesorios</a
-            >
           </div>
         </div>
-      </nav>
-    </header>
-    <!-- Registro -->
-    <main>
-      <div class="container">
-        <div class="contenedor__todo">
-          <!-- CAJA TRASERA -->
-          <div class="caja__trasera gap-5 gap-lg-3">
-            <!-- CAMBIAR A LOGIN -->
-            <div class="caja__trasera-login">
-              <h3>Inicia sesion</h3>
-              <p>Inicia sesion para poder seguir comprando</p>
-              <button id="btn_Inicio">Iniciar Sesión</button>
-            </div>
-            <!-- CAMBIAR A REGISTRO -->
-            <div class="caja__trasera-register">
-              <h3>¿No tienes cuenta?</h3>
-              <p>Registrate para empezar a comprar en Wicsha</p>
-              <button id="btn_Registro">Regístrarse</button>
-            </div>
+
+        <!-- Enlaces -->
+        <div
+          class="collapse navbar-collapse text-center justify-content-center gap-2 gap-lg-5 order-sm-0 flex-sm-grow-1"
+          id="navbarSupportedContent">
+          <a class="nav-link py-2 py-sm-0" href="productos.html">Todes</a>
+          <a class="nav-link py-2 py-sm-0" href="productos.html">Ellas</a>
+          <a class="nav-link py-2 py-sm-0" href="productos.html">Ellos</a>
+          <a class="nav-link py-2 py-sm-0" href="productos.html">Accesorios</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Carrito de compras -->
+    <div class="card card-cart position-absolute end-0 inactive" style="width: 18rem;">
+      <div class="card-header text-center fw-bolder">
+        Carrito
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">An item</li>
+      </ul>
+      <a href="#" class="btn btn-warning btn-sm gocart">Ir a la bolsa <img src="./../assets/ico/Bolsa de compra.png"
+          alt="bolsa de compra" class="buy_icos mx-2"></a>
+      <a href="#" class="btn btn-warning btn-sm border border-2 border-dark mt-1 buyNow"><b>Comprar ahora</b></a>
+    </div>
+  </header>
+  <!-- Registro -->
+  <main>
+    <div class="container">
+      <div class="contenedor__todo">
+        <!-- CAJA TRASERA -->
+        <div class="caja__trasera gap-5 gap-lg-3">
+          <!-- CAMBIAR A LOGIN -->
+          <div class="caja__trasera-login">
+            <h3>Inicia sesion</h3>
+            <p>Inicia sesion para poder seguir comprando</p>
+            <button id="btn_Inicio">Iniciar Sesión</button>
+          </div>
+          <!-- CAMBIAR A REGISTRO -->
+          <div class="caja__trasera-register">
+            <h3>¿No tienes cuenta?</h3>
+            <p>Registrate para empezar a comprar en Wicsha</p>
+            <button id="btn_Registro">Regístrarse</button>
           </div>
 
-          <!-- CAJA DELANTERA -->
-          <div class="contenedor__login-register">
-            <form action="POST" class="formulario__login border border-4">
-              <h2>Iniciar Sesión</h2>
-              <div class="col-md-12">
-                <input
-                  type="text"
-                  class="form-control"
-                  name="inputUsuario"
-                  id="inputUsuario"
-                  required
-                  placeholder="Ingrese su usuario"
-                />
-              </div>
-              <div class="col-md-12">
-                <input
-                  type="password"
-                  class="form-control"
-                  name="inputPassword"
-                  id="inicioUsuarioPassword"
-                  required
-                  placeholder="Contraseña"
-                />
-              </div>
-              <div class="mt-3" id="inicioSesionBoton">
-                <button type="button" id="botonInicio" class="btn btn-dark">
-                  Iniciar sesión
-                </button>
-              </div>
-            </form>
+        </div>
 
-            <!-- FORMULARIO REGISTRO -->
-            <form action="POST" class="formulario__register border border-4">
-              <h2>Bienvenido</h2>
+        <!-- CAJA DELANTERA -->
+        <div class="contenedor__login-register">
 
-              <div class="formulario__grupo" id="grupo__usuario">
-                <div class="formulario__grupo-input">
-                  <input
-                    type="text"
-                    class="formulario__input"
-                    name="usuario"
-                    id="usuario"
-                    placeholder="Nombre de usuario"
-                    required
-                  />
-                  <i
-                    class="formulario__validacion-estado fas fa-times-circle"
-                  ></i>
-                </div>
-                <p class="formulario__input-error">
-                  El usuario tiene que ser de 4 a 16 dígitos y solo puede
-                  contener numeros, letras y guion bajo.
-                </p>
+          <form action="POST" class="formulario__login border border-4">
+            <h2>Iniciar Sesión</h2>
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="inputUsuario" id="inputUsuario" required
+                placeholder="Ingrese su usuario" />
+            </div>
+            <div class="col-md-12">
+              <input type="password" class="form-control" name="inputPassword" id="inicioUsuarioPassword" required
+                placeholder="Contraseña" />
+            </div>
+            <div class="mt-3" id="inicioSesionBoton">
+              <button type="button" id="botonInicio" class="btn btn-dark">
+                Iniciar sesión
+              </button>
+            </div>
+          </form>
+
+          <!-- FORMULARIO REGISTRO -->
+          <form action="POST" class="formulario__register border border-4">
+            <h2>Bienvenido</h2>
+
+            <div class="formulario__grupo" id="grupo__usuario">
+              <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Nombre de usuario"
+                  required />
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
               </div>
+              <p class="formulario__input-error">
+                El usuario tiene que ser de 4 a 16 dígitos y solo puede
+                contener numeros, letras y guion bajo.
+              </p>
+            </div>
 
-              <div class="formulario__grupo" id="grupo__nombre">
-                <div class="formulario__grupo-input">
-                  <input
-                    type="text"
-                    class="formulario__input"
-                    name="nombre"
-                    id="nombre"
-                    placeholder="Nombre"
-                    required
-                  />
-                  <i
-                    class="formulario__validacion-estado fas fa-times-circle"
-                  ></i>
-                </div>
-                <p class="formulario__input-error">
-                  El nombre solo debe llevar letras.
-                </p>
+            <div class="formulario__grupo" id="grupo__nombre">
+              <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre" required />
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
               </div>
+              <p class="formulario__input-error">
+                El nombre solo debe llevar letras.
+              </p>
+            </div>
 
-              <!-- Grupo: Contraseña -->
-              <div class="formulario__grupo" id="grupo__password">
-                <div class="formulario__grupo-input">
-                  <input
-                    type="password"
-                    class="formulario__input"
-                    name="password"
-                    id="password"
-                    required
-                    placeholder="Contraseña"
-                  />
-                  <i
-                    class="formulario__validacion-estado fas fa-times-circle"
-                  ></i>
-                </div>
-                <p class="formulario__input-error">
-                  La contraseña tiene que ser de 8 a 15 dígitos con un número.
-                </p>
+            <!-- Grupo: Contraseña -->
+            <div class="formulario__grupo" id="grupo__password">
+              <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="password" id="password" required
+                  placeholder="Contraseña" />
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
               </div>
+              <p class="formulario__input-error">
+                La contraseña tiene que ser de 8 a 15 dígitos con un número.
+              </p>
+            </div>
 
-              <!-- Grupo: Contraseña 2 -->
-              <div class="formulario__grupo" id="grupo__password2">
-                <div class="formulario__grupo-input">
-                  <input
-                    type="password"
-                    class="formulario__input"
-                    name="password2"
-                    id="password2"
-                    placeholder="Confirma contraseña"
-                    required
-                  />
-                  <i
-                    class="formulario__validacion-estado fas fa-times-circle"
-                  ></i>
-                </div>
-                <p class="formulario__input-error">
-                  Ambas contraseñas deben ser iguales.
-                </p>
+            <!-- Grupo: Contraseña 2 -->
+            <div class="formulario__grupo" id="grupo__password2">
+              <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="password2" id="password2"
+                  placeholder="Confirma contraseña" required />
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
               </div>
+              <p class="formulario__input-error">
+                Ambas contraseñas deben ser iguales.
+              </p>
+            </div>
 
-              <!-- Grupo: Correo Electronico -->
-              <div class="formulario__grupo" id="grupo__correo">
-                <div class="formulario__grupo-input">
-                  <input
-                    type="email"
-                    class="formulario__input"
-                    name="correo"
-                    id="correo"
-                    placeholder="correo@correo.com"
-                  />
-                  <i
-                    class="formulario__validacion-estado fas fa-times-circle"
-                  ></i>
-                </div>
-                <p class="formulario__input-error">
-                  El correo solo puede contener letras, numeros, puntos, guiones
-                  y guion bajo.
-                </p>
+            <!-- Grupo: Correo Electronico -->
+            <div class="formulario__grupo" id="grupo__correo">
+              <div class="formulario__grupo-input">
+                <input type="email" class="formulario__input" name="correo" id="correo"
+                  placeholder="correo@correo.com" />
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
               </div>
+              <p class="formulario__input-error">
+                El correo solo puede contener letras, numeros, puntos, guiones
+                y guion bajo.
+              </p>
+            </div>
 
-              <!-- Grupo: Teléfono -->
-              <div class="formulario__grupo" id="grupo__telefono">
-                <div class="formulario__grupo-input">
-                  <input
-                    type="number"
-                    class="formulario__input"
-                    name="telefono"
-                    id="telefono"
-                    placeholder="4491234567"
-                  />
-                  <i
-                    class="formulario__validacion-estado fas fa-times-circle"
-                  ></i>
-                </div>
-                <p class="formulario__input-error">
-                  El telefono solo puede contener numeros y el maximo son 14
-                  dígitos.
-                </p>
+            <!-- Grupo: Teléfono -->
+            <div class="formulario__grupo" id="grupo__telefono">
+              <div class="formulario__grupo-input">
+                <input type="number" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567" />
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
               </div>
+              <p class="formulario__input-error">
+                El telefono solo puede contener numeros y el maximo son 14
+                dígitos.
+              </p>
+            </div>
 
+<<<<<<< HEAD
               <!-- Grupo: Terminos y Condiciones -->
               <div class="formulario__grupo" id="grupo__terminos">
                 <div class="d-flex">
@@ -327,32 +222,40 @@
                     Acepto los Terminos y Condiciones
                   </label>
                 </div>
+=======
+            <!-- Grupo: Terminos y Condiciones -->
+            <div class="formulario__grupo" id="grupo__terminos">
+              <div class="d-flex">
+                <input class="formulario__checkbox m-2 flex-shrink-1" type="checkbox" name="terminos" id="terminos" />
+                <label class="formulario__label flex-shrink-0" for="terminos">
+                  Acepto los Terminos y Condiciones
+                </label>
+>>>>>>> 453aa5a56a161325393d7b691dbe318398b16c65
               </div>
+            </div>
 
-              <div class="formulario__mensaje" id="formulario__mensaje">
-                <p>
-                  <i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por
-                  favor rellena el formulario correctamente.
-                </p>
-              </div>
+            <div class="formulario__mensaje" id="formulario__mensaje">
+              <p>
+                <i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por
+                favor rellena el formulario correctamente.
+              </p>
+            </div>
 
-              <div class="formulario__grupo formulario__grupo-btn-enviar">
-                <button type="submit" class="formulario__btn" id="btnRegistrar">
-                  Enviar
-                </button>
-                <p
-                  class="formulario__mensaje-exito"
-                  id="formulario__mensaje-exito"
-                >
-                  Formulario enviado exitosamente!
-                </p>
-              </div>
-            </form>
-          </div>
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+              <button type="submit" class="formulario__btn" id="btnRegistrar">
+                Enviar
+              </button>
+              <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
+                Formulario enviado exitosamente!
+              </p>
+            </div>
+          </form>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
+<<<<<<< HEAD
     <!-------------------------- Footer de la pagina ------------------------>
     <hr />
     <footer class="container text-center">
@@ -623,3 +526,187 @@
     <script src="../JS/cookies.js"></script>
   </body>
 </html>
+=======
+  <!-------------------------- Footer de la pagina ------------------------>
+  <hr>
+  <footer class="container text-center ">
+
+    <div class="d-md-none">
+      <!-- FOOTER MOBILE -->
+      <div class="row">
+        <div class="col-md-12">
+          <!-- CONTACTO -->
+          <p>
+            <!-- boton que despliega -->
+            <a class="d-grid btn btn-light collapsed" data-bs-toggle="collapse" href="#collapseContacto" role="button"
+              aria-expanded="false" aria-controls="collapseExample">
+              CONTACTO
+            </a>
+          </p>
+          <div class="collapse list-group" id="collapseContacto">
+            <!-- Contenido que despliega el boton -->
+            <a href="contacto.html" class="list-group-item list-group-item-action">Envianos un
+              Mensaje</a>
+            <a href="https://wa.me/525562280518" class="list-group-item list-group-item-action"> Chat en WhatsApp </a>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <!-- AYUDA -->
+          <p>
+            <!-- boton que despliega -->
+            <a class="d-grid btn btn-light collapsed" data-bs-toggle="collapse" href="#collapseAyuda" role="button"
+              aria-expanded="false" aria-controls="collapseExample">
+              AYUDA
+            </a>
+          </p>
+          <div class="collapse list-group" id="collapseAyuda">
+            <!-- Contenido que despliega el boton -->
+            <a href="" class="list-group-item list-group-item-action">Preguntas Frecuentes</a>
+            <a href="" class="list-group-item list-group-item-action">Estatus de Pedido</a>
+            <a href="" class="list-group-item list-group-item-action">Envíos</a>
+            <a href="" class="list-group-item list-group-item-action">Factura</a>
+            <a href="" class="list-group-item list-group-item-action">Devoluciones</a>
+
+
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <!-- SOBRE NOSOTROS -->
+          <p>
+            <!-- boton que despliega -->
+            <a class="d-grid btn btn-light collapsed" data-bs-toggle="collapse" href="#collapseNosotros" role="button"
+              aria-expanded="false" aria-controls="collapseExample">
+              SOBRE NOSOTROS
+            </a>
+          </p>
+          <div class="collapse list-group" id="collapseNosotros">
+            <!-- Contenido que despliega el boton -->
+            <a href="acercade.html#nosotros" class="list-group-item list-group-item-action">¿Quiénes
+              somos?</a>
+            <a href="acercade.html#colabora" class="list-group-item list-group-item-action">Trabaja
+              con Nosotros</a>
+            <a href="acercade.html#comunidad" class="list-group-item list-group-item-action">Comunidad</a>
+          </div>
+        </div>
+
+      </div>
+      <hr>
+      <div class="row">
+        <!-- REDES SOCIALES -->
+
+        <div class="col"><a href=""><i class="bi bi-facebook"></i></a> </div>
+        <div class="col"><a href=""><i class="bi bi-instagram" style="color:palevioletred;"></i></a> </div>
+        <div class="col"><a href=""><i class="bi bi-tiktok" style="color:black;"></i></a> </div>
+        <div class="col"><a href=""><i class="bi bi-pinterest" style="color:red;"></i></a> </div>
+      </div>
+    </div>
+
+    <!-- ======================================================= -->
+
+    <div class="d-none d-md-block">
+      <!-- FOOTER WEB -->
+      <div class="row">
+
+        <div class="col-md-3">
+          <!--CONTACTO -->
+          <ul class="list-group list-group-flush">
+            <p class="list-group">CONTACTO</p>
+            <a href="contacto.html" class="list-group-item">Envianos un mensaje</a>
+            <a href="https://wa.me/525562280518" class="list-group-item"> Chat en WhatsApp </a>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <!--AYUDA -->
+          <ul class="list-group list-group-flush">
+            <p class="list-group">AYUDA</p>
+            <a class="list-group-item">Preguntas Frecuentes</a>
+            <a class="list-group-item">Estatus de Pedido</a>
+            <a class="list-group-item">Envíos</a>
+            <a class="list-group-item">Factura</a>
+            <a class="list-group-item">Devoluciones</a>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <!--SOBRE NOSOTROS -->
+          <ul class="list-group list-group-flush">
+            <p class="list-group">SOBRE NOSOTROS</p>
+            <a href="acercade.html#nosotros" class="list-group-item">¿Quiénes somos?</a>
+            <a href="acercade.html#colabora" class="list-group-item">Trabaja con Nosotros</a>
+            <a href="acercade.html#comunidad" class="list-group-item">Comunidad</a>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <!--REDES SOCIALES -->
+          <ul class="list-group list-group-flush">
+            <p class="list-group">REDES SOCIALES</p>
+            <li class="list-group-item">
+              <br>
+              <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4"><a href=""><i class="bi bi-facebook"></i></a></div>
+                <div class="col-md-4"><a href=""><i class="bi bi-instagram" style="color:palevioletred;"></i></a></div>
+                <div class="col-md-2"></div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4"><a href=""><i class="bi bi-tiktok" style="color:black;"></i></a>
+                </div>
+                <div class="col-md-4"><a href=""><i class="bi bi-pinterest" style="color:red;"></i></a>
+                </div>
+                <div class="col-md-2"></div>
+              </div>
+
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <!-- Terminos y condiciones -->
+      <div class="col-md-6">
+        <p>Copyright 2022 WICSHA</p>
+      </div>
+      <div class="col-md-6">
+        <a href="../PDF/Condiciones-de-uso-Wicsha.pdf" target="_blank">Términos y condiciones</a>
+        <span> | </span>
+        <a href="../HTML/cookies.html" target="_blank">Políticas de cookies</a>
+        <span> | </span>
+        <a href="../PDF/Política-de-Privacidad-Wicsha.pdf" target="_blank">Políticas de Privacidad</a>
+      </div>
+    </div>
+  </footer>
+  <!--Cookies-->
+
+
+  <section class="cajacookies" id="caja">
+    <h2>¿Aceptas nuestras Cookies?</h2>
+    <p>Éste sitio web usa cookies, si permanece aquí acepta su uso.
+      Puede leer más sobre el uso de cookies en nuestra <a href="../PDF/Política-de-Privacidad-Wicsha.pdf">política de
+        privacidad</a>.</p>
+
+    <p> <button onclick="aceptarCookies()" class="pull-right" id="datosLocal"><i class="fa fa-times"></i> Aceptar y
+        cerrar éste mensaje</button></p>
+
+
+  </section>
+
+  <!--****SCRIPT*******-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="../JS/registro.js"></script>
+  <script src="../JS/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="../JS/cookies.js"></script>
+</body>
+
+</html>
+>>>>>>> 453aa5a56a161325393d7b691dbe318398b16c65

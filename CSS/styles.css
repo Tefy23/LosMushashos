@@ -370,7 +370,7 @@ justify-content: center;
 
 }
 
-/*-----------Imagen del producto----------------------------------------------------------------*/
+/*-----------Imagen del producto----------------------*/
 .contendorImg {
   padding-left: 0;
   margin-left: 0;
@@ -381,10 +381,10 @@ justify-content: center;
   transition: 1s;
 }
 
-.imgProduct:hover {
+/* .imgProduct:hover {
   transform: scale(1.8);
   transition: 1s;
-}
+} */
 
 .blanco {
   color: #EEE;
@@ -430,7 +430,6 @@ justify-content: center;
 }
 
 .otros_productos {
-  margin: 0;
   color: #ffffff;
   background-color: black;
 }
@@ -449,24 +448,6 @@ justify-content: center;
 .toDescription:hover {
   color: #000000;
 }
-
-label.talla {
-  padding: auto;
-  font-size: smaller;
-  font-weight: 600;
-  background-color: #353535;
-  color: #ffffff;
-  width: 40px;
-  height: 35px;
-  border-radius: 45%;
-}
-
-label.aro {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-}
-
 /*------------Carrito de compras---------------- */
 .card-cart {
   top: 151px;
@@ -485,6 +466,35 @@ div.inactive {
   ;
 }
 
+/* =================================================================EXPERIMENTO PRODUCT DETAIL======================================================= */
+
+/* --------------------Imagen del producto-------------------------- */
+/* --------------------Grupo de imagenes pequeñas-------------------------- */
+.small-img-group{
+  display: flex;
+  justify-content: space-between;
+}
+.small-img-col{
+  flex-basis: 24%;
+}
+.small-img-col:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+
+
+/* -----Botón añadir al carrito------ */
+.sizeGuide{
+  color: deepskyblue;
+  text-decoration: none;
+}
+.sizeGuide:hover{
+  color: aqua;
+}
+.cantidadItem{
+  width: 15%
+}
 
 @media (max-width: 991px) {
   .contendorImg {
