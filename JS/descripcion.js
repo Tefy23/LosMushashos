@@ -1,7 +1,13 @@
-/* *********Funcionamiento del botón: Bolsa de compra********* */
+/* ===========Variables============= */
 const botonCarrito = document.querySelector('.clickCarrito')
 const iconoBolsa = document.querySelector('.card-cart')
+const imgPrincipal = document.getElementById('imgPrincipal');
+const imgPequeña = document.getElementsByClassName('imgPequeña');
+const nameItem = document.querySelector('#nameItem');
+const detailItem = document.getElementById('detailItem');
 
+
+/* *********Funcionamiento del botón: Bolsa de compra********* */
 botonCarrito.addEventListener('click', clickABolsa);
 
 function clickABolsa(){
@@ -11,9 +17,6 @@ function clickABolsa(){
 console.log("hola"); //Hay que quitar esta también
 
 /* =================== Funcionalidad Fotografía del producto ============= */
-let imgPrincipal = document.getElementById('imgPrincipal');
-let imgPequeña = document.getElementsByClassName('imgPequeña');
-
 imgPequeña[0].addEventListener('click', function(){
     imgPrincipal.src = imgPequeña[0].src;
 });
@@ -27,7 +30,11 @@ imgPequeña[3].addEventListener('click', function(){
     imgPrincipal.src = imgPequeña[3].src;
 });
 
-/* =================== Funcionalidad Fotografía del producto ============= */
+/* =================== Productos Dinámicos ============= */
+nameItem.addEventListener('click', cambiarNombre() 
+)
+
+
 
 
 /* ===================Funcionalidad OTRAS OFERTAS======================= */
@@ -88,28 +95,3 @@ addItem({
     'img': '../assets/img/Articulos/jumpsuit_animal_print.jpg',
     'description': 'Animal Print'
 })
-
-/*addItem({
-    'name': 'Jumpsuit ',
-    'img': '../assets/img/Articulos/jumpsuit_water.jpg',
-    'description': 'Edicion limitada'
-})
-
-addItem({
-    'name': 'Sudadera',
-    'img': '../assets/img/Articulos/sudadera_autum.png',
-    'description': 'Autum'
-});
-
-addItem({
-    'name': 'Sudadera',
-    'img': '../assets/img/Articulos/sudadera_winter.png',
-    'description': 'Winter'
-})
-
-addItem({
-    'name': 'Sueter',
-    'img': '../assets/img/Articulos/sueter.jpg',
-    'description': 'Sueter Gris'
-})
- */
