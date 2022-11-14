@@ -1,5 +1,4 @@
 
-
 function addItem(item) {
     const itemHTML = `
         <div class="col p-2">
@@ -17,15 +16,15 @@ function addItem(item) {
             </a>
         </div>
         `;
-    const itemsContainer = document.getElementById("list-items");
-    itemsContainer.innerHTML += itemHTML;
+        const itemsContainer = document.getElementById("list-items");
+        itemsContainer.innerHTML += itemHTML;
 }
 
 addItem({
     'name': 'Top Valeria',
     'img': '../assets/img/Articulos/top_valeria.jpg',
     'description': 'Top negro con mangas acampanadas'
-    
+
 });
 
 addItem({
@@ -58,7 +57,7 @@ addItem({
     'description': 'Animal Print'
 })
 
-addItem({
+/*addItem({
     'name': 'Jumpsuit ',
     'img': '../assets/img/Articulos/jumpsuit_water.jpg',
     'description': 'Edicion limitada'
@@ -81,3 +80,4 @@ addItem({
     'img': '../assets/img/Articulos/sueter.jpg',
     'description': 'Sueter Gris'
 })
+ */
