@@ -4,7 +4,7 @@ function addItem(item) {
             <div class="col p-2">
             <a href="./descripcion.html">    
             <button class="toDescription" id= "${item[i].id_producto}">
-                    <div class="card h-100"  id= "${item[i].id_producto}">
+                    <div class="card h-100"}">
                         <div class="p-4">
                             <img src="${item[i].img}" class="card-img-top img-fluid" alt="image">
                         </div>
@@ -78,6 +78,9 @@ let productosjson = [
         'name': 'Jumpsuit ',
         'price': '$445 mxn',
         'img': '../assets/img/Articulos/jumpsuit_water.jpg',
+        'secondImg': [
+
+        ],
         'description': 'Edicion limitada',
         'detail': ''
     },
@@ -91,7 +94,7 @@ let productosjson = [
     },
     {
         'id_producto': 9,
-        'name': 'Sudadera',
+        'name': 'Sudadera Winter',
         'price': '$499 mxn',
         'img': '../assets/img/Articulos/sudadera_winter.png',
         'description': 'Winter',
@@ -109,15 +112,15 @@ let productosjson = [
 
 addItem(productosjson);
 
-let botons = document.querySelectorAll(".toDescription");
-for(let boton of botons){
+let botons = document.getElementsByClassName("toDescription");
+for (let boton of botons) {
     console.log(boton);
-    boton.addEventListener('click',function(){
-        const id = boton.id;
-        const productSelect = productosjson.filter(producto=> producto.id_producto == id) 
-        
+    boton.addEventListener('click', function () {
+        let id = boton.id;
+        let productSelect = productosjson.filter(producto => producto.id_producto == id)
+
         console.log(productSelect);
 
-        localStorage.setItem("producto",JSON.stringify(productSelect[0]));
+        localStorage.setItem("product", JSON.stringify(productSelect[0]));
     })
 };
