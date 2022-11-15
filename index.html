@@ -27,44 +27,47 @@
 
 <body>
   <!-- HEADER -->
-  <header class="row-fluid sticky-top border-bottom">
-  <!--ENCABEZADO BASE PAGINA PRINCIPAL-->
-  <!--LOGO PRINCPIPAL-->
-    <a href="../index.html"><img src="./assets/img/logo/wicsha-logo-principal.png" class="img-fluid" align="top-left"
-        alt="wicsha-logo-principal" id="logoPrincipal"></a>
+  <header class="row-fluid position-fixed border-bottom">
+    <!--ENCABEZADO BASE PAGINA PRINCIPAL-->
+    <!--LOGO PRINCPIPAL-->
+    <a href="./index.html"><img src="./assets/img/logo/wicsha-logo-secundario.png" class="img-fluid"
+            align="top-left" alt="wicsha-logo-principal" id="logoPrincipal"></a>
 
-  <!--BARRA DE NAVEGACION-->
+    <!--BARRA DE NAVEGACION-->
+    <!--<div class="container-sm mt-2">-->
     <nav class="navbar navbar-expand-sm">
-      <div class="container mt-4 gap-2 gap-lg-4">
-        <!--  -->
-        <div class="d-flex flex-grow-1 flex-sm-grow-0 gap-2 order-sm-1">
-          <button class="navbar-toggler px-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="text-center d-flex flex-grow-1 justify-content-end gap-4 gap-lg-4">
-            <form class="d-flex flex-grow-1 flex-sm-grow-0 justify-content-end" style="min-width: 160px;" role="Buscar">
-              <input class="icon-placeholder w-100 m-0" type="search" placeholder="   B u s c a r "
-                aria-label="Search">
-            </form>
-
-        <!--ICONOS superiores-->
-            <div class="d-flex gap-3 align-items-center">
-              <div class="btn-group">
-                <img class="icon mx-auto dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false"
-                src="../assets/img/ico/usuario barra principal.png">
-                <ul class="dropdown-menu dropdown-menu-end">
-                  <li><a class="dropdown-item" href="#">Perfil</a></li>
-                  <li><a class="dropdown-item" href="/HTML/registro.html">Registrarse</a></li>
-                </ul>
-              </div>
-  
-              <a class="d-flex clickCarrito" href="#" id="clickCarrito"><img class="icon mx-auto"
-                  src="../assets/img/ico/Bolsa de compra.png"></a>
-              <a class="d-flex" href="#"><img class="icon mx-auto" src="../assets/img/ico/Wish.png"
-                  class="float-end"></a>
+        <div class="container mt-4 gap-2 gap-lg-4">
+            <!--  -->
+            <div class="d-flex flex-grow-1 flex-sm-grow-0 gap-2 order-sm-1">
+                <button class="navbar-toggler px-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="text-center d-flex flex-grow-1 justify-content-end gap-2 gap-lg-4">
+                    <form class="d-flex flex-grow-1 flex-sm-grow-0 justify-content-end" style="min-width: 200px;"
+                        role="Buscar">
+                        <input class="icon-placeholder w-100 m-0" type="search" placeholder="   B u s c a r "
+                            aria-label="Search">
+                    </form>
+                    <!--ICONOS superiores-->
+                    <div class="dropdown-center d-flex gap-2">
+                        <div class="d-flex gap-3 gap-lg-4 justify-content-center align-items-center">
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Perfil</a></li>
+                                <li><a class="dropdown-item" href="/HTML/registro.html">Registrarse</a></li>
+                            </ul>
+                            <img class="icon mx-auto dropdown" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" src="./assets/img/ico/usuario barra principal.png">
+                            <a class="d-flex clickCarrito" href="#"  id="clickCarrito"><img class="icon mx-auto"
+                                    src="./assets/img/ico/Bolsa de compra.png"></a>
+                            <a class="d-flex" href="#"><img class="icon mx-auto"
+                                    src="./assets/img/ico/Wish.png" class="float-end"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
+
 
         <!-- Enlaces -->
         <div
