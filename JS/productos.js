@@ -83,6 +83,6 @@ let productosjson = [
         'img': '../assets/img/Articulos/sueter.jpg',
         'description': 'Sueter Gris'
     }
-]
+];
 
 addItem(productosjson);

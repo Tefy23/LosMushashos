@@ -5,6 +5,7 @@ const imgPrincipal = document.getElementById('imgPrincipal');
 const imgPequeña = document.getElementsByClassName('imgPequeña');
 const nameItem = document.querySelector('#nameItem');
 const detailItem = document.getElementById('detailItem');
+const selectProducto = document.getElementsByClassName("toDescription")
 
 
 /* *********Funcionamiento del botón: Bolsa de compra********* */
@@ -31,8 +32,9 @@ imgPequeña[3].addEventListener('click', function(){
 });
 
 /* =================== Productos Dinámicos ============= */
-nameItem.addEventListener('click', cambiarNombre() 
-)
+selectProducto.addEventListener('click',()=>{
+    console.log()
+})
 
 
 
