@@ -32,10 +32,17 @@ imgPequeña[3].addEventListener('click', function(){
 });
 
 /* =================== Productos Dinámicos ============= */
-selectProducto.addEventListener('click',()=>{
-    console.log()
-})
+const producto = JSON.parse(localStorage.getItem("producto"));
+console.log(producto);
 
+let imagenPrincipal = document.getElementById("imgPrincipal");
+imagenPrincipal.src = producto.img;
+
+let nombreProducto = document.getElementById("nameItem");
+nombreProducto.innerHTML = producto.name;
+
+let detalleProducto = document.getElementById("detailItem");
+detalleProducto.innerHTML = producto.description;
 
 
 
