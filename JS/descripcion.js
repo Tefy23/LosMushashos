@@ -10,35 +10,48 @@ const detailItem = document.getElementById('detailItem');
 /* *********Funcionamiento del botón: Bolsa de compra********* */
 botonCarrito.addEventListener('click', clickABolsa);
 
-function clickABolsa(){
+function clickABolsa() {
     iconoBolsa.classList.toggle('inactive');
     console.log("Hiciste un click") // Hay que quitar esta sentencia
 }
-console.log("hola"); //Hay que quitar esta también
 
 /* =================== Funcionalidad Fotografía del producto ============= */
-imgPequeña[0].addEventListener('click', function(){
+imgPequeña[0].addEventListener('click', function () {
     imgPrincipal.src = imgPequeña[0].src;
 });
-imgPequeña[1].addEventListener('click', function(){
+imgPequeña[1].addEventListener('click', function () {
     imgPrincipal.src = imgPequeña[1].src;
 });
-imgPequeña[2].addEventListener('click', function(){
+imgPequeña[2].addEventListener('click', function () {
     imgPrincipal.src = imgPequeña[2].src;
 });
-imgPequeña[3].addEventListener('click', function(){
+imgPequeña[3].addEventListener('click', function () {
     imgPrincipal.src = imgPequeña[3].src;
 });
 
 /* =================== Productos Dinámicos ============= */
-nameItem.addEventListener('click', cambiarNombre() 
-)
+let producto = JSON.parse(localStorage.getItem("product"));
+console.log(producto);
+
+let imagenPrincipal = document.getElementById("imgPrincipal");
+imagenPrincipal.src = producto.img;
+
+//let imagenesPequeñas = ;
+
+let nombreProducto = document.getElementById("nameItem");
+nombreProducto.innerHTML = producto.name;
+
+let detalleProducto = document.getElementById("detailItem");
+detalleProducto.innerHTML = producto.description;
+
+let precioProducto = document.getElementById("priceItem");
+precioProducto.innerHTML = producto.price;
 
 
 
 
 /* ===================Funcionalidad OTRAS OFERTAS======================= */
-function addItem(item) {
+/* function addItem(item) {
     const itemHTML = `
         <div class="col p-2">
             <a href="./descripcion.html" class="toDescription">
@@ -55,8 +68,8 @@ function addItem(item) {
             </a>
         </div>
         `;
-        const itemsContainer = document.getElementById("list-items");
-        itemsContainer.innerHTML += itemHTML;
+    const itemsContainer = document.getElementById("list-items");
+    itemsContainer.innerHTML += itemHTML;
 }
 
 addItem({
@@ -94,4 +107,4 @@ addItem({
     'name': 'Jumpsuit Water',
     'img': '../assets/img/Articulos/jumpsuit_animal_print.jpg',
     'description': 'Animal Print'
-})
+}) */
