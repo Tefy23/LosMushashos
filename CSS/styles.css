@@ -377,13 +377,12 @@ justify-content: center;
   overflow: hidden;
 }
 
-.imgProduct {
-  transition: 1s;
-}
+/* .imgProduct {
+} */
 
 /* .imgProduct:hover {
   transform: scale(1.8);
-  transition: 1s;
+  z-index: 20;
 } */
 
 .blanco {

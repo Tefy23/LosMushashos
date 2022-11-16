@@ -60,3 +60,7 @@ justify-content: center;
 } */
 
 /*.............................................................*/
+
+button.toDescription{
+  border:#EEEE;
+}
