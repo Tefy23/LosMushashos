@@ -86,6 +86,7 @@
             </ul>
             <a href="#" class="btn btn-warning btn-sm gocart">Ir a la bolsa <img
                     src="./../assets/ico/Bolsa de compra.png" alt="bolsa de compra" class="buy_icos mx-2"></a>
+            <a href="#" class="btn btn-warning btn-sm border border-2 border-dark mt-1 buyNow"><b>Comprar ahora</b></a>
         </div>
     </header>
 
@@ -95,22 +96,26 @@
         <section class="sproduct">
             <div class="row mb-5">
                 <!-- Fotografía del producto -->
-                <div class="col-lg-7 col-md-12 col-12 contendorImg">
-                    <img class="img-fluid imgProduct w-75" src="./../assets/img/Articulos/abrigo_moon.jpg"
-                        alt="Abrigo_Moon">
+                <div class="col-lg-7 col-md-12 col-12 contendorImg text-center">
+                    <img class="img-fluid imgProduct w-90 border" src="./../assets/img/Articulos/abrigo_moon.jpg"
+                        alt="Abrigo_Moon" id="imgPrincipal">
                     <!-- Galería pequeña -->
                     <div class="small-img-group mt-4 pt-1">
                         <div class="small-img-col border rounded">
-                            <img src="./../assets/img/itemDescription/card_abrigoMoon.png" width="90%"
-                                alt="imagen_secundaria">
+                            <img src="./../assets/img/itemDescription/card_jumpsuitLimitedEdition.png" width="90%"
+                                alt="imagen_secundaria" class="imgPequeña">
+                        </div>
+                        <div class="small-img-col border">
+                            <img src="./../assets/img/itemDescription/card_jumpsuitAnimalPrint.png" width="90%"
+                                alt="imagen_secundaria" class="imgPequeña">
+                        </div>
+                        <div class="small-img-col border">
+                            <img src="./../assets/img/itemDescription/card_topValeria.png" width="90%"
+                                alt="imagen_secundaria" class="imgPequeña">
                         </div>
                         <div class="small-img-col border">
                             <img src="./../assets/img/itemDescription/card_abrigoMoon.png" width="90%"
-                                alt="imagen_secundaria">
-                        </div>
-                        <div class="small-img-col border">
-                            <img src="./../assets/img/itemDescription/card_abrigoMoon.png" width="90%"
-                                alt="imagen_secundaria">
+                                alt="imagen_secundaria" class="imgPequeña">
                         </div>
                     </div>
                 </div>
@@ -118,7 +123,7 @@
                 <!-- Ficha de descripción del producto -->
                 <div class="col-lg-4 col-md-12 col-12 border-start border-end">
                     <h6 class="mb-5">Wicsha / Ellas</h6>
-                    <h3>Abrigo Moon</h3>
+                    <h3 id="nameItem">Abrigo Moon</h3>
                     <h2>$450 mxn</h2>
                     <hr>
 
@@ -162,7 +167,7 @@
                     <hr>
                     <section class=" mx-3 mt-4">
                         <h4>Descripción</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti mollitia sequi, quod amet
+                        <p id="detailItem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti mollitia sequi, quod amet
                             officia quas quis repudiandae quo sapiente dignissimos aspernatur earum provident
                             consectetur
                             porro minus dolorum ducimus obcaecati eligendi.
@@ -208,7 +213,8 @@
                         <!-- Contenido que despliega el boton -->
                         <a href="contacto.html" class="list-group-item list-group-item-action">Envianos un
                             Mensaje</a>
-                            <a href="https://wa.me/525562280518" class="list-group-item list-group-item-action" > Chat en WhatsApp </a>
+                        <a href="https://wa.me/525562280518" class="list-group-item list-group-item-action"> Chat en
+                            WhatsApp </a>
                     </div>
                 </div>
 
@@ -275,7 +281,7 @@
                     <ul class="list-group list-group-flush">
                         <p class="list-group">CONTACTO</p>
                         <a href="contacto.html" class="list-group-item">Envianos un mensaje</a>
-                        <a href="https://wa.me/525562280518" class="list-group-item" > Chat en WhatsApp </a>
+                        <a href="https://wa.me/525562280518" class="list-group-item"> Chat en WhatsApp </a>
                     </ul>
                 </div>
 
@@ -368,7 +374,6 @@
         crossorigin="anonymous"></script>
     <script src="./../JS/descripcion.js"></script>
     <script src="../JS/cookies.js"></script>
-    <script src="./../JS/otros-productos.js"></script>
 </body>
 
 </html>

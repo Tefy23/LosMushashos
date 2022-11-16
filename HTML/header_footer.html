@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <!-- Fuentes extraidas de Google Fonts -->
+    <!-- Fuentes extraidas de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
@@ -50,19 +50,22 @@
                                 aria-label="Search">
                         </form>
                         <!--ICONOS superiores-->
-            <div class="dropdown-center d-flex gap-2">              
-              <div class="d-flex gap-3 gap-lg-4 justify-content-center align-items-center">
-                <ul class="dropdown-menu dropdown-menu-end">
-                  <li><a class="dropdown-item" href="#">Perfil</a></li>
-                  <li><a class="dropdown-item" href="/HTML/registro.html">Registrarse</a></li>
-                </ul>
-                <img class="icon mx-auto dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" src="../assets/img/ico/usuario barra principal.png">
-                <a class="d-flex" href="prueba.html"><img class="icon mx-auto" src="../assets/img/ico/Bolsa de compra.png"></a>
-                <a class="d-flex" href="prueba.html"><img class="icon mx-auto" src="../assets/img/ico/Wish.png" class="float-end"></a>
-              </div>
-            </div>
-          </div>
-        </div>
+                        <div class="dropdown-center d-flex gap-2">
+                            <div class="d-flex gap-3 gap-lg-4 justify-content-center align-items-center">
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+                                    <li><a class="dropdown-item" href="/HTML/registro.html">Registrarse</a></li>
+                                </ul>
+                                <img class="icon mx-auto dropdown" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false" src="../assets/img/ico/usuario barra principal.png">
+                                <a class="d-flex clickCarrito" href="#"  id="clickCarrito"><img class="icon mx-auto"
+                                        src="../assets/img/ico/Bolsa de compra.png"></a>
+                                <a class="d-flex" href="#"><img class="icon mx-auto"
+                                        src="../assets/img/ico/Wish.png" class="float-end"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- Enlaces -->
                 <div class="collapse navbar-collapse text-center justify-content-center gap-2 gap-lg-5 order-sm-0 flex-sm-grow-1"
@@ -74,6 +77,18 @@
                 </div>
             </div>
         </nav>
+        <!-- Carrito de compras -->
+        <div class="card card-cart position-absolute end-0 inactive" style="width: 18rem;">
+            <div class="card-header text-center fw-bolder">
+               Tu bolsa
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+            </ul>
+            <a href="#" class="btn btn-warning btn-sm gocart">Ir a la bolsa <img
+                    src="./../assets/ico/Bolsa de compra.png" alt="bolsa de compra" class="buy_icos mx-2"></a>
+            <a href="#" class="btn btn-warning btn-sm border border-2 border-dark mt-1 buyNow"><b>Comprar ahora</b></a>
+        </div>
     </header>
 
     <main>
@@ -99,7 +114,8 @@
                         <!-- Contenido que despliega el boton -->
                         <a href="contacto.html" class="list-group-item list-group-item-action">Envianos un
                             Mensaje</a>
-                        <a href="https://wa.me/525562280518" class="list-group-item list-group-item-action" > Chat en WhatsApp </a>
+                        <a href="https://wa.me/525562280518" class="list-group-item list-group-item-action"> Chat en
+                            WhatsApp </a>
                     </div>
                 </div>
 
@@ -139,8 +155,7 @@
                             somos?</a>
                         <a href="acercade.html#colabora" class="list-group-item list-group-item-action">Trabaja
                             con Nosotros</a>
-                        <a href="acercade.html#comunidad"
-                            class="list-group-item list-group-item-action">Comunidad</a>
+                        <a href="acercade.html#comunidad" class="list-group-item list-group-item-action">Comunidad</a>
                     </div>
                 </div>
 
@@ -167,7 +182,7 @@
                     <ul class="list-group list-group-flush">
                         <p class="list-group">CONTACTO</p>
                         <a href="contacto.html" class="list-group-item">Envianos un mensaje</a>
-                        <a href="https://wa.me/525562280518" class="list-group-item" > Chat en WhatsApp </a>
+                        <a href="https://wa.me/525562280518" class="list-group-item"> Chat en WhatsApp </a>
                     </ul>
                 </div>
 
@@ -226,28 +241,30 @@
         <div class="row">
             <!-- Terminos y condiciones -->
             <div class="col-md-6">
-              <p>Copyright 2022 WICSHA</p>
+                <p>Copyright 2022 WICSHA</p>
             </div>
             <div class="col-md-6">
-              <a href="../PDF/Condiciones-de-uso-Wicsha.pdf" target="_blank">Términos y condiciones</a>
-              <span> | </span>
-              <a href="../HTML/cookies.html" target="_blank">Políticas de cookies</a>
-              <span> | </span>
-              <a href="../PDF/Política-de-Privacidad-Wicsha.pdf" target="_blank">Políticas de Privacidad</a>
+                <a href="../PDF/Condiciones-de-uso-Wicsha.pdf" target="_blank">Términos y condiciones</a>
+                <span> | </span>
+                <a href="../HTML/cookies.html" target="_blank">Políticas de cookies</a>
+                <span> | </span>
+                <a href="../PDF/Política-de-Privacidad-Wicsha.pdf" target="_blank">Políticas de Privacidad</a>
             </div>
-          </div>
+        </div>
     </footer>
-     <!--Cookies-->
- 
+    <!--Cookies-->
 
-     <section class="cajacookies" id="caja">
-        <h2>¿Aceptas nuestras Cookies?</h2> 
+
+    <section class="cajacookies" id="caja">
+        <h2>¿Aceptas nuestras Cookies?</h2>
         <p>Éste sitio web usa cookies, si permanece aquí acepta su uso.
-          Puede leer más sobre el uso de cookies en nuestra <a href="../PDF/Política-de-Privacidad-Wicsha.pdf">política de privacidad</a>.</p>
-        
-           <p> <button onclick="aceptarCookies()" class="pull-right" id="datosLocal"><i class="fa fa-times"></i> Aceptar y cerrar éste mensaje</button></p>
-           
-       
+            Puede leer más sobre el uso de cookies en nuestra <a
+                href="../PDF/Política-de-Privacidad-Wicsha.pdf">política de privacidad</a>.</p>
+
+        <p> <button onclick="aceptarCookies()" class="pull-right" id="datosLocal"><i class="fa fa-times"></i> Aceptar y
+                cerrar éste mensaje</button></p>
+
+
     </section>
 
     <!--****SCRIPT*******-->
@@ -256,7 +273,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
-        <script src="../JS/cookies.js"></script>
+    <script src="../JS/cookies.js"></script>
+    <script src="./../JS/descripcion.js"></script>
 </body>
 
 </html>
