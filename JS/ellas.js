@@ -76,6 +76,22 @@ let productosjson = [
         'description': 'Edicion limitada',
         'detail': ''
     },
+{
+    'id_producto': 13,
+    'name': 'Air ',
+    'price': '$499 mxn',
+    'img': '../assets/img/Articulos/air_negro.jpg',
+    'description': 'Negro',
+    'detail': ''
+},
+{
+    'id_producto': 14,
+    'name': 'Air',
+    'price': '$405 mxn',
+    'img': '../assets/img/Articulos/air_rosa.jpg',
+    'description': 'Rosa',
+    'detail': ''
+}
 
 ];
 

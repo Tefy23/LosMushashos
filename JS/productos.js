@@ -3,14 +3,14 @@ function addItem(item) {
         const itemHTML = `
             <div class="col p-2">
             <a href="./descripcion.html">    
-            <button class="toDescription" id= "${item[i].id_producto}">
+            <button class="toDescription h-100" id= "${item[i].id_producto}">
                     <div class="card h-100"}">
                         <div class="p-4">
                             <img src="${item[i].img}" class="card-img-top img-fluid" alt="image">
                         </div>
                         <div class="card-body border-top d-flex flex-column" >
                             <h5 class="card-title">${item[i].name}</h5>
-                            <p class="card-text">${item[i].description}</p>
+                            <p class="card-text flex-grow-1">${item[i].description}</p>
                             <p class="card-text">${item[i].price}</p>
                         </div>
                     </div>
@@ -111,18 +111,18 @@ let productosjson = [
 
 {
     'id_producto': 11,
-    'name': 'Pants Rex',
+    'name': 'Pants',
     'price': '$499 mxn',
     'img': '../assets/img/Articulos/pants_rex.jpg',
-    'description': 'Winter',
+    'description': 'Rex',
     'detail': ''
 },
 {
     'id_producto': 12,
-    'name': 'Jogger Rex',
+    'name': 'Jogger',
     'price': '$405 mxn',
     'img': '../assets/img/Articulos/jogger_rex.jpg',
-    'description': 'Sueter Gris',
+    'description': 'Rex',
     'detail': ''
 },
 {
