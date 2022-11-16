@@ -517,4 +517,6 @@ a.nav-link {
       transition: 1s;
     }
   }
-  
+  div.inactive{
+    display: none;
+  }
