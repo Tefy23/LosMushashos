@@ -11,7 +11,8 @@
   
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./../CSS/styles.css">
+  <link rel="stylesheet" href="./CSS/index.css">
+  <link rel="stylesheet" href="./CSS/styles.css">
   <!--ENLACE Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -27,42 +28,46 @@
 <body>
   <!-- HEADER -->
   <header class="row-fluid position-fixed border-bottom">
-  <!--ENCABEZADO BASE PAGINA PRINCIPAL-->
-  <!--LOGO PRINCPIPAL-->
-    <a href="../index.html"><img src="./assets/img/logo/wicsha-logo-principal.png" class="img-fluid" align="top-left"
-        alt="wicsha-logo-principal" id="logoPrincipal"></a>
+    <!--ENCABEZADO BASE PAGINA PRINCIPAL-->
+    <!--LOGO PRINCPIPAL-->
+    <a href="./index.html"><img src="./assets/img/logo/wicsha-logo-secundario.png" class="img-fluid"
+            align="top-left" alt="wicsha-logo-principal" id="logoPrincipal"></a>
 
-  <!--BARRA DE NAVEGACION-->
+    <!--BARRA DE NAVEGACION-->
+    <!--<div class="container-sm mt-2">-->
     <nav class="navbar navbar-expand-sm">
-      <div class="container mt-4 gap-2 gap-lg-4">
-        <!--  -->
-        <div class="d-flex flex-grow-1 flex-sm-grow-0 gap-2 order-sm-1">
-          <button class="navbar-toggler px-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="text-center d-flex flex-grow-1 justify-content-end gap-2 gap-lg-4">
-            <form class="d-flex flex-grow-1 flex-sm-grow-0 justify-content-end" style="min-width: 200px;" role="Buscar">
-              <input class="icon-placeholder w-100 m-0" type="search" placeholder="   B u s c a r "
-                aria-label="Search">
-            </form>
-
-        <!--ICONOS superiores-->
-            <div class="dropdown-center d-flex gap-2">
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Perfil</a></li>
-                <li><a class="dropdown-item" href="./JS/registro.js">Registrarse</a></li>
-              </ul>
-              <div class="d-flex gap-3 gap-lg-4 justify-content-center align-items-center">
-                <img class="icon mx-auto dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false"
-                  src="../assets/img/ico/usuario barra principal.png">
-                <a class="d-flex" href="prueba.html"><img class="icon mx-auto"
-                    src="../assets/img/ico/Bolsa de compra.png"></a>
-                <a class="d-flex" href="prueba.html"><img class="icon mx-auto" src="../assets/img/ico/Wish.png"
-                    class="float-end"></a>
-              </div>
+        <div class="container mt-4 gap-2 gap-lg-4">
+            <!--  -->
+            <div class="d-flex flex-grow-1 flex-sm-grow-0 gap-2 order-sm-1">
+                <button class="navbar-toggler px-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="text-center d-flex flex-grow-1 justify-content-end gap-2 gap-lg-4">
+                    <form class="d-flex flex-grow-1 flex-sm-grow-0 justify-content-end" style="min-width: 200px;"
+                        role="Buscar">
+                        <input class="icon-placeholder w-100 m-0" type="search" placeholder="   B u s c a r "
+                            aria-label="Search">
+                    </form>
+                    <!--ICONOS superiores-->
+                    <div class="dropdown-center d-flex gap-2">
+                        <div class="d-flex gap-3 gap-lg-4 justify-content-center align-items-center">
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Perfil</a></li>
+                                <li><a class="dropdown-item" href="/HTML/registro.html">Registrarse</a></li>
+                            </ul>
+                            <img class="icon mx-auto dropdown" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" src="./assets/img/ico/usuario barra principal.png">
+                            <a class="d-flex clickCarrito" href="#"  id="clickCarrito"><img class="icon mx-auto"
+                                    src="./assets/img/ico/Bolsa de compra.png"></a>
+                            <a class="d-flex" href="#"><img class="icon mx-auto"
+                                    src="./assets/img/ico/Wish.png" class="float-end"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
+
 
         <!-- Enlaces -->
         <div
@@ -75,41 +80,55 @@
         </div>
       </div>
     </nav>
+     <!-- Carrito de compras -->
+     <div class="card card-cart position-absolute end-0 inactive" style="width: 18rem;">
+      <div class="card-header text-center fw-bolder">
+         Tu Bolsa
+      </div>
+      <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+      </ul>
+      <a href="#" class="btn btn-warning btn-sm gocart">Ir a la bolsa <img
+              src="./../assets/ico/Bolsa de compra.png" alt="bolsa de compra" class="buy_icos mx-2"></a>
+      <a href="#" class="btn btn-warning btn-sm border border-2 border-dark mt-1 buyNow"><b>Comprar ahora</b></a>
+  </div>
   </header>
 
 <!--DIVISION DE PÀGINA Y COLECCION-->
 
-      <div class="bitter d-none d-sm-none d-md-block" >
-        <img src="./assets/img/logo/LOGO2.png" class="coleccion img-fluid" alt="nombre-de-coleccion-F/W-2022" height="mx-auto">
+      <div class="bitter py-4 d-flex justify-content-center align-items-center" >
+        <img src="./assets/img/logo/LOGO2.png" class="img-fluid w-75" alt="nombre-de-coleccion-F/W-2022" height="mx-auto">
       </div>
      
   
 <!-- EMPIEZA CARRUSEL-->
-    <div class="carousel">
-       <div class="wrap">
-        <ul>        
-          <li> <img src="./assets/img/img-carrusel/01.jpg" href="./HTML/productos.html" class="img-fluid" alt="foto-vista-jumpsuit-animalprint-rosa"></li>
-          <li> <img src="./assets/img/img-carrusel/ropacarousel/01.jpg" href="./HTML/productos.html"class="img-fluid"  alt="producto-jumpsuit-animalprint-rosa""></li>
-          <li> <img src="./assets/img/img-carrusel/03.jpg" class="img-fluid" href="./HTML/productos.html" alt="foto-vista-jumpsuit-vinipiel-negro"></li>
-          <li> <img src="./assets/img/img-carrusel/ropacarousel/03.jpg" href="./HTML/productos.html" class="img-fluid" alt="producto-jumpsuit-vinipiel-negro"></li>
-          <li> <img src="./assets/img/img-carrusel/05.jpg" class="img-fluid" href="./HTML/productos.html" alt="foto-vista-top-sofia-negro"></li>
-          <li> <img src="./assets/img/img-carrusel/ropacarousel/06.jpg" href="./HTML/productos.html" class="img-fluid" alt="producto-abrigo-moon-negro"></li>
-          <li> <img src="./assets/img/img-carrusel/06.jpg" class="img-fluid" href="./HTML/productos.html" alt="foto-vista-top-sofia-negro"></li>
-          <li> <img src="./assets/img/img-carrusel/ropacarousel/07.jpg" href="./HTML/productos.html" class="img-fluid" alt="producto-top-air-rosa-negro"></li>
-          <li> <img src="./assets/img/img-carrusel/04.jpg" href="./HTML/productos.html" class="img-fluid" alt="foto-vista-top-air-negro"></li>  
-        </ul>
-      </div>
-    </div>
+<div class="container-fluid" style="width: 94%;">
+  <div class="carousel">
+    <div class="wrap">
+     <ul>
+       <li> <img src="./assets/img/img-carrusel/01.jpg" href="./HTML/productos.html" class="img-fluid" alt="foto-vista-jumpsuit-animalprint-rosa"></li>
+       <li> <img src="./assets/img/img-carrusel/ropacarousel/01.jpg" href="./HTML/productos.html"class="img-fluid"  alt="producto-jumpsuit-animalprint-rosa""></li>
+       <li> <img src="./assets/img/img-carrusel/03.jpg" class="img-fluid" href="./HTML/productos.html" alt="foto-vista-jumpsuit-vinipiel-negro"></li>
+       <li> <img src="./assets/img/img-carrusel/ropacarousel/03.jpg" href="./HTML/productos.html" class="img-fluid" alt="producto-jumpsuit-vinipiel-negro"></li>
+       <li> <img src="./assets/img/img-carrusel/05.jpg" class="img-fluid" href="./HTML/productos.html" alt="foto-vista-top-sofia-negro"></li>
+       <li> <img src="./assets/img/img-carrusel/ropacarousel/06.jpg" href="./HTML/productos.html" class="img-fluid" alt="producto-abrigo-moon-negro"></li>
+       <li> <img src="./assets/img/img-carrusel/06.jpg" class="img-fluid" href="./HTML/productos.html" alt="foto-vista-top-sofia-negro"></li>
+       <li> <img src="./assets/img/img-carrusel/ropacarousel/07.jpg" href="./HTML/productos.html" class="img-fluid" alt="producto-top-air-rosa-negro"></li>
+       <li> <img src="./assets/img/img-carrusel/04.jpg" href="./HTML/productos.html" class="img-fluid" alt="foto-vista-top-air-negro"></li>  
+     </ul>
+   </div>
+  </div>
+</div>
 <!-- DIVISION FONDO NEGRO, PARA SECCIÓN DE CABALLEROS-->
   <!--TITULO-->
-  <div class="man mt-4">
+  <div class="man mt-4 py-3">
     <div class="container-md text-center">
       <img src="./assets/img/logo/fondo-ellos-02-01.png" alt="título-ellos" class="ellos" alt="texto-para-hombres" class="img-fluid">
     </div> 
     <!--Contenido de  container-->
-      <div class="container-md g-0  text-center mt-4">   
-        <div class="row justify-content-around">             
-          <div class="col-4">                    
+      <div class="container-md g-0  text-center mt-4 w-75">   
+        <div class="row d-flex justify-content-around mx-0 align-items-center">             
+          <div class="col-12 col-lg-6">                    
             <div class="card" style="min-width: 15rem;">
               <img src="./assets/img/logo/thedevil is in details-blanco-01.png" class="card-img-top " alt="card-imagen-thedevilisinthedetails-con-boton-shop">
                 <div class="card-body">
@@ -122,7 +141,7 @@
                 </div>
             </div>
           </div> 
-          <div class="col-4 d-none d-lg-block">
+          <div class="col-lg-6 d-none d-lg-block">
             <img src="./assets/img/img-hombres/DSC_0085.jpg" alt="foto-vista-sudadera-autum" class="fotoCab d-none d-lg-block">
           </div>
         </div>
@@ -130,11 +149,12 @@
     </div>  
              
 <!-- COMPRA POR CATEGORÍA-->
-    <div class="categoria container-md g-0 text-center mt-4">
-      <img src="./assets/img/logo/Mesa de trabajo 10.png" alt="título-compra-por-categoría" class="img-fluid">
-      <div>
-        <hr>
-        <div class="row justify-content-around mt-4">
+    <div class="categoria">
+      <div class="categoria__container g-0 text-center mt-4">
+        <div class="border-bottom border-2 pb-3 mw-100 mx-auto">
+          <img src="./assets/img/logo/Mesa de trabajo 10.png" alt="título-compra-por-categoría" class="img-fluid">
+        </div>
+        <div class="row justify-content-around mt-4 mx-0">
           <div class="col">
             <img src="./assets/img/logo/iconoropa/icono-01.png" alt="icono-basico" class="iconoropa">            
             <img src="./assets/img/logo/iconoropa/icono-02.png" alt="icono-bottoms" class="iconoropa">
@@ -163,15 +183,14 @@
         <h6>y forma parte de nuestra comunidad compartiendo tu look en Instagram etiquetando a @wicsha.mx</h6>
         <h6>Mira las opiniones y fotos de nuestros clientes en el siguiente enlace: </h6>
         <br>
-        <h5><a href="./HTML/acercade.html#comunidad" class="list-group-item list-group-item-action"> -> C O M U N I D A D <- </a>
+        <h5><a href="./HTML/acercade.html#nosotros" class="list-group-item list-group-item-action"> -> C O M U N I D A D <- </a>
         <br></h5>  
         
       </div>
       
     </div> 
-    </div>
-
-  </main>
+  </div>
+</div>
   <!-------------------------- Footer de la pagina ------------------------>
   <hr>
   <footer class="container text-center ">
@@ -192,7 +211,9 @@
             <!-- Contenido que despliega el boton -->
             <a href="./HTML/contacto.html" class="list-group-item list-group-item-action">Envianos un
               Mensaje</a>
-              <a href="https://wa.me/525562280518" class="list-group-item list-group-item-action" > Chat en WhatsApp </a>
+            <a href="./HTML/contacto.html" class="list-group-item list-group-item-action">TEL: 52+
+              5612124578</a>
+            <a href="./HTML/contacto.html" class="list-group-item list-group-item-action">Iniciar Chat</a>
           </div>
         </div>
 
@@ -232,7 +253,7 @@
               somos?</a>
             <a href="./HTML/acercade.html#colabora" class="list-group-item list-group-item-action">Trabaja
               con Nosotros</a>
-            <a href="./HTML/acercade.html#comunidad" class="list-group-item list-group-item-action">Comunidad</a>
+            <a href="./HTML/acercade.html#redes" class="list-group-item list-group-item-action">Colaboraciones</a>
           </div>
         </div>
 
@@ -259,7 +280,8 @@
           <ul class="list-group list-group-flush">
             <p class="list-group">CONTACTO</p>
             <a href="./HTML/contacto.html" class="list-group-item">Envianos un mensaje</a>
-            <a href="https://wa.me/525562280518" class="list-group-item" > Chat en WhatsApp </a>
+            <a href="./HTML/contacto.html" class="list-group-item">52+ 5612124578</a>
+            <a href="./HTML/contacto.html" class="list-group-item">Iniciar Chat</a>
           </ul>
         </div>
 
@@ -281,7 +303,7 @@
             <p class="list-group">SOBRE NOSOTROS</p>
             <a href="./HTML/acercade.html" class="list-group-item">¿Quiénes somos?</a>
             <a href="./HTML/acercade.html#colabora" class="list-group-item">Trabaja con Nosotros</a>
-            <a href="./HTML/acercade.html#comunidad" class="list-group-item">Comunidad</a>
+            <a href="./HTML/acercade.html#redes" class="list-group-item">Colaboraciones</a>
           </ul>
         </div>
 
@@ -317,7 +339,7 @@
     <div class="row">
       <!-- Terminos y condiciones -->
       <div class="col-md-6">
-        <p>Copyright 2022 WICSHA</p> href="./HTML/acercade.html"
+        <p>Copyright 2022 WICSHA</p>
       </div>
       <div class="col-md-6">
         <a href="./PDF/Condiciones-de-uso-Wicsha.pdf" target="_blank">Términos y condiciones</a>
@@ -349,6 +371,7 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
     <script src="./JS/cookies.js"></script>
+    <script src="./JS/descripcion.js"></script>
 </body>
 
 </html>
