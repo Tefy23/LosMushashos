@@ -15,6 +15,7 @@ function clickABolsa() {
     console.log("Hiciste un click") // Hay que quitar esta sentencia
 }
 
+
 /* =================== Funcionalidad Fotografía del producto ============= */
 imgPequeña[0].addEventListener('click', function () {
     imgPrincipal.src = imgPequeña[0].src;
