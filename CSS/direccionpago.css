@@ -96,3 +96,31 @@ form {
   margin-left : 25%
 }
 /*  */
+
+
+/* boton */
+.formulario__btn {
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background:palevioletred;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
+}
