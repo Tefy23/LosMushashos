@@ -56,6 +56,30 @@ let productosjson = [
         'img': '../assets/img/Articulos/sueter.jpg',
         'description': 'Sueter Gris',
         'detail': ''
+    },
+    {
+        'id_producto': 16,
+        'name': 'Camisa',
+        'price': '$405 mxn',
+        'img': '../assets/img/Articulos/CamisaAutum.jpg',
+        'description': 'Autum',
+        'detail': ''
+    },
+    {
+        'id_producto': 17,
+        'name': 'Camisa',
+        'price': '$405 mxn',
+        'img': '../assets/img/Articulos/CamisaMoon.jpg',
+        'description': 'Moon',
+        'detail': ''
+    },
+    {
+        'id_producto': 15,
+        'name': 'Sudadera ',
+        'price': '$499 mxn',
+        'img': '../assets/img/Articulos/top_katherine.jpg',
+        'description': 'Moon',
+        'detail': ''    
     }
 ];
 

@@ -26,32 +26,32 @@ function addItem(item) {
 let productosjson = [
     {
         'id_producto': 1,
-        'name': 'Top Valeria',
+        'name': 'Top ',
         'price': '$450 mxn',
         'img': '../assets/img/Articulos/top_valeria.jpg',
-        'description': 'Top negro con mangas acampanadas',
+        'description': 'Valeria',
         'detail': ''
 
     },
     {
         'id_producto': 2,
-        'name': 'Falda Alicia',
+        'name': 'Falda',
         'price': '$440 mxn',
         'img': '../assets/img/Articulos/falda_alicia.png',
-        'description': 'Falda negra corta',
+        'description': 'Alicia',
         'detail': ''
     },
     {
         'id_producto': 3,
-        'name': 'Falda Pilar',
+        'name': 'Falda',
         'price': '$420 mxn',
         'img': '../assets/img/Articulos/falda_pilar.jpg',
-        'description': 'Falda negra con corte ondulado',
+        'description': 'Pilar',
         'detail': ''
     },
     {
         'id_producto': 4,
-        'name': 'Jumpsuit Water',
+        'name': 'Jumpsuit',
         'price': '$455 mxn',
         'img': '../assets/img/Articulos/jumpsuit_vinipiel.jpg',
         'description': 'Vinipiel',
@@ -59,15 +59,15 @@ let productosjson = [
     },
     {
         'id_producto': 5,
-        'name': 'Abrigo Moon',
+        'name': 'Abrigo ',
         'price': '$495 mxn',
         'img': '../assets/img/Articulos/abrigo_moon.jpg',
-        'description': 'Abrigo negro',
+        'description': 'Moon',
         'detail': ''
     },
     {
         'id_producto': 6,
-        'name': 'Jumpsuit Water',
+        'name': 'Jumpsuit',
         'price': '$485 mxn',
         'img': '../assets/img/Articulos/jumpsuit_animal_print.jpg',
         'description': 'Animal Print',
@@ -94,7 +94,7 @@ let productosjson = [
     },
     {
         'id_producto': 9,
-        'name': 'Sudadera Winter',
+        'name': 'Sudadera ',
         'price': '$499 mxn',
         'img': '../assets/img/Articulos/sudadera_winter.png',
         'description': 'Winter',
@@ -107,7 +107,65 @@ let productosjson = [
         'img': '../assets/img/Articulos/sueter.jpg',
         'description': 'Sueter Gris',
         'detail': ''
-    }
+    },
+
+{
+    'id_producto': 11,
+    'name': 'Pants Rex',
+    'price': '$499 mxn',
+    'img': '../assets/img/Articulos/pants_rex.jpg',
+    'description': 'Winter',
+    'detail': ''
+},
+{
+    'id_producto': 12,
+    'name': 'Jogger Rex',
+    'price': '$405 mxn',
+    'img': '../assets/img/Articulos/jogger_rex.jpg',
+    'description': 'Sueter Gris',
+    'detail': ''
+},
+{
+    'id_producto': 13,
+    'name': 'Air ',
+    'price': '$499 mxn',
+    'img': '../assets/img/Articulos/air_negro.jpg',
+    'description': 'Negro',
+    'detail': ''
+},
+{
+    'id_producto': 14,
+    'name': 'Air',
+    'price': '$405 mxn',
+    'img': '../assets/img/Articulos/air_rosa.jpg',
+    'description': 'Rosa',
+    'detail': ''
+},
+{
+    'id_producto': 15,
+    'name': 'Sudadera ',
+    'price': '$499 mxn',
+    'img': '../assets/img/Articulos/top_katherine.jpg',
+    'description': 'Moon',
+    'detail': ''
+},
+{
+    'id_producto': 16,
+    'name': 'Camisa',
+    'price': '$405 mxn',
+    'img': '../assets/img/Articulos/CamisaAutum.jpg',
+    'description': 'Autum',
+    'detail': ''
+},
+{
+    'id_producto': 17,
+    'name': 'Camisa',
+    'price': '$405 mxn',
+    'img': '../assets/img/Articulos/CamisaMoon.jpg',
+    'description': 'Moon',
+    'detail': ''
+}
+    
 ];
 
 addItem(productosjson);
