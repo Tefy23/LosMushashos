@@ -24,64 +24,13 @@ function addItem(item) {
 }
 
 let productosjson = [
-    {
-        'id_producto': 1,
-        'name': 'Top Valeria',
-        'price': '$450 mxn',
-        'img': '../assets/img/Articulos/top_valeria.jpg',
-        'description': 'Top negro con mangas acampanadas',
-        'detail': ''
 
-    },
-    {
-        'id_producto': 2,
-        'name': 'Falda Alicia',
-        'price': '$440 mxn',
-        'img': '../assets/img/Articulos/falda_alicia.png',
-        'description': 'Falda negra corta',
-        'detail': ''
-    },
-    {
-        'id_producto': 3,
-        'name': 'Falda Pilar',
-        'price': '$420 mxn',
-        'img': '../assets/img/Articulos/falda_pilar.jpg',
-        'description': 'Falda negra con corte ondulado',
-        'detail': ''
-    },
-    {
-        'id_producto': 4,
-        'name': 'Jumpsuit Water',
-        'price': '$455 mxn',
-        'img': '../assets/img/Articulos/jumpsuit_vinipiel.jpg',
-        'description': 'Vinipiel',
-        'detail': ''
-    },
     {
         'id_producto': 5,
         'name': 'Abrigo Moon',
         'price': '$495 mxn',
         'img': '../assets/img/Articulos/abrigo_moon.jpg',
         'description': 'Abrigo negro',
-        'detail': ''
-    },
-    {
-        'id_producto': 6,
-        'name': 'Jumpsuit Water',
-        'price': '$485 mxn',
-        'img': '../assets/img/Articulos/jumpsuit_animal_print.jpg',
-        'description': 'Animal Print',
-        'detail': ''
-    },
-    {
-        'id_producto': 7,
-        'name': 'Jumpsuit ',
-        'price': '$445 mxn',
-        'img': '../assets/img/Articulos/jumpsuit_water.jpg',
-        'secondImg': [
-
-        ],
-        'description': 'Edicion limitada',
         'detail': ''
     },
     {

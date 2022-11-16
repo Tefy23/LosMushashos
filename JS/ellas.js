@@ -58,14 +58,6 @@ let productosjson = [
         'detail': ''
     },
     {
-        'id_producto': 5,
-        'name': 'Abrigo Moon',
-        'price': '$495 mxn',
-        'img': '../assets/img/Articulos/abrigo_moon.jpg',
-        'description': 'Abrigo negro',
-        'detail': ''
-    },
-    {
         'id_producto': 6,
         'name': 'Jumpsuit Water',
         'price': '$485 mxn',
@@ -84,30 +76,7 @@ let productosjson = [
         'description': 'Edicion limitada',
         'detail': ''
     },
-    {
-        'id_producto': 8,
-        'name': 'Sudadera',
-        'price': '$500 mxn',
-        'img': '../assets/img/Articulos/sudadera_autum.png',
-        'description': 'Autum',
-        'detail': ''
-    },
-    {
-        'id_producto': 9,
-        'name': 'Sudadera Winter',
-        'price': '$499 mxn',
-        'img': '../assets/img/Articulos/sudadera_winter.png',
-        'description': 'Winter',
-        'detail': ''
-    },
-    {
-        'id_producto': 10,
-        'name': 'Sueter',
-        'price': '$405 mxn',
-        'img': '../assets/img/Articulos/sueter.jpg',
-        'description': 'Sueter Gris',
-        'detail': ''
-    }
+
 ];
 
 addItem(productosjson);
