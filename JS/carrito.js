@@ -53,7 +53,7 @@ function cargarCarrito() {
   };
   
   
-  //esta función borra elementos del carrito
+  /********************Eliminar Items ***************/
   
   let remove = obj => {
     arregloCarrito.splice($(obj).parent().parent().index(),1); //elimina el elemento del arreglo carrito. 
@@ -62,7 +62,7 @@ function cargarCarrito() {
   
   
   
-  //esta función lee los elementos de mi carrito
+  /******* */ /* esta función lee los elementos de mi carrito *********** */ 
   
   let body;
   
