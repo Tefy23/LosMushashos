@@ -34,6 +34,9 @@ imgPequeña[3].addEventListener('click', function () {
 let producto = JSON.parse(localStorage.getItem("product"));
 console.log(producto);
 
+let title = document.querySelector("title");
+title.innerHTML = producto.name;
+
 let imagenPrincipal = document.getElementById("imgPrincipal");
 imagenPrincipal.src = producto.img;
 
@@ -49,7 +52,17 @@ let precioProducto = document.getElementById("priceItem");
 precioProducto.innerHTML = producto.price;
 
 
+/* **********Añadir a la bolsa************ */
+window.addEventListener("click", function(e){
+    if (e.target.classList.contains("addToCart")) {
+        let listaCompra =[];
+        let compra=JSON.parse(localStorage.getItem("product"));
+        listaCompra.push(compra);
+        localStorage.setItem("carrito", JSON.stringify(listaCompra))
+    };
+    
 
+});
 
 /* ===================Funcionalidad OTRAS OFERTAS======================= */
 /* function addItem(item) {
