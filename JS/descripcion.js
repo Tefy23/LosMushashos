@@ -49,7 +49,7 @@ let detalleProducto = document.getElementById("detailItem");
 detalleProducto.innerHTML = producto.description;
 
 let precioProducto = document.getElementById("priceItem");
-precioProducto.innerHTML = producto.price;
+precioProducto.innerHTML = (`$${producto.price} ${producto.divisa}`);
 
 
 /* **********Añadir a la bolsa************ */
@@ -63,6 +63,8 @@ window.addEventListener("click", function(e){
     
 
 });
+
+
 
 /* ===================Funcionalidad OTRAS OFERTAS======================= */
 /* function addItem(item) {
