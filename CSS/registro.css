@@ -11,6 +11,7 @@ main{
     margin: auto;
     padding: 2rem 0;
     background-image: url(../assets/img/logo/ellas\ fondo\ jpg.jpg);
+    margin-bottom: 150px;
     background-size: contain;
 }
 @media screen and (min-width: 768px){
@@ -33,7 +34,7 @@ main{
     justify-content: center;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color: rgb(105, 105, 105, 0.2);
+    background-color: rgb(105, 105, 105, 0.3);
 }
 
 .caja__trasera div{
@@ -100,7 +101,7 @@ main{
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
-    color: cadetblue;
+    color: palevioletred;
 }
 
 .contenedor__login-register form input{
