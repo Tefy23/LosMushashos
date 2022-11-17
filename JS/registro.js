@@ -237,7 +237,6 @@ function iniciarSesion(){
     aaUsuario.push(iUsuario);
     aaNombre.push(iContraseña);
 
-
     localStorage.setItem('usuarioIni', JSON.stringify(aaUsuario));
     localStorage.setItem('contraIni', JSON.stringify(aaNombre));
 
