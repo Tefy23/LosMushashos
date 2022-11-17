@@ -115,7 +115,7 @@ a.nav-link {
   
   
   /*------------------CARRUSEL-------------------------------------------*/
-  .carousel {
+  /*.carousel {
     display: flex;
     border-radius: 8px;
   
@@ -124,7 +124,7 @@ a.nav-link {
     transform: translateZ(0);
     height: 350px;
     -webkit-overflow-scrolling: touch;
-    /* for tablets */
+    /* for tablets 
   }
   
   .touch .carousel {
@@ -520,6 +520,6 @@ a.nav-link {
   :target {
     display: block;
     position: relative;
-    top: -120px; 
+    top: -140px; 
     visibility: hidden;
   }
