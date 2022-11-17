@@ -35,21 +35,21 @@ let producto = JSON.parse(localStorage.getItem("product"));
 console.log(producto);
 
 let title = document.querySelector("title");
-title.innerHTML = producto.name;
+title.innerHTML = producto.nombrePrenda;
 
 let imagenPrincipal = document.getElementById("imgPrincipal");
-imagenPrincipal.src = producto.img;
+imagenPrincipal.src = producto.imgPrincipal;
 
 //let imagenesPequeñas = ;
 
 let nombreProducto = document.getElementById("nameItem");
-nombreProducto.innerHTML = producto.name;
+nombreProducto.innerHTML = producto.nombrePrenda;
 
 let detalleProducto = document.getElementById("detailItem");
-detalleProducto.innerHTML = producto.description;
+detalleProducto.innerHTML = producto.descripcion;
 
 let precioProducto = document.getElementById("priceItem");
-precioProducto.innerHTML = (`$${producto.price} ${producto.divisa}`);
+precioProducto.innerHTML = (`$${producto.precio} ${producto.divisa}`);
 
 
 /* **********Añadir a la bolsa************ */
