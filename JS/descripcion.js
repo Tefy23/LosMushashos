@@ -15,6 +15,7 @@ function clickABolsa() {
     console.log("Hiciste un click") // Hay que quitar esta sentencia
 }
 
+
 /* =================== Funcionalidad Fotografía del producto ============= */
 imgPequeña[0].addEventListener('click', function () {
     imgPrincipal.src = imgPequeña[0].src;
@@ -33,20 +34,35 @@ imgPequeña[3].addEventListener('click', function () {
 let producto = JSON.parse(localStorage.getItem("product"));
 console.log(producto);
 
+let title = document.querySelector("title");
+title.innerHTML = producto.nombrePrenda;
+
 let imagenPrincipal = document.getElementById("imgPrincipal");
-imagenPrincipal.src = producto.img;
+imagenPrincipal.src = producto.imgPrincipal;
 
 //let imagenesPequeñas = ;
 
 let nombreProducto = document.getElementById("nameItem");
-nombreProducto.innerHTML = producto.name;
+nombreProducto.innerHTML = producto.nombrePrenda;
 
 let detalleProducto = document.getElementById("detailItem");
-detalleProducto.innerHTML = producto.description;
+detalleProducto.innerHTML = producto.descripcion;
 
 let precioProducto = document.getElementById("priceItem");
-precioProducto.innerHTML = producto.price;
+precioProducto.innerHTML = (`$${producto.precio} ${producto.divisa}`);
 
+
+/* **********Añadir a la bolsa************ */
+window.addEventListener("click", function(e){
+    if (e.target.classList.contains("addToCart")) {
+        let listaCompra =[];
+        let compra=JSON.parse(localStorage.getItem("product"));
+        listaCompra.push(compra);
+        localStorage.setItem("carrito", JSON.stringify(listaCompra))
+    };
+    
+
+});
 
 
 
