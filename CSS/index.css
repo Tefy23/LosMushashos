@@ -495,6 +495,13 @@ a.nav-link {
     font-family: 'Raleway', sans-serif;
     ;
   }
+
+
+  /* ******Botones de tipo de prenda****** */
+  .porTipo{
+    border: none;
+    background-color: white;
+  }
   
   
   @media (max-width: 991px) {

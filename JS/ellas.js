@@ -28,7 +28,7 @@ function addItem(item) {
 }
 
 
-fetch("http://localhost:8080/api/producto")
+fetch("https://wicsha.herokuapp.com/api/producto")
     .then(res => res.json())
     .then(res => {
         addItem(res);

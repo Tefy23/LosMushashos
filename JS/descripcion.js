@@ -6,6 +6,10 @@ const imgPequeña = document.getElementsByClassName('imgPequeña');
 const nameItem = document.querySelector('#nameItem');
 const detailItem = document.getElementById('detailItem');
 
+/*===================================CODIGO AÑADIDO================================================*/
+/* =================== BOTON DE COMPRA============= */
+const botonAdd = document.getElementById("btnAdd")
+/*=================================================================================================*/
 
 /* *********Funcionamiento del botón: Bolsa de compra********* */
 botonCarrito.addEventListener('click', clickABolsa);
@@ -14,7 +18,6 @@ function clickABolsa() {
     iconoBolsa.classList.toggle('inactive');
     console.log("Hiciste un click") // Hay que quitar esta sentencia
 }
-
 
 /* =================== Funcionalidad Fotografía del producto ============= */
 imgPequeña[0].addEventListener('click', function () {
@@ -34,8 +37,8 @@ imgPequeña[3].addEventListener('click', function () {
 let producto = JSON.parse(localStorage.getItem("product"));
 console.log(producto);
 
-let title = document.querySelector("title");
-title.innerHTML = producto.nombrePrenda;
+let titulo = document.querySelector("title");
+titulo.innerHTML = producto.nombrePrenda;
 
 let imagenPrincipal = document.getElementById("imgPrincipal");
 imagenPrincipal.src = producto.imgPrincipal;
@@ -49,10 +52,11 @@ let detalleProducto = document.getElementById("detailItem");
 detalleProducto.innerHTML = producto.detalle;
 
 let precioProducto = document.getElementById("priceItem");
-precioProducto.innerHTML = (`$${producto.precio} ${producto.divisa}`);
+precioProducto.innerHTML = (`$ ${producto.precio}  ${producto.divisa}`);
 
 
-/* **********Añadir a la bolsa************ */
+/*===================AÑADIR A CARRITO=======================*/
+
 botonAdd.addEventListener("click", function (e) {
     e.preventDefault();
     let listaCompra = [];
@@ -62,17 +66,12 @@ botonAdd.addEventListener("click", function (e) {
     let compra = JSON.parse(localStorage.getItem("product"));
     listaCompra.push(compra);
     localStorage.setItem("carrito", JSON.stringify(listaCompra));
-});
-
-
-
+})
 
 /* ===================Funcionalidad OTRAS OFERTAS======================= */
-
-
 function verMas(item) {
     let counter = 0;
-    while (counter) {
+    while (counter < 6) {
         const itemHTML = `
             <div class="col p-2">
             <a href="./descripcion.html">    
@@ -94,9 +93,7 @@ function verMas(item) {
         const itemsContainer = document.getElementById("list-items");
         itemsContainer.innerHTML += itemHTML;
 
-        counter ++;
+        counter++;
 
     }
 };
-
-

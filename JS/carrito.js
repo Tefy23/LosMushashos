@@ -1,5 +1,5 @@
 let tabla = document.getElementById("tablaCompras");
-let total = document.getElementById("total")
+let total = document.getElementById("total");
 
 tabla.innerHTML+= `<thead>
 <tr>
@@ -9,9 +9,10 @@ tabla.innerHTML+= `<thead>
 </tr>
 </thead>`
 
-if (localStorage.getItem("carrito")) {
+let carritoLleno =localStorage.getItem("carrito")
+if (carritoLleno) {
     let suma = 0
-    let carrito = JSON.parse(localStorage.getItem("carrito"));
+    let carrito = JSON.parse(carritoLleno)
     carrito.forEach(element => {
         tabla.innerHTML+= `<tbody>
       <tr>
@@ -19,7 +20,7 @@ if (localStorage.getItem("carrito")) {
         <td>${element.nombrePrenda}</td>
         <td>${element.precio.split(" ")[0]}</td>
       </tr>
-      </tbody>`
+      </tbody>`;
       suma+= parseFloat(element.precio.split(" ")[0].split("$")[1])
       total.innerHTML=`TOTAL DE COMPRA: ${suma}`
     });
