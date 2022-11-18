@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pago</title>
+  <title>Confirmación</title>
   <!-- Fuentes extraidas de Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <!-- Estilos propios -->
   <link rel="stylesheet" href="./../CSS/styles.css">
-  <link rel="stylesheet" href="../CSS/direccionpago.css">
+  <link rel="stylesheet" href="../CSS/contacto.css">
   <!--ENLACE Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -58,8 +58,8 @@
               <li><a class="dropdown-item" href="/HTML/registro.html">Registrarse</a></li>
             </ul>
             <img class="icon mx-auto dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" src="../assets/img/ico/usuario barra principal.png">
-            <a class="d-flex clickCarrito" href="#"  id="clickCarrito"  ><img class="icon mx-auto" src="../assets/img/ico/Bolsa de compra.png"></a>
-            <a class="d-flex" href="#"><img class="icon mx-auto" src="../assets/img/ico/Wish.png" class="float-end"></a>
+            <a class="d-flex" href="prueba.html"><img class="icon mx-auto" src="../assets/img/ico/Bolsa de compra.png"></a>
+            <a class="d-flex" href="prueba.html"><img class="icon mx-auto" src="../assets/img/ico/Wish.png" class="float-end"></a>
           </div>
         </div>
       </div>
@@ -77,190 +77,43 @@
     </nav>
 </header>
 
-  <main>
-<div class="card-header" style="background-image: url('../assets/img/logo/ellas\ fondo\ jpg.jpg');">
-    
-    <!-- Ingresar datos de direccion -->
+<main>
 
-    <div class="container">
-      <h1 class="" id="contacto">Ingresa tus datos de entrega</h1>
-      <div class="row">
-        <div class="col">
-          <form>
 
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <div class="form-group col-md-12">
-                    <label for="inputNombre"> <strong>Nombre</strong> </label>
-                    <input type="text" class="form-control" name="nombre" required />
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="form-group col-md-12">
-                    <label for="inputNombre"><strong> Apellido</strong></label>
-                    <input type="text" class="form-control" name="apellido" required />
-                  </div>
+    <div class="container text-center">
+    <div class="card-header" style="background-image: url('../assets/img/logo/ellas-01-v2.jpg');">
+        <div class="row">
+          <div class="col">
+            <div class="tenor-gif-embed" data-postid="12712105" data-share-method="host" data-aspect-ratio="1.9084" data-width="100%"><a href="https://tenor.com/view/black-butterfly-gothic-gif-12712105">Black Butterfly GIF</a>from <a href="https://tenor.com/search/black-gifs">Black GIFs</a></div> 
+          </div>
+
+          <div class="col">
+            <div class="card-header"">
+                <br><br><br><br>
+                <div class="card bg-secondary text-center" style="border-color: #d87093;">
+                    
+                  <h3 style="color:black"> ¡ Gracias por tu pedido !</h3>
+
+                  <!-- <div class="card bg-secondary text-center">
+                    <h3>
+                     Resumen de pedido
+                    </h3>
+                  </div> -->
                 </div>
               </div>
-            </div>
-
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <div class="form-group col-md-12">
-                    <label for="inputNombre"> <strong>Teléfono celular</strong> </label>
-                    <input type="text" class="form-control" name="tel" maxlength="10" required />
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="form-group col-md-12">
-                    <label for="Correo"><strong>Correo electrónico</strong>  </label>
-                    <input type="email" class="form-control" name="correo" required />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            
-            
-            <div class="container">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="form-group col-md-12">
-                    <label for="inputAddress"><strong>Calle</strong> </label>
-                    <input type="text" class="form-control" name="address" required />
-                  </div>
-                </div>
-                <div class="col-md-2">
-                  <div class="form-group col-md-12">
-                    <label for="inputNum"><strong>Num</strong> </label>
-                    <input type="text" class="form-control" name="num" maxlength="5" required />
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group col-md-12">
-                      <label for="inputCity"><strong>Estado</strong> </label>
-                      <p class="msj-error" id="valEstado"></p>
-                      <select id="inputState" class="form-control">
-                        <option value="">Selecciona...</option>
-                        <option value="">Aguascalientes</option>
-                        <option value="">Baja California</option>
-                        <option value="">Baja California Sur</option>
-                        <option value="">Campeche</option>
-                        <option value="">Chiapas</option>
-                        <option value="">Chihuahua</option>
-                        <option value="">Ciudad de México</option>
-                        <option value="">Coahuila</option>
-                        <option value="">Colima</option>
-                        <option value="">Durango</option>
-                        <option value="">Estado de México</option>
-                        <option value="">Guanajuato</option>
-                        <option value="">Guerrero</option>
-                        <option value="">Hidalgo</option>
-                        <option value="">Jalisco</option>
-                        <option value="">Michoacán</option>
-                        <option value="">Morelos</option>
-                        <option value="">Nayarit</option>
-                        <option value="">Nuevo León</option>
-                        <option value="">Oaxaca</option>
-                        <option value="">Puebla</option>
-                        <option value="">Querétaro</option>
-                        <option value="">Quintana Roo</option>
-                        <option value="">San Luis Potosí</option>
-                        <option value="">Sinaloa</option>
-                        <option value="">Sonora</option>
-                        <option value="">Tabasco</option>
-                        <option value="">Tamaulipas</option>
-                        <option value="">Tlaxcala</option>
-                        <option value="">Veracruz</option>
-                        <option value="">Yucatán</option>
-                        <option value="">Zacatecas</option>
-                      </select>
-                  </div>
-                </div>
-                <div class="col-md-2">
-                  <div class="form-group col-md-8">
-                    <label for="inputCP"><strong>C.P.</strong> </label>
-                    <input type="text" class="form-control" name="cp" maxlength="5" required />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </form>
+          </div>
         </div>
-      </div>
+    </div>
     </div>
 
-    <!-- Ingresar datos de tarjeta -->
-
-    <div class="container">
-      <h1 class="" id="contacto">Ingresa tus datos de pago</h1>
-      <div class="row">
-        <div class="col">
-
-          <form> <!-- Pensar si dejarlo o no -->
-
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <div class="form-group col-md-12">
-                    <label for="inputNombretarjeta"><strong>Nombre del tarjetahabiente</strong> </label>
-                    <input type="text" class="form-control" name="nombretarjeta" required placeholder="Nombre que aparece en la tarjeta"/>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <div class="form-group col-md-12">
-                    <label for="inputNumTarjeta"><strong>Número de tarjeta</strong> </label>
-                    <input type="text" class="form-control" name="NumTarjeta" maxlength="16" required placeholder="16 dígitos"/>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            
-            
-            <div class="container">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="form-group col-md-12">
-                    <label for="inputFechaExpiracion"><strong>Fecha de Expiración</strong> </label>
-                    <input type="text" class="form-control" name="FechaExpiracion" maxlength="5" required placeholder="MM/YY" />
-                  </div>
-                </div>
-                <div class="col-md-4">
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group col-md-12">
-                    <label for="inputCP"><strong>CVV</strong></label>
-                    <input type="text" class="form-control" name="cp" maxlength="3" required placeholder="3 dígitos al reverso de la tarjeta"/>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </form>
-
-        </div>
-      </div>
-    </div>
-
-    <!-- boton -->
-    <div class="text-center">
-      <button type="submit" class="formulario__btn" id="btnRegistrar""> <a href="confirmacion.html" style="color:black">Enviar</a> </button> 
-    </div>
-
-    <br><br>
-</div>
 
 
-  </main>
+</main>
+
+
+<script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+
     <!-------------------------- Footer de la pagina ------------------------>
     <hr>
     <footer class="container text-center ">
@@ -332,8 +185,8 @@
             <div class="row">
                 <!-- REDES SOCIALES -->
 
-                <div class="col"><a href="https://www.facebook.com/people/Wicsha/100056972211087/"><i class="bi bi-facebook"></i></a> </div>
-                <div class="col"><a href="https://www.instagram.com/wicsha.mx/?utm_medium=copy_link"><i class="bi bi-instagram" style="color:palevioletred;"></i></a> </div>
+                <div class="col"><a href=""><i class="bi bi-facebook"></i></a> </div>
+                <div class="col"><a href=""><i class="bi bi-instagram" style="color:palevioletred;"></i></a> </div>
                 <div class="col"><a href=""><i class="bi bi-tiktok" style="color:black;"></i></a> </div>
                 <div class="col"><a href=""><i class="bi bi-pinterest" style="color:red;"></i></a> </div>
             </div>
@@ -384,8 +237,8 @@
                             <br>
                             <div class="row">
                                 <div class="col-md-2"></div>
-                                <div class="col-md-4"><a href=""><i class="bi bi-facebook"></i></a></div>
-                                <div class="col-md-4"><a href=""><i class="bi bi-instagram"
+                                <div class="col-md-4"><a href="https://www.facebook.com/people/Wicsha/100056972211087/"><i class="bi bi-facebook"></i></a></div>
+                                <div class="col-md-4"><a href="https://www.instagram.com/wicsha.mx/?utm_medium=copy_link"><i class="bi bi-instagram"
                                             style="color:palevioletred;"></i></a></div>
                                 <div class="col-md-2"></div>
                             </div>
@@ -440,7 +293,6 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
     <script src="../JS/cookies.js"></script>
-    <script src="./../JS/descripcion.js"></script>
 </body>
 
 </html>
