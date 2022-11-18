@@ -15,15 +15,16 @@ if (localStorage.getItem("carrito")) {
     carrito.forEach(element => {
         tabla.innerHTML+= `<tbody>
       <tr>
-        <th scope="row">${element.id_producto}</th>
-        <td>${element.name}</td>
-        <td>${element.price.split(" ")[0]}</td>
+        <th scope="row">${element.productoId}</th>
+        <td>${element.nombrePrenda}</td>
+        <td>${element.precio.split(" ")[0]}</td>
       </tr>
       </tbody>`
-      suma+= parseFloat(element.price.split(" ")[0].split("$")[1])
+      suma+= parseFloat(element.precio.split(" ")[0].split("$")[1])
       total.innerHTML=`TOTAL DE COMPRA: ${suma}`
     });
 }
+
 
   
   /********************Eliminar Items ***************/
