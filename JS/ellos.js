@@ -28,25 +28,28 @@ function addItem(item) {
 }
 
 
-fetch("https://wicsha.herokuapp.com/api/producto")
-    .then(res => res.json())
-    .then(res => {
-        addItem(res);
-        Mau(res);
-    })
+let productosjson = [];
 
-
-function Mau(productosjson) {
-    let botons = document.getElementsByClassName("toDescription");
-    for (let boton of botons) {
-
-        boton.addEventListener('click', function () {
-            let id = boton.id;
-            let productSelect = productosjson.filter(producto => producto.productoId == id);
-
-            console.log(productSelect);
-
-            localStorage.setItem("product", JSON.stringify(productSelect[0]));
+fetch("https://wicsha.herokuapp.com/api/producto")  
+    .then(res=>res.json())
+        .then(res=> { 
+            productosjson = res;
+            addItem(productosjson);
+            Mau(productosjson);
         })
-    };
+
+        
+function Mau(productosjson){
+let botons = document.getElementsByClassName("toDescription");
+for (let boton of botons) {
+
+    boton.addEventListener('click', function () {
+        let id = boton.id;
+        let productSelect = productosjson.filter(producto => producto.productoId == id)
+
+        console.log(productSelect);
+
+        localStorage.setItem("product", JSON.stringify(productSelect[0]));
+    })
+};
 }

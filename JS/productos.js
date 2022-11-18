@@ -23,12 +23,14 @@ function addItem(item) {
     }
 }
 
+let productosjson = [];
 
 fetch("https://wicsha.herokuapp.com/api/producto")  
     .then(res=>res.json())
         .then(res=> { 
-            addItem(res);
-            Mau(res);
+            productosjson = res;
+            addItem(productosjson);
+            Mau(productosjson);
         })
 
         

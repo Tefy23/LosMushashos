@@ -18,10 +18,10 @@ if (carritoLleno) {
       <tr>
         <th scope="row">${element.productoId}</th>
         <td>${element.nombrePrenda}</td>
-        <td>${element.precio.split(" ")[0]}</td>
+        <td>${element.precio}</td>
       </tr>
       </tbody>`;
-      suma+= parseFloat(element.precio.split(" ")[0].split("$")[1])
+      suma+= parseFloat(element.precio)
       total.innerHTML=`TOTAL DE COMPRA: ${suma}`
     });
 }

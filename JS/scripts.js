@@ -118,12 +118,11 @@ new HoverCarousel(carouselElm)
 
 /* ------Llamado de botones------ */
 
-let deTipo = document.getElementsByClassName("deTipo");
+let deTipo = document.getElementsByClassName("porTipo");
 for (let tipo of deTipo) {
 
     boton.addEventListener('click', function () {
         let id = tipo.id;
-        
         let productSelect = productosjson.filter(producto => producto.productoId == id)
 
         console.log(productSelect);
