@@ -59,7 +59,7 @@
                 </ul>
                 <img class="icon mx-auto dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false"
                   src="../assets/img/ico/usuario barra principal.png">
-                <a class="d-flex clickCarrito" href="#" id="clickCarrito"><img class="icon mx-auto"
+                <a class="d-flex clickCarrito" href="#"  id="clickCarrito"><img class="icon mx-auto"
                     src="../assets/img/ico/Bolsa de compra.png"></a>
                 <a class="d-flex" href="#"><img class="icon mx-auto" src="../assets/img/ico/Wish.png"
                     class="float-end"></a>
@@ -82,164 +82,80 @@
     <!-- Carrito de compras -->
     <div class="card card-cart position-absolute end-0 inactive" style="width: 18rem;">
       <div class="card-header text-center fw-bolder">
-        Tu Bolsa
+        Tu bolsa
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">An item</li>
       </ul>
-      <a href="./carrito.html" class="btn btn-warning btn-sm gocart">Ir a la bolsa <img
-          src="./../assets/ico/Bolsa de compra.png" alt="bolsa de compra" class="buy_icos mx-2"></a>
-      <a href="./direccionpago.html" class="btn btn-warning btn-sm border border-2 border-dark mt-1 buyNow"><b>Comprar
-          ahora</b></a>
+      <a href="#" class="btn btn-warning btn-sm gocart">Ir a la bolsa <img src="./../assets/ico/Bolsa de compra.png"
+          alt="bolsa de compra" class="buy_icos mx-2"></a>
+      <a href="#" class="btn btn-warning btn-sm border border-2 border-dark mt-1 buyNow"><b>Comprar ahora</b></a>
     </div>
   </header>
-  <!-- Registro -->
-  <main>
-    <div class="container">
-      <div class="contenedor__todo">
-        <!-- CAJA TRASERA -->
-        <div class="caja__trasera gap-5 gap-lg-3">
-          <!-- CAMBIAR A LOGIN -->
-          <div class="caja__trasera-login">
-            <h3>Inicia sesion</h3>
-            <p>Inicia sesion para poder seguir comprando</p>
-            <button id="btn_Inicio">Iniciar Sesión</button>
-          </div>
-          <!-- CAMBIAR A REGISTRO -->
-          <div class="caja__trasera-register">
-            <h3>¿No tienes cuenta?</h3>
-            <p>Registrate para empezar a comprar en Wicsha</p>
-            <button id="btn_Registro">Regístrarse</button>
-          </div>
+  <!--EMPIEZA EL COLLAPSE-->
 
-        </div>
-
-        <!-- CAJA DELANTERA -->
-        <div class="contenedor__login-register">
-
-          <form action="POST" class="formulario__login border border-4">
-            <h2>Iniciar Sesión</h2>
-            <div class="col-md-12">
-              <input type="text" class="form-control" style="border-color: #d87093;" name="inputUsuario"
-                id="inputUsuario" required placeholder="Ingrese su usuario" />
-            </div>
-            <div class="col-md-12">
-              <input type="password" class="form-control" name="inputPassword" id="inicioUsuarioPassword" required
-                placeholder="Contraseña" />
-            </div>
-            <div class="mt-3" id="inicioSesionBoton">
-              <button type="button" id="botonInicio" class="btn btn-dark">
-                Iniciar sesión
-              </button>
-            </div>
-          </form>
-
-          <!-- FORMULARIO REGISTRO -->
-          <form action="POST" class="formulario__register border border-4">
-            <h2>Bienvenido</h2>
-
-            <div class="formulario__grupo" id="grupo__usuario">
-              <div class="formulario__grupo-input">
-                <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Nombre de usuario"
-                  required />
-                <i class="formulario__validacion-estado fas fa-times-circle"></i>
-              </div>
-              <p class="formulario__input-error">
-                El usuario tiene que ser de 4 a 16 dígitos y solo puede
-                contener numeros, letras y guion bajo.
-              </p>
-            </div>
-
-            <div class="formulario__grupo" id="grupo__nombre">
-              <div class="formulario__grupo-input">
-                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre" required />
-                <i class="formulario__validacion-estado fas fa-times-circle"></i>
-              </div>
-              <p class="formulario__input-error">
-                El nombre solo debe llevar letras.
-              </p>
-            </div>
-
-            <!-- Grupo: Contraseña -->
-            <div class="formulario__grupo" id="grupo__password">
-              <div class="formulario__grupo-input">
-                <input type="password" class="formulario__input" name="password" id="password" required
-                  placeholder="Contraseña" />
-                <i class="formulario__validacion-estado fas fa-times-circle"></i>
-              </div>
-              <p class="formulario__input-error">
-                La contraseña tiene que ser de 8 a 15 dígitos con un número.
-              </p>
-            </div>
-
-            <!-- Grupo: Contraseña 2 -->
-            <div class="formulario__grupo" id="grupo__password2">
-              <div class="formulario__grupo-input">
-                <input type="password" class="formulario__input" name="password2" id="password2"
-                  placeholder="Confirma contraseña" required />
-                <i class="formulario__validacion-estado fas fa-times-circle"></i>
-              </div>
-              <p class="formulario__input-error">
-                Ambas contraseñas deben ser iguales.
-              </p>
-            </div>
-
-            <!-- Grupo: Correo Electronico -->
-            <div class="formulario__grupo" id="grupo__correo">
-              <div class="formulario__grupo-input">
-                <input type="email" class="formulario__input" name="correo" id="correo"
-                  placeholder="correo@correo.com" />
-                <i class="formulario__validacion-estado fas fa-times-circle"></i>
-              </div>
-              <p class="formulario__input-error">
-                El correo solo puede contener letras, numeros, puntos, guiones
-                y guion bajo.
-              </p>
-            </div>
-
-            <!-- Grupo: Teléfono -->
-            <div class="formulario__grupo" id="grupo__telefono">
-              <div class="formulario__grupo-input">
-                <input type="number" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567" />
-                <i class="formulario__validacion-estado fas fa-times-circle"></i>
-              </div>
-              <p class="formulario__input-error">
-                El telefono solo puede contener numeros y el maximo son 14
-                dígitos.
-              </p>
-            </div>
-
-            <!-- Grupo: Terminos y Condiciones -->
-            <div class="formulario__grupo" id="grupo__terminos">
-              <div class="d-flex">
-                <input class="formulario__checkbox m-2 flex-shrink-1" type="checkbox" name="terminos" id="terminos" />
-                <label class="formulario__label flex-shrink-0" for="terminos">
-                  Acepto los Terminos y Condiciones
-                </label>
-              </div>
-            </div>
-
-            <div class="formulario__mensaje" id="formulario__mensaje">
-              <p>
-                <i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por
-                favor rellena el formulario correctamente.
-              </p>
-            </div>
-
-            <div class="formulario__grupo formulario__grupo-btn-enviar">
-              <button type="submit" class="formulario__btn" id="btnRegistrar">
-                Enviar
-              </button>
-              <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
-                Formulario enviado exitosamente!
-              </p>
-            </div>
-          </form>
-        </div>
+  <div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">¿Cómo comprar?</h5>
+        
       </div>
-    </div>
-  </main>
+      <p class="mb-1">Agrega artículos a tu carrito, o compra directamente dando click en el boton "Comprar ahora". Ingresa todos tus datos personales y del producto. Puedes crear un perfil para crear un historial de compra..</small>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">¿Còmo saber si se hizo o no el pago?</h5>
+        
+      </div>
+      <p class="mb-1">Al momento de hacer el pago, te llegará un correo de confirmación de compra que tendrá un folio en donde podrás acceder a los detalles de envío y fecha de entrega.</p>
+     
+    </a>
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">¿Cuánto es el tiempo de entrega?</h5>
+        
+      </div>
+      <p class="mb-1">Tu compra llegará de 24 a 72 hrs. Si tu compra fue fuera de la CDMX, llegará entre 3 y 5 días hábiles.</p>
+    </a>
 
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">¿Què garantìa tiene el producto?</h5>
+          
+        </div>
+        <p class="mb-1">El producto pasa por procesos para asegurar que esta en las condiciones apropiadas para el pùblico. En caso de recibirlo con algùn inperfecto cuenta con 4 dìas despuès de la confirmaciòn de entrega para el cambio o devoluciòn del dinero.
+
+ 
+
+            Comunicarse a los nùmeros publicados en contacto o al correo mxwicsha@gmail.com</p>
+    </a>
+
+      <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Cambios y devoluciones</h5>
+          
+        </div>
+        <p class="mb-1">Si recibiste un artículo con algún defecto o diferente al que compraste, efectuaremos el reembolso de dichos artículos y de los gastos de envío tan pronto como los recibamos en nuestros almacenes y verifiquemos el estado de las prendas.
+
+            Para tramitar la devolución, es imprescindible que llenes la nota de entrega y la incluyas en tu paquete.</small>
+      </a>
+
+      <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Seguridad</h5>
+          
+        </div>
+        <p class="mb-1">Para WICSHA, la seguridad en las compras en línea es fundamental. Todas las transacciones se llevan a cabo a través de sistemas de pago seguros y los datos confidenciales del pago son transmitidos directamente y de forma encriptada</small>
+      </a>
+
+      <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Facturación</h5>
+          
+        </div>
+        <p class="mb-1">Si necesitas que tu compra sea faturada, favor de comunicarse mediante la págica de <a href="./contacto.html">contacto</a> mandando el folio de compra (que está en correo) y tus datos fiscales.</small>
+      </a>
+  </div>
   <!-------------------------- Footer de la pagina ------------------------>
   <hr>
   <footer class="container text-center ">
@@ -275,7 +191,7 @@
           </p>
           <div class="collapse list-group" id="collapseAyuda">
             <!-- Contenido que despliega el boton -->
-            <a href="ayuda.html" class="list-group-item list-group-item-action">Preguntas Frecuentes</a>
+            <a href="" class="list-group-item list-group-item-action">Preguntas Frecuentes</a>
             <a href="" class="list-group-item list-group-item-action">Estatus de Pedido</a>
             <a href="" class="list-group-item list-group-item-action">Envíos</a>
             <a href="" class="list-group-item list-group-item-action">Factura</a>
@@ -334,12 +250,13 @@
         <div class="col-md-3">
           <!--AYUDA -->
           <ul class="list-group list-group-flush">
-            <p class="list-group">AYUDA</p>
+            <p  class="list-group">AYUDA</p> 
             <a class="list-group-item">Preguntas Frecuentes</a>
             <a class="list-group-item">Estatus de Pedido</a>
             <a class="list-group-item">Envíos</a>
             <a class="list-group-item">Factura</a>
             <a class="list-group-item">Devoluciones</a>
+
           </ul>
         </div>
 
@@ -361,10 +278,8 @@
               <br>
               <div class="row">
                 <div class="col-md-2"></div>
-                <div class="col-md-4"><a href="https://www.facebook.com/people/Wicsha/100056972211087/"><i
-                      class="bi bi-facebook"></i></a></div>
-                <div class="col-md-4"><a href="https://www.instagram.com/wicsha.mx/?utm_medium=copy_link"><i
-                      class="bi bi-instagram" style="color:palevioletred;"></i></a></div>
+                <div class="col-md-4"><a href="https://www.facebook.com/people/Wicsha/100056972211087/"><i class="bi bi-facebook"></i></a></div>
+                <div class="col-md-4"><a href="https://www.instagram.com/wicsha.mx/?utm_medium=copy_link"><i class="bi bi-instagram" style="color:palevioletred;"></i></a></div>
                 <div class="col-md-2"></div>
               </div>
               <br>
