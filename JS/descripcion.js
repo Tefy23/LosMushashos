@@ -46,7 +46,7 @@ let nombreProducto = document.getElementById("nameItem");
 nombreProducto.innerHTML = producto.nombrePrenda;
 
 let detalleProducto = document.getElementById("detailItem");
-detalleProducto.innerHTML = producto.descripcion;
+detalleProducto.innerHTML = producto.detalle;
 
 let precioProducto = document.getElementById("priceItem");
 precioProducto.innerHTML = (`$${producto.precio} ${producto.divisa}`);
@@ -83,7 +83,7 @@ function verMas(item) {
                         </div>
                         <div class="card-body border-top d-flex flex-column" >
                             <h5 class="card-title">${item[counter].nombrePrenda}</h5>
-                            <p class="card-text flex-grow-1">${item[counter].descripcion}</p>
+                            <p class="card-text flex-grow-1">${item[counter].detalle}</p>
                             <p class="card-text">$${item[i].precio} ${item[counter].divisa}</p>
                         </div>
                     </div>
