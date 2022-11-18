@@ -1,7 +1,7 @@
 function addItem(item) {
     let categoriaFiltrada = " ";
     for (let i = 0; i < item.length; i++) {
-        categoriaFiltrada = item.filter(categoria => categoria.target == "Todes")
+        categoriaFiltrada = item.filter(categoria => categoria.target == "Ellos")
         console.log(categoriaFiltrada[i])
         const itemHTML = `
             <div class="col p-2">
