@@ -53,13 +53,13 @@ precioProducto.innerHTML = (`$${producto.precio} ${producto.divisa}`);
 
 
 /* **********Añadir a la bolsa************ */
-botonAdd.addEventListener("click", function(e){
+botonAdd.addEventListener("click", function (e) {
     e.preventDefault();
-    let listaCompra=[];
-    if (localStorage.getItem("carrito")){
+    let listaCompra = [];
+    if (localStorage.getItem("carrito")) {
         listaCompra = JSON.parse(localStorage.getItem("carrito"));
     }
-    let compra=JSON.parse(localStorage.getItem("product"));
+    let compra = JSON.parse(localStorage.getItem("product"));
     listaCompra.push(compra);
     localStorage.setItem("carrito", JSON.stringify(listaCompra));
 });
@@ -68,60 +68,35 @@ botonAdd.addEventListener("click", function(e){
 
 
 /* ===================Funcionalidad OTRAS OFERTAS======================= */
-/* function addItem(item) {
-    const itemHTML = `
-        <div class="col p-2">
-            <a href="./descripcion.html" class="toDescription">
-                <div class="card h-100">
-                    <div class="p-4">
-                        <img src="${item.img}" class="card-img-top img-fluid" alt="image">
+
+
+function verMas(item) {
+    let counter = 0;
+    while (counter) {
+        const itemHTML = `
+            <div class="col p-2">
+            <a href="./descripcion.html">    
+            <button class="toDescription h-100" id= "${item[counter].productoId}">
+                    <div class="card h-100"}">
+                        <div class="p-4">
+                            <img src="${item[counter].imgPrincipal}" class="card-img-top img-fluid" alt="image">
+                        </div>
+                        <div class="card-body border-top d-flex flex-column" >
+                            <h5 class="card-title">${item[counter].nombrePrenda}</h5>
+                            <p class="card-text flex-grow-1">${item[counter].descripcion}</p>
+                            <p class="card-text">$${item[i].precio} ${item[counter].divisa}</p>
+                        </div>
                     </div>
-                    <div class="card-body border-top d-flex flex-column" >
-                        <h5 class="card-title">${item.name}</h5>
-                        <p class="card-text">${item.description}</p>
-                        <p class="card-text">$450</p>
-                    </div>
-                </div>
+                </button>
             </a>
-        </div>
-        `;
-    const itemsContainer = document.getElementById("list-items");
-    itemsContainer.innerHTML += itemHTML;
-}
+            </div>
+            `;
+        const itemsContainer = document.getElementById("list-items");
+        itemsContainer.innerHTML += itemHTML;
 
-addItem({
-    'name': 'Top Valeria',
-    'img': '../assets/img/Articulos/top_valeria.jpg',
-    'description': 'Top negro con mangas acampanadas'
+        counter ++;
 
-});
+    }
+};
 
-addItem({
-    'name': 'Falda Alicia',
-    'img': '../assets/img/Articulos/falda_alicia.png',
-    'description': 'Falda negra corta'
-})
 
-addItem({
-    'name': 'Falda Pilar',
-    'img': '../assets/img/Articulos/falda_pilar.jpg',
-    'description': 'Falda negra con corte ondulado'
-})
-
-addItem({
-    'name': 'Jumpsuit Water',
-    'img': '../assets/img/Articulos/jumpsuit_vinipiel.jpg',
-    'description': 'Vinipiel'
-});
-
-addItem({
-    'name': 'Abrigo Moon',
-    'img': '../assets/img/Articulos/abrigo_moon.jpg',
-    'description': 'Abrigo negro'
-})
-
-addItem({
-    'name': 'Jumpsuit Water',
-    'img': '../assets/img/Articulos/jumpsuit_animal_print.jpg',
-    'description': 'Animal Print'
-}) */
