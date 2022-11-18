@@ -53,16 +53,17 @@ precioProducto.innerHTML = (`$${producto.precio} ${producto.divisa}`);
 
 
 /* **********Añadir a la bolsa************ */
-window.addEventListener("click", function(e){
-    if (e.target.classList.contains("addToCart")) {
-        let listaCompra =[];
-        let compra=JSON.parse(localStorage.getItem("product"));
-        listaCompra.push(compra);
-        localStorage.setItem("carrito", JSON.stringify(listaCompra))
-    };
-    
-
+botonAdd.addEventListener("click", function(e){
+    e.preventDefault();
+    let listaCompra=[];
+    if (localStorage.getItem("carrito")){
+        listaCompra = JSON.parse(localStorage.getItem("carrito"));
+    }
+    let compra=JSON.parse(localStorage.getItem("product"));
+    listaCompra.push(compra);
+    localStorage.setItem("carrito", JSON.stringify(listaCompra));
 });
+
 
 
 

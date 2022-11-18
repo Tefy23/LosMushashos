@@ -24,47 +24,47 @@
 </head>
 
 <body>
-  <!-- HEADER -->
-  <header class="row-fluid position-fixed border-bottom">
-    <!--ENCABEZADO BASE PAGINA PRINCIPAL-->
-    <!--LOGO PRINCPIPAL-->
-    <a href="../index.html"><img src="../assets/img/logo/wicsha-logo-secundario.png" class="img-fluid"
-            align="top-left" alt="wicsha-logo-principal" id="logoPrincipal"></a>
+    <!-- HEADER -->
+    <header class="row-fluid position-fixed border-bottom">
+        <!--ENCABEZADO BASE PAGINA PRINCIPAL-->
+        <!--LOGO PRINCPIPAL-->
+        <a href="../index.html"><img src="../assets/img/logo/wicsha-logo-secundario.png" class="img-fluid"
+                align="top-left" alt="wicsha-logo-principal" id="logoPrincipal"></a>
 
-    <!--BARRA DE NAVEGACION-->
-    <!--<div class="container-sm mt-2">-->
-    <nav class="navbar navbar-expand-sm">
-        <div class="container mt-4 gap-2 gap-lg-4">
-            <!--  -->
-            <div class="d-flex flex-grow-1 flex-sm-grow-0 gap-2 order-sm-1">
-                <button class="navbar-toggler px-2" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="text-center d-flex flex-grow-1 justify-content-end gap-2 gap-lg-4">
-                    <form class="d-flex flex-grow-1 flex-sm-grow-0 justify-content-end" style="min-width: 200px;"
-                        role="Buscar">
-                        <input class="icon-placeholder w-100 m-0" type="search" placeholder="   B u s c a r "
-                            aria-label="Search">
-                    </form>
-                    <!--ICONOS superiores-->
-                    <div class="dropdown-center d-flex gap-2">
-                        <div class="d-flex gap-3 gap-lg-4 justify-content-center align-items-center">
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li><a class="dropdown-item" href="#">Perfil</a></li>
-                                <li><a class="dropdown-item" href="/HTML/registro.html">Registrarse</a></li>
-                            </ul>
-                            <img class="icon mx-auto dropdown" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false" src="../assets/img/ico/usuario barra principal.png">
-                            <a class="d-flex clickCarrito" href="#"  id="clickCarrito"><img class="icon mx-auto"
-                                    src="../assets/img/ico/Bolsa de compra.png"></a>
-                            <a class="d-flex" href="#"><img class="icon mx-auto"
-                                    src="../assets/img/ico/Wish.png" class="float-end"></a>
+        <!--BARRA DE NAVEGACION-->
+        <!--<div class="container-sm mt-2">-->
+        <nav class="navbar navbar-expand-sm">
+            <div class="container mt-4 gap-2 gap-lg-4">
+                <!--  -->
+                <div class="d-flex flex-grow-1 flex-sm-grow-0 gap-2 order-sm-1">
+                    <button class="navbar-toggler px-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="text-center d-flex flex-grow-1 justify-content-end gap-2 gap-lg-4">
+                        <form class="d-flex flex-grow-1 flex-sm-grow-0 justify-content-end" style="min-width: 200px;"
+                            role="Buscar">
+                            <input class="icon-placeholder w-100 m-0" type="search" placeholder="   B u s c a r "
+                                aria-label="Search">
+                        </form>
+                        <!--ICONOS superiores-->
+                        <div class="dropdown-center d-flex gap-2">
+                            <div class="d-flex gap-3 gap-lg-4 justify-content-center align-items-center">
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+                                    <li><a class="dropdown-item" href="/HTML/registro.html">Registrarse</a></li>
+                                </ul>
+                                <img class="icon mx-auto dropdown" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false" src="../assets/img/ico/usuario barra principal.png">
+                                <a class="d-flex clickCarrito" href="#" id="clickCarrito"><img class="icon mx-auto"
+                                        src="../assets/img/ico/Bolsa de compra.png"></a>
+                                <a class="d-flex" href="#"><img class="icon mx-auto" src="../assets/img/ico/Wish.png"
+                                        class="float-end"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
                 <!-- Enlaces -->
                 <div class="collapse navbar-collapse text-center justify-content-center gap-2 gap-lg-5 order-sm-0 flex-sm-grow-1"
                     id="navbarSupportedContent">
@@ -153,7 +153,7 @@
                             <!-- Cantidad de producto -->
                             <input type="number" value="1" class="cantidadItem text-center">
                             <!-- Agregar a la bolsa -->
-                            <button href="./carrito.html" class="addToCart mx-1 my-1 btn btn-warning">
+                            <button id="btnAdd" class="addToCart mx-1 my-1 btn btn-warning">
                                 <b>Añadir a la bolsa <img src="./../assets/ico/Bolsa de compra.png"
                                         alt="bolsa de compra" class="buy_icos mx-2"></b>
                             </button>
@@ -167,7 +167,8 @@
                     <hr>
                     <section class=" mx-3 mt-4">
                         <h4>Descripción</h4>
-                        <p id="detailItem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti mollitia sequi, quod amet
+                        <p id="detailItem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti mollitia
+                            sequi, quod amet
                             officia quas quis repudiandae quo sapiente dignissimos aspernatur earum provident
                             consectetur
                             porro minus dolorum ducimus obcaecati eligendi.
@@ -315,9 +316,12 @@
                             <br>
                             <div class="row">
                                 <div class="col-md-2"></div>
-                                <div class="col-md-4"><a href="https://www.facebook.com/people/Wicsha/100056972211087/"><i class="bi bi-facebook"></i></a></div>
-                                <div class="col-md-4"><a href="https://www.instagram.com/wicsha.mx/?utm_medium=copy_link"><i class="bi bi-instagram"
-                                            style="color:palevioletred;"></i></a></div>
+                                <div class="col-md-4"><a
+                                        href="https://www.facebook.com/people/Wicsha/100056972211087/"><i
+                                            class="bi bi-facebook"></i></a></div>
+                                <div class="col-md-4"><a
+                                        href="https://www.instagram.com/wicsha.mx/?utm_medium=copy_link"><i
+                                            class="bi bi-instagram" style="color:palevioletred;"></i></a></div>
                                 <div class="col-md-2"></div>
                             </div>
                             <br>
